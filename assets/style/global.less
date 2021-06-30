@@ -1,0 +1,47 @@
+
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+
+a {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none !important;;
+  -webkit-text-decoration-skip: objects;
+  transition: color .3s;
+  color: @mainColor;
+  &.black {
+    color: @fontColor2;
+  }
+  &:hover {
+    color: @mainColor !important;
+  }
+  &.active {
+    color: @mainColor !important;
+  }
+}
+
+.text-single-ellipsis{
+  display: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.d-none {
+  display: none !important;
+}
+img {
+  width: 100%;
+}
+@media only screen and (max-width: 760px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+}

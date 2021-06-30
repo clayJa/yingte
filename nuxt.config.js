@@ -20,12 +20,16 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'swiper/dist/idangerous.swiper.css',
+    '@/assets/style/global.less',
+    '@/assets/style/iconfont/iconfont.css',
     //配置全局 css
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '@/plugins/babel-polyfill', ssr: true }, // 将es6转换为es5 兼容ie9
+    { src: '@/plugins/swiper.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,6 +45,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     '@nuxtjs/style-resources',
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
   ],
   styleResources:{
     less:'./assets/style/variable.less'
