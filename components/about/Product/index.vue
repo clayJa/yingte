@@ -2,12 +2,6 @@
   <div class="product-container">
     <div class="decription">
       <div class="title">蒸发式冷凝器</div>
-      <div class="select-wrapper">
-        <div :class="['select-item', { active: select === index}]" v-for="(item,index) in 3"
-          :key="item" @click="changeSelect(index)">
-          Model {{item}}
-        </div>
-      </div>
       <div class="info">
         <div>采用专利逆流式结构，换热效率更高，占地面积小，减少机组尺寸；</div>
         <div>水侧采用闭式环状结构分配和集水槽设计，实现均匀布水；</div>
@@ -37,11 +31,31 @@
       <div class="image-wrapper">
         <img :src="require('@/static/images/about/蒸发式冷凝器.png')" alt="">
       </div>
-      <div class="my-swiper">
+      <!-- <div class="my-swiper">
         <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
           :key="index" @click="changeItem(index)">
           <div class="product-image">
             <img :src="item.img" alt="">
+          </div>
+        </div>
+      </div> -->
+      <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption" :key="randomKey">
+        <div class="swiper-wrapper">
+          <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
+            :key="index" @click="changeItem(index)">
+            <div class="product-image">
+              <img :src="item.img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption" :key="randomKey">
+        <div class="swiper-wrapper">
+          <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
+            :key="index" @click="changeItem(index)">
+            <div class="product-image">
+              <img :src="item.img" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -53,6 +67,26 @@
 export default {
   data() {
     return {
+      swiperOption: {
+        loop: false,
+        // autoplay: 6000,
+        // spaceBetween: 30,
+        slidesPerView: 3,
+        paginationClickable :true,
+        preventClicks: false,
+        updateOnImagesReady : true,
+        resizeReInit : true,
+      },
+      swiperMobileOption: {
+        loop: false,
+        // autoplay: 6000,
+        // spaceBetween: 30,
+        slidesPerView: 2.4,
+        paginationClickable :true,
+        preventClicks: false,
+        updateOnImagesReady : true,
+        resizeReInit : true,
+      },
       activeItem: 1,
       randomKey: Math.random(),
       productList: [
@@ -61,15 +95,11 @@ export default {
         { img: require('@/static/images/about/降膜式换热器.png') },
         { img: require('@/static/images/about/降膜式换热器.png') },
       ],
-      select: 1
     }
   },
   computed: {
   },
   watch: {
-    // swiperBanner() {
-    //   this.randomKey = Math.random();
-    // }
   },
   methods: {
     changeItem(index) {
@@ -89,17 +119,11 @@ export default {
   position: relative;
   width: 555px;
   height: 200px;
-  overflow-x: auto;
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #ECECEC;
   .swiper-slide {
     display: flex;
     justify-content: center;
     position: relative;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
     &.active {
       .product-image {
         border: 1px solid #354194;
@@ -144,28 +168,7 @@ export default {
       font-weight: 300;
       color: #181E2D;
       line-height: 54px;
-    }
-    .select-wrapper {
-      margin: 32px 0;
-      display: flex;
-      .select-item {
-        cursor: pointer;
-        font-size: 12px;
-        font-family: Montserrat-Regular, Montserrat;
-        font-weight: 400;
-        color: #9A9A9A;
-        line-height: 12px;
-        padding: 15px 32px;
-        border-radius: 100px;
-        border: 1px solid transparent;
-        &:not(:last-child) {
-          margin-right: 20px;
-        }
-        &:hover,  &.active{
-          color: #354194;
-          border-color: #354194;
-        }
-      }
+      margin-bottom: 48px;
     }
     .info {
       font-size: 16px;
@@ -220,15 +223,18 @@ export default {
     }
   }
   .image-wrapper {
-    // width: 474px;
     height: 555px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
     img {
+      width: 474px;
       height: 100%;
     }
+  }
+  @media only screen and (max-width: 760px) {
+
   }
 }
 </style>

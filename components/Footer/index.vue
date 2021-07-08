@@ -2,7 +2,16 @@
   <div class="footer-wrapper">
     <div class="content">
       <div class="left-wrapper">
-        <div class="logo"></div>
+        <div class="logo-wrapper">
+          <div class="logo"></div>
+          <div class="follow">
+            <div class="text">Follow us</div>
+            <div class="links">
+              <div class="wechat"></div>
+              <div class="weibo"></div>
+            </div>
+          </div>
+        </div>
         <div class="item">
           <div class="name">关于英特</div>
           <div class="name">产品应用</div>
@@ -16,17 +25,22 @@
       <div class="right-wrapper">
         <div class="address">
           <div class="text">
+            china.info@extek.com
+          </div>
+          <div class="icon"><img :src="require('@/static/images/icons/icon_Contact_Email.png')" alt=""></div>
+        </div>
+        <div class="address">
+          <div class="text" style="max-width: 100%">
+            +86 188 XXXX 8888 / 400 888 8888
+          </div>
+          <div class="icon"><img :src="require('@/static/images/icons/icon_Contact_Phone.png')" alt=""></div>
+        </div>
+        <div class="address">
+          <div class="text">
             <div>浙江省安吉县递铺街道乐三路</div>
             <div>468 Lesan Road, Dipu street, Anji County, Zhejiang Province</div>
           </div>
           <div class="icon"><img :src="require('@/static/images/icons/icon_Address.png')" alt=""></div>
-        </div>
-        <div class="follow">
-          <div class="text">Follow us</div>
-          <div class="links">
-            <div class="wechat"></div>
-            <div class="weibo"></div>
-          </div>
         </div>
       </div>
     </div>
@@ -83,6 +97,9 @@ export default {
   }
   .left-wrapper {
     display: flex;
+    .logo-wrapper {
+
+    }
     .item {
       cursor: pointer;
       font-size: 16px;
@@ -101,7 +118,10 @@ export default {
   .right-wrapper {
     .address {
       display: flex;
-      margin-bottom: 32px;
+      justify-content: flex-end;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
       .text {
         font-size: 16px;
         font-family: PingFangSC-Regular, PingFang SC;
@@ -123,13 +143,12 @@ export default {
     justify-content: space-between;
   }
   .follow {
-    text-align: right;
+    margin-top: 52px;
   }
   .links {
     display: flex;
-    justify-content: flex-end;
     margin-top: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     .wechat {
       cursor: pointer;
       display: inline-block;
