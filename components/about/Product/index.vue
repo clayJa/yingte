@@ -80,8 +80,8 @@ export default {
       swiperMobileOption: {
         loop: false,
         // autoplay: 6000,
-        // spaceBetween: 30,
-        slidesPerView: 2.4,
+        initialSlide: 1,
+        slidesPerView: 1.8,
         paginationClickable :true,
         preventClicks: false,
         updateOnImagesReady : true,
@@ -234,7 +234,132 @@ export default {
     }
   }
   @media only screen and (max-width: 760px) {
-
+    padding: 96px 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    .decription {
+      margin: 0 16px;
+      width: auto;
+      .title {
+        font-size: 46px;
+        font-family: PingFangSC-Light, PingFang SC;
+        font-weight: 300;
+        color: #181E2D;
+        line-height: 54px;
+        margin-bottom: 48px;
+      }
+      .info {
+        font-size: 16px;
+        color: #9A9A9A;
+        div {
+          display: flex;
+          margin-bottom: 8px;
+          &::before {
+            content: '·';
+            display: inline-block;
+            margin-right: 1em;
+          }
+        }
+      }
+      .item-list {
+        margin: 0 16px;
+        margin-top: 32px;
+        .item {
+          display: flex;
+          padding: 10px 0px;
+          justify-content: space-between;
+          border-top: 1px solid #ECECEC;
+          &:last-child {
+            border-bottom: 1px solid #ECECEC;
+          }
+          .left {
+            font-size: 16px;
+            font-family: Montserrat-Light, Montserrat;
+            font-weight: 300;
+            color: #9A9A9A;
+          }
+          .right {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #404040;
+          }
+        }
+      }
+      .button-wrapper {
+        margin: 0 16px;
+        margin-top: 64px;
+        .button {
+          display: inline-block;
+          font-size: 16px;
+          font-family: Montserrat-Regular, Montserrat;
+          font-weight: 400;
+          color: #FFFFFF;
+          padding: 14px 42px;
+          background: #354194;
+          border-radius: 4px;
+          border: 1px solid rgba(24, 30, 45, 0.2);
+        }
+      }
+    }
+    .right-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .image-wrapper {
+      padding: 0 25px;
+      margin: 0 16px;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      border: 1px solid #ECECEC;
+      margin-bottom: 48px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.mobile-my-swiper  {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  border-bottom: 1px solid #ECECEC;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &.active {
+      .product-image {
+        border: 1px solid #354194;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #354194;
+        bottom: 0px;
+      }
+    }
+    .product-image {
+      width: 165px;
+      height: 165px;
+      padding: 10px 20px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #EEEEEE;
+      // border: 1px solid #354194;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 </style>
