@@ -2,10 +2,10 @@
   <div class="news-wrapper">
     <div class="title-wrapper">
       <div class="title">新闻资讯</div>
-      <div class="more">Load More</div>
+      <div class="more d-md-none">Load More</div>
     </div>
     <div class="content">
-      <div class="left-wrapper">
+      <div class="left-wrapper d-md-none">
         <div class="item">
           <div class="image-wrapper">
             <img :src="require('@/static/images/about/news-image.png')" alt="">
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="right-wrapper">
+      <div class="right-wrapper d-md-none">
         <div class="item" v-for="(item,index) in 4" :key="index">
           <div class="image-wrapper">
             <img :src="require('@/static/images/about/news-image.png')" alt="">
@@ -32,6 +32,20 @@
           </div>
         </div>
       </div>
+      <div class="item-wrapper  d-none d-md-block">
+        <div class="item" v-for="(item,index) in 4" :key="index">
+          <div class="image-wrapper">
+            <img :src="require('@/static/images/about/news-image.png')" alt="">
+          </div>
+          <div class="title line-2">看展｜“碳中和”下的2021制冷展，暖通空调产业链重磅看点全景呈现…</div>
+          <div class="time">
+            <span>热点资讯</span>
+            <span>/</span>
+            <span>August 21 2021</span>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-more d-md-block d-none">Load More</div>
     </div>
   </div>
 </template>
@@ -172,5 +186,79 @@ export default {
       }
     }
   }
+  @media only screen and (max-width: 760px) {
+    padding: 96px 16px 64px 16px;
+    .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 68px;
+      .title {
+        font-size: 46px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #181E2D;
+        line-height: 65px;
+        position: relative;
+        &::after {
+          left: 0;
+          bottom: -32px;
+          position: absolute;
+          content: '';
+          display: inline-block;
+          width: 80px;
+          height: 2px;
+          background: #354194;
+        }
+      }
+    }
+    .content {
+      flex-direction: column;
+    }
+    .item-wrapper {
+      .item {
+        width: 100%;
+        border-bottom: 1px solid #ECECEC;
+        padding-bottom: 20px;
+        &:nth-child(2n+1) {
+          margin-right: 24px;
+        }
+        .title {
+          font-size: 18px;
+          font-family: PingFangSC-Light, PingFang SC;
+          font-weight: 300;
+          color: #404040;
+          line-height: 25px;
+          margin-bottom: 24px;
+          margin-top: 20px;
+          padding: 0 16px;
+        }
+        .time {
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #9A9A9A;
+          line-height: 20px;
+          padding: 0 16px;
+          span:nth-child(1) {
+            color: #404040;
+          }
+          span:nth-child(2) {
+            display: inline-block;
+            margin: 0 4px;
+          }
+        }
+      }
+    }
+  }
+}
+.mobile-more {
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(154, 154, 154, 0.5);
+  line-height: 32px;
+  text-align: center;
+  margin-top: 24px;
 }
 </style>

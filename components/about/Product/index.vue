@@ -309,12 +309,11 @@ export default {
     }
     .image-wrapper {
       padding: 0 25px;
-      margin: 0 16px;
       height: auto;
       display: block;
       border-radius: 4px;
       border: 1px solid #ECECEC;
-      margin-bottom: 48px;
+      margin: 48px  16px;
       img {
         width: 100%;
         height: 100%;

@@ -3,17 +3,33 @@
     <div class="main-image-wrapper">
       <img :src="list[active].image" alt="">
       <div class="content">
-        <div class="title">{{list[active].name}}</div>
-        <div class="button">Load More</div>
+        <div class="title-wrapper">
+          <div class="title">{{list[active].name}}</div>
+          <div class="button">Load More</div>
+        </div>
+        <div class="icon-wrapper">
+          <img :src="list[active].icon" alt="">
+        </div>
       </div>
     </div>
-    <div class="image-list">
+    <div class="image-list d-md-none">
       <div :class="['item', { active: active === index}]" v-for="(item,index) in list"
         :key="index"
         @click="changeClick(index)"
       >
         <img :src="item.thumbnail" alt="">
         <div class="name">{{ item.name }}</div>
+      </div>
+    </div>
+    <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption">
+      <div class="swiper-wrapper">
+        <div :class="['swiper-slide', { active: active === index}]" v-for="(item,index) in list"
+          :key="index" @click="changeClick(index)">
+          <div :class="['item', { active: active === index}]">
+            <img :src="item.thumbnail" alt="">
+            <div class="name">{{ item.name }}</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -23,6 +39,16 @@
 export default {
   data() {
     return {
+      swiperMobileOption: {
+        loop: false,
+        // autoplay: 6000,
+        initialSlide: 1,
+        slidesPerView: 1.8,
+        paginationClickable :true,
+        preventClicks: false,
+        updateOnImagesReady : true,
+        resizeReInit : true,
+      },
       active: 0,
       list: [
         {
@@ -85,9 +111,16 @@ export default {
     .content {
       position: absolute;
       left: 0;
-      right: 0;
+      right: 150px;
       bottom: 144px;
       padding-left: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .icon-wrapper {
+        width: 112px;
+        height: 112px;
+      }
       .title {
         font-size: 72px;
         font-family: PingFangSC-Regular, PingFang SC;
@@ -116,8 +149,85 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 64px 150px 96px 150px;
+  }
+  .item {
+    cursor: pointer;
+    .name {
+      font-size: 18px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #404040;
+      line-height: 32px;
+      text-align: center;
+      margin-top: 24px;
+    }
+    &.active {
+      .name {
+        color: #354194;
+        font-weight: 600;
+      }
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .main-image-wrapper {
+      position: relative;
+      height: 800px;
+      margin-bottom: 64px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .content {
+        position: absolute;
+        left: 0;
+        right: 0px;
+        bottom: 96px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        .icon-wrapper {
+          width: 112px;
+          height: 112px;
+        }
+        .title {
+          font-size: 40px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 64px;
+          margin-bottom: 64px;
+          margin-top: 64px;
+        }
+        .button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 165px;
+          height: 45px;
+          background: #354194;
+          border-radius: 100px;
+          border: 1px solid rgba(24, 30, 45, 0.2);
+          font-size: 12px;
+          font-family: Montserrat-Regular, Montserrat;
+          font-weight: 400;
+          color: #FFFFFF;
+        }
+      }
+    }
+    .image-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 64px 150px 96px 150px;
+    }
     .item {
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       .name {
         font-size: 18px;
         font-family: PingFangSC-Regular, PingFang SC;
@@ -134,6 +244,12 @@ export default {
         }
       }
     }
+  }
+}
+.mobile-my-swiper {
+  height: 265px;
+  img {
+    width: 165px;
   }
 }
 </style>

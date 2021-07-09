@@ -53,5 +53,36 @@ export default {
     font-weight: 300;
     color: #354194;
   }
+  @media only screen and (max-width: 760px) {
+    width: 100%;
+    height: 288px;
+    background: #354194;
+    padding: 64px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    .title {
+      font-size: 24px;
+      font-family: PingFangSC-Light, PingFang SC;
+      font-weight: 300;
+      color: #FFFFFF;
+      max-width: 11em;
+    }
+    .button {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 172px;
+      height: 46px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      font-size: 18px;
+      font-family: PingFangSC-Light, PingFang SC;
+      font-weight: 300;
+      color: #354194;
+    }
+  }
 }
 </style>
