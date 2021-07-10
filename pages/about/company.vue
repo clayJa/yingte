@@ -1,8 +1,11 @@
 <template>
   <div class="index-wrapper">
     <Header />
-    <div class="banner">
+    <div class="banner d-md-none">
       <img :src="require('@/static/images/about/banner/12.png')" alt="">
+    </div>
+    <div class="banner d-md-block d-none">
+      <img :src="require('@/static/images/about/mobile_banner/mobile_banner_3.png')" alt="">
     </div>
     <TabBar />
     <div class="media">
@@ -152,6 +155,7 @@ export default {
       margin-bottom: 60px;
     }
     .button {
+      cursor: pointer;
       display: inline-block;
       padding: 0 42px;
       height: 54px;
@@ -226,6 +230,7 @@ export default {
         letter-spacing: 2px;
       }
       .title {
+        position: relative;
         font-size: 56px;
         font-family: PingFang SC;
         color: #404040;
@@ -281,6 +286,200 @@ export default {
     }
     .item6 {
       width: 440px;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .media {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 60px 16px 96px 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .media-wrapper {
+      width: 100%;
+      height: 221px;
+      position: relative;
+      border-radius: 4px;
+      .media-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: @bgColor;
+        border-radius: 4px;
+      }
+      .play-btn {
+        position: absolute;
+        width: 92px;
+        height: 92px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-radius: 4px;
+      }
+    }
+    .media-description {
+      margin-top: 48px;
+      max-width: 100%;
+      .title {
+        font-size: 40px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #404040;
+        line-height: 64px;
+        max-width: 100%;
+      }
+      .info {
+        font-size: 18px;
+        font-family: PingFangSC-Light, PingFang SC;
+        font-weight: 300;
+        color: #9A9A9A;
+        line-height: 28px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+      }
+      .button {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 42px;
+        height: 54px;
+        background: #354194;
+        border-radius: 4px;
+        border: 1px solid rgba(24, 30, 45, 0.2);
+        text-align: center;
+        font-size: 16px;
+        font-family: Montserrat-Regular, Montserrat;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 54px;
+      }
+    }
+    .about-wrapper {
+      padding: 96px 16px;
+      .content {
+        background-image: url('@/static/images/about/about_company_bg.png');
+        background-size: 100% 100%;
+        object-fit: cover;
+      }
+      .title-en {
+        font-size: 16px;
+        font-family: Montserrat-Light, Montserrat;
+        font-weight: 300;
+        color: #9A9A9A;
+        line-height: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .description div {
+        font-size: 16px;
+        font-family: PingFangSC-Light, PingFang SC;
+        font-weight: 300;
+        color: #404040;
+        line-height: 32px;
+        margin-bottom: 2em;
+      }
+      .title {
+        position: relative;
+        font-size: 40px;
+        font-family: PingFangSC-Light, PingFang SC;
+        font-weight: 300;
+        color: #404040;
+        line-height: 64px;
+        text-align: center;
+        margin-bottom: 75px;
+        margin-top: 12px;
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          bottom: -24px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 62px;
+          height: 3px;
+          background: #354194;
+        }
+      }
+    }
+    .works-wrapper {
+      padding: 0 16x;
+      padding-bottom: 96px;
+      .title-wrapper {
+        .title-en {
+          font-size: 18px;
+          font-family: Montserrat-Light, Montserrat;
+          font-weight: 300;
+          color: #9A9A9A;
+          line-height: 32px;
+          letter-spacing: 2px;
+        }
+        .title {
+          font-size: 56px;
+          font-family: PingFang SC;
+          color: #404040;
+          font-weight: 300;
+          line-height: 64px;
+          margin-top: 24px;
+          margin-bottom: 75px;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -24px;
+            left: 0;
+            width: 62px;
+            height: 3px;
+            background: #354194;
+          }
+        }
+      }
+    }
+    .work-list-wrapper {
+      // img {
+      //   width: auto;
+      // }
+      .left {
+        float: none;
+      }
+      .work-item {
+        overflow: hidden;
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
+        &:hover img {
+          transition: all 1s;
+          transform: scale(1.2);
+        }
+      }
+      .right {
+        float: none;
+      }
+      .item1 {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      .item2 {
+        width: 100%;
+      }
+      .item3,.item4 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+      .item5 {
+        width: 100%;
+        margin-right: 0;
+      }
+      .item6 {
+        width: 0;
+      }
     }
   }
 }

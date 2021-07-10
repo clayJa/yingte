@@ -39,7 +39,7 @@
           </div>
         </div>
       </div> -->
-      <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption" :key="randomKey">
+      <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption">
         <div class="swiper-wrapper">
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption" :key="randomKey">
+      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption">
         <div class="swiper-wrapper">
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
@@ -96,6 +96,8 @@ export default {
         { img: require('@/static/images/about/降膜式换热器.png') },
       ],
     }
+  },
+  mounted() {
   },
   computed: {
   },

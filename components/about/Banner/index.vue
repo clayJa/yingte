@@ -1,6 +1,6 @@
 <template>
   <div class="banner-container">
-    <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption" :key="randomKey">
+    <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(item,index) in swiperBanner" :key="index">
           <img :src="item" alt="">
@@ -8,7 +8,7 @@
       </div>
         <!-- <div class="swiper-pagination"></div> -->
     </div>
-    <div class="mobile-my-swiper d-md-block d-none" v-swiper:myMobileSwiper="swiperOption" :key="randomKey">
+    <div class="mobile-my-swiper d-md-block d-none" v-swiper:myMobileSwiper="swiperOption">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(item,index) in mobileBanner" :key="index">
           <img :src="item" alt="">
