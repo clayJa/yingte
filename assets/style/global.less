@@ -55,6 +55,11 @@ img {
   -webkit-line-clamp: 4;
   overflow: hidden;
 }
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 @media only screen and (max-width: 760px) {
   .d-md-none {
     display: none !important;
