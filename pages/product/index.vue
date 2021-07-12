@@ -79,6 +79,7 @@ export default {
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 64px;
       .list-item {
         width: 555px;
         position: relative;
@@ -172,6 +173,7 @@ export default {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 64px;
         .list-item {
           width: 100%;
           position: relative;
