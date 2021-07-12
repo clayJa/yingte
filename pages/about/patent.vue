@@ -9,9 +9,6 @@
     </div>
     <TabBar />
     <div class="wrapper">
-      <div class="select">
-        <ButtonGroup :options="options" :select="select" @onChange="handleChange" />
-      </div>
       <div class="list-wrapper">
         <div class="list-item" v-for="(item,index) in list" :key="index">
           <div class="image">
@@ -19,7 +16,6 @@
           </div>
           <div class="description">
             <div class="name">{{item.name}}</div>
-            <div class="date">{{item.date}}</div>
           </div>
         </div>
       </div>
@@ -39,21 +35,11 @@ import ButtonGroup from '@/components/about/ButtonGroup/index.vue'
 export default {
   data() {
     return {
-      options: [
-        {name: '政府荣誉', value: 1},
-        {name: '行业荣誉', value: 2},
-        {name: '客户荣誉', value: 3},
-      ],
-      select: 1,
       list: [
-        { image: require('@/static/images/about/honor/honor_image_1.png'), name: '国家高新技术企业证书', date: '2021/03/12' },
-        { image: require('@/static/images/about/honor/honor_image_2.png'), name: '“AAA”级企业信用等级', date: '2021/03/23' },
-        { image: require('@/static/images/about/honor/honor_image_3.png'), name: '国家高新技术企业证书', date: '2018/04/12' },
-        { image: require('@/static/images/about/honor/honor_image_4.png'), name: '2018年度热泵行业优秀零部件供应商', date: '2019/03/23' },
-        { image: require('@/static/images/about/honor/honor_image_5.png'), name: '2019热泵技术创新奖', date: '2004/04/12' },
-        { image: require('@/static/images/about/honor/honor_image_6.png'), name: '国家高新技术企业证书', date: '2008/03/23' },
-        { image: require('@/static/images/about/honor/honor_image_7.png'), name: '国家高新技术企业证书', date: '2004/04/12' },
-        { image: require('@/static/images/about/honor/honor_image_8.png'), name: '国家高新技术企业证书', date: '2008/03/23' },
+        { image: require('@/static/images/about/patent/patent_image_1.png'), name: '特种设备制造许可证' },
+        { image: require('@/static/images/about/patent/patent_image_2.png'), name: '实用新型专利证书' },
+        { image: require('@/static/images/about/patent/patent_image_3.png'), name: 'CRAA产品认证证书' },
+        { image: require('@/static/images/about/patent/patent_image_4.png'), name: '实用新型专利证书' },
       ]
     }
   },
@@ -73,11 +59,6 @@ export default {
 .index-wrapper {
   .wrapper {
     padding: 96px 150px 0px 150px;
-    .select {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 32px;
-    }
     .list-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -85,28 +66,37 @@ export default {
       justify-content: space-between;
       border-bottom: 1px solid #ECECEC;
       .list-item {
-        margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
+        position: relative;
+        &:hover {
+          .description {
+            visibility: visible;
+          }
+        }
+        &:nth-child(3n) {
+          margin-right: 0px;
+        }
+        margin-right: 40px;
       }
       .description {
-        padding-top: 24px;
-        padding-bottom: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        background: rgba(53, 65, 148, 0.9);
+        animation: all 1s;
         .name {
-          font-size: 16px;
-          font-family: PingFangSC-Light, PingFang SC;
-          font-weight: 300;
-          color: #171717;
-          line-height: 22px;
-          text-align: center;
-        }
-        .date {
-          font-size: 14px;
-          font-family: PingFangSC-Light, PingFang SC;
-          font-weight: 300;
-          color: #8F92A1;
-          line-height: 20px;
-          margin-top: 4px;
+          font-size: 20px;
+          font-family: Montserrat-Regular, Montserrat;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 26px;
           text-align: center;
         }
       }
@@ -153,41 +143,45 @@ export default {
   @media only screen and (max-width: 760px) {
     .wrapper {
       padding: 96px 16px 0px 16px;
-      .select {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 32px;
-      }
       .list-wrapper {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #ECECEC;
+        padding: 0 48px;
         .list-item {
-          margin-top: 16px;
           margin-bottom: 48px;
           width: 100%;
+          position: relative;
+          &:hover {
+            .description {
+              visibility: visible;
+            }
+          }
+          &:nth-child(3n) {
+            margin-right: 0px;
+          }
+          margin-right: 0;
         }
         .description {
-          padding-top: 24px;
-          padding-bottom: 12px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          visibility: hidden;
+          background: rgba(53, 65, 148, 0.9);
+          animation: all 1s;
           .name {
-            font-size: 16px;
-            font-family: PingFangSC-Light, PingFang SC;
-            font-weight: 300;
-            color: #171717;
-            line-height: 22px;
-            text-align: center;
-          }
-          .date {
-            font-size: 14px;
-            font-family: PingFangSC-Light, PingFang SC;
-            font-weight: 300;
-            color: #8F92A1;
-            line-height: 20px;
-            margin-top: 4px;
+            font-size: 20px;
+            font-family: Montserrat-Regular, Montserrat;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 26px;
             text-align: center;
           }
         }
