@@ -67,12 +67,11 @@ export default {
       activePath: '',
       scroll: false,
       menus: [
-        { name: '关于英特', path: '/' },
+        { name: '关于英特', path: '/about' },
         { name: '产品应用', path: '/product' },
         { name: '新闻资讯', path: '/news' },
         { name: '投资者关系', path: '/investor-relations'},
-        { name: '加入我们', path: '/contact' },
-        { name: '联系', path: '/contact' },
+        { name: '加入我们', path: '/join' },
       ]
     }
   },

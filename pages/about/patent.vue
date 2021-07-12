@@ -31,7 +31,6 @@
 
 <script lang="ts">
 import TabBar from '@/components/about/TabBar/index.vue'
-import ButtonGroup from '@/components/about/ButtonGroup/index.vue'
 export default {
   data() {
     return {
@@ -44,13 +43,9 @@ export default {
     }
   },
   methods: {
-    handleChange(item,index) {
-      this.select = item.value
-    }
   },
   components: {
     TabBar,
-    ButtonGroup,
   }
 }
 </script>
