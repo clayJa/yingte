@@ -176,6 +176,7 @@ export default {
       border-radius: 4px;
       margin-top: 76px;
       margin-bottom: 96px;
+      object-fit: cover;
       .title {
         font-size: 46px;
         font-family: PingFangSC-Light, PingFang SC;
@@ -220,6 +221,10 @@ export default {
           width: 560px;
           height: 555px;
           position: relative;
+          border-radius: 4px;
+          img {
+            border-radius: 4px;
+          }
           &:hover {
             .info {
               visibility: visible;
@@ -253,6 +258,192 @@ export default {
               font-weight: 300;
               color: #FFFFFF;
               line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .detail {
+      padding: 26px 16px 96px 16px;
+      .title-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 48px;
+        .title {
+          font-size: 32px;
+          font-family: PingFangSC-Light, PingFang SC;
+          font-weight: 300;
+          color: #181E2D;
+          line-height: 54px;
+          margin-top: 48px;
+          padding-bottom: 48px;
+          width: auto;
+          border-bottom: 1px solid #E5E5E5;
+          float: none;
+        }
+        .product-image {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          float: none;
+          padding: 18px;
+          width: 240px;
+          height: 240px;
+          background: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #ECECEC;
+        }
+      }
+      .sub-title {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        font-family: PingFangSC-Light, PingFang SC;
+        font-weight: 300;
+        color: #404040;
+        line-height: 45px;
+        &::before {
+          content: '';
+          width: 59px;
+          height: 1px;
+          background: #404040;
+          margin-right: 32px;
+        }
+      }
+      .description {
+        font-size: 18px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #9A9A9A;
+        line-height: 42px;
+        margin-top: 24px;
+        margin-bottom: 48px;
+        & div::before {
+          content: '·';
+          display: inline-block;
+          margin-right: 1em;
+        }
+      }
+      .display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 48px;
+        .display-item {
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+          margin-right: 0;
+          margin-bottom: 48px;
+        }
+        .image {
+          width: 100%;
+          height: 300px;
+        }
+        .name {
+          margin-top: 24px;
+          font-size: 16px;
+          font-family: PingFangSC-Light, PingFang SC;
+          font-weight: 300;
+          color: #9A9A9A;
+          line-height: 25px;
+        }
+      }
+      .product-advantage {
+        padding: 96px 32px;
+        background-image: url('@/static/images/product/advantage_bg.png');
+        background-size: 100% 100%;
+        border-radius: 4px;
+        margin-top: 16px;
+        margin-bottom: 48px;
+        .title {
+          font-size: 32px;
+          font-family: PingFangSC-Light, PingFang SC;
+          font-weight: 300;
+          color: #FFFFFF;
+          line-height: 54px;
+          margin-bottom: 45px;
+        }
+        .advantage {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: space-between;
+          .item {
+            font-size: 18px;
+            font-family: PingFangSC-Light, PingFang SC;
+            font-weight: 300;
+            color: #FFFFFF;
+            line-height: 25px;
+            max-width: 100%;
+            display: inline-flex;
+            &:not(:last-child) {
+              margin-bottom: 24px;
+            }
+            &::before {
+              display: inline-block;
+              content: '';
+              flex-shrink: 0;
+              width: 32px;
+              height: 29px;
+              margin-right: 16px;
+              background-image: url('@/static/images/product/check-square.png');
+            }
+          }
+        }
+      }
+      .application {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 48px;
+        .item {
+          margin-bottom: 24px;
+          width: 100%;
+          .image {
+            width: 100%;
+            height: auto;
+            position: relative;
+            border-radius: 4px;
+            img {
+              border-radius: 4px;
+            }
+            &:hover {
+              .info {
+                visibility: visible;
+              }
+            }
+            .info {
+              position: absolute;
+              visibility: hidden;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              background: rgba(53, 65, 148, 0.9);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 0 106px;
+              text-align: center;
+              .info1 {
+                font-size: 28px;
+                font-family: PingFangSC-Light, PingFang SC;
+                font-weight: 300;
+                color: #FFFFFF;
+                line-height: 34px;
+                margin-bottom: 32px;
+              }
+              .info2 {
+                font-size: 16px;
+                font-family: PingFangSC-Light, PingFang SC;
+                font-weight: 300;
+                color: #FFFFFF;
+                line-height: 25px;
+              }
             }
           }
         }
