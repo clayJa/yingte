@@ -85,7 +85,6 @@ export default {
         justify-content: center;
         visibility: hidden;
         background: rgba(53, 65, 148, 0.9);
-        animation: all 1s;
         .name {
           font-size: 20px;
           font-family: Montserrat-Regular, Montserrat;
@@ -170,7 +169,6 @@ export default {
           justify-content: center;
           visibility: hidden;
           background: rgba(53, 65, 148, 0.9);
-          animation: all 1s;
           .name {
             font-size: 20px;
             font-family: Montserrat-Regular, Montserrat;

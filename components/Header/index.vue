@@ -87,8 +87,7 @@ export default {
       this.$router.push('/search')
     },
     toPath(item) {
-      const path = this.computePath(item)
-      this.$router.push(path)
+      this.$router.push(item.path)
     },
   },
   mounted() {
