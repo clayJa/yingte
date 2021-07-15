@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     toPath(item) {
-      console.log(item)
+      this.$router.push(item.path)
     },
     initIndex() {
       const path = this.$nuxt.$route.path

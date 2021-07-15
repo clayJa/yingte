@@ -69,7 +69,7 @@ export default {
 }
 </script>
 
-<style lang="less" >
+<style lang="less" scoped>
 .index-wrapper {
   .wrapper {
     padding: 96px 150px 0px 150px;

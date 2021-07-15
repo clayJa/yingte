@@ -85,7 +85,7 @@ export default {
 }
 </script>
 
-<style lang="less" >
+<style lang="less" scoped>
 .index-wrapper {
   .detail {
     padding: 96px 150px 144px 150px;
