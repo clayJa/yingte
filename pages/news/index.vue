@@ -119,9 +119,12 @@ export default {
             font-size: 12px;
             font-family: PingFangSC-Regular, PingFang SC;
             font-weight: 400;
-            color: #404040;
+            color: #9A9A9A;
             line-height: 20px;
             padding: 0 32px 32px 32px;
+            span:first-child {
+              color: #404040;
+            }
           }
         }
       }
@@ -167,6 +170,75 @@ export default {
   }
   @media only screen and (max-width: 760px) {
     .wrapper {
+      .new-content {
+        .title-wrapper {
+          padding: 96px 16px 0px 16px;
+          background: #fff;
+          .title {
+            font-size: 40px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #181E2D;
+            line-height: 56px;
+            &::after {
+              content: '';
+              display: block;
+              width: 80px;
+              height: 2px;
+              background: #354194;
+              margin-top: 32px;
+            }
+          }
+        }
+        .list-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 48px 16px 0 16px;
+          border-bottom: 1px solid #ECECEC;
+          .item {
+            width: 100%;
+            margin-bottom: 32px;
+            background: #fff;
+            border-bottom: 4px solid #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+              border-color: #354194;
+            }
+            .image-wrapper {
+              height: 240px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .title {
+              font-size: 22px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #404040;
+              line-height: 30px;
+              margin: 32px 32px 22px 32px;
+            }
+            .info {
+              font-size: 14px;
+              font-family: Montserrat-Light, Montserrat;
+              font-weight: 300;
+              color: #9A9A9A;
+              line-height: 20px;
+              padding: 0 32px 32px 32px;
+            }
+            .time {
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              line-height: 20px;
+              padding: 0 32px 32px 32px;
+            }
+          }
+        }
+      }
     }
     .pager-wrapper {
       display: flex;
@@ -178,7 +250,7 @@ export default {
       color: #3E3E3E;
       line-height: 28px;
       letter-spacing: 1px;
-      padding: 16px 0;
+      padding: 16px 16px;
       .icon {
         font-size: 38px;
       }
