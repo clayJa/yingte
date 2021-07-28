@@ -9,46 +9,47 @@
     </div>
     <div class="detail">
       <div class="title-wrapper clearfix">
-        <div class="title">壳管式换热器</div>
+        <div class="title">{{this.detail.title}}</div>
         <div class="product-image">
-          <img :src="require('@/static/images/product/product_image.png')" alt="">
+          <img :src="`/backApi/upload/${this.detail.cover_picture}`" alt="">
         </div>
       </div>
       <div class="product-description">
         <div class="sub-title">产品描述</div>
         <div class="description">
-          <div>采用分配器分液，保证管程冷媒分配均匀，改善了管程的设计，最大限度地利用了换热面积，换热性能良好；</div>
+          <div v-for="(item,index) in this.detail.description || []" :key="index">{{item.title}}</div>
+          <!-- <div>采用分配器分液，保证管程冷媒分配均匀，改善了管程的设计，最大限度地利用了换热面积，换热性能良好；</div>
           <div>工艺上改胀接为焊接，耐压强度高，大幅提升了产品的可靠性。取消了管板和管箱，分配器、收集器、换热管焊接一体，使得多个系统完全独立，不存在密封泄漏风险，特别适合R410a、R32等新型环保制冷剂；</div>
           <div>耐脏、耐堵、耐冻，尾部悬伸短，抗振性好，克服了振动断裂的风险；</div>
-          <div>产品标准化、模块化设计，适合批量化生产，大大提高产品质量，易于拆装维护，缩短生产交货周期。</div>
+          <div>产品标准化、模块化设计，适合批量化生产，大大提高产品质量，易于拆装维护，缩短生产交货周期。</div> -->
         </div>
       </div>
       <div class="product-display">
         <div class="sub-title">产品展示</div>
         <div class="display">
-          <div class="display-item" v-for="(item,index) in product" :key="index">
+          <div class="display-item" v-for="(item,index) in this.detail.product_show || []" :key="index">
             <div class="image">
-              <img :src="item.image" alt="">
+              <img :src="`/backApi/upload/${item.image}`" alt="">
             </div>
-            <div class="name">{{ item.name }}</div>
+            <div class="name">{{ item.title }}</div>
           </div>
         </div>
       </div>
       <div class="product-advantage">
         <div class="title">产品优势</div>
         <div class="advantage">
-          <div class="item" v-for="(item,index) in advantage" :key="index">{{ item }}</div>
+          <div class="item" v-for="(item,index) in this.detail.product_advantage || []" :key="index">{{ item.title }}</div>
         </div>
       </div>
       <div class="product-application">
         <div class="sub-title">应用领域</div>
         <div class="application">
-          <div class="item" v-for="(item,index) in application" :key="index">
+          <div class="item" v-for="(item,index) in this.detail.product_scopes || []" :key="index">
             <div class="image">
-              <img :src="item.image" alt="">
+              <img :src="`/backApi/upload/${item.image}`" alt="">
               <div class="info">
-                <div class="info1">{{ item.name }}</div>
-                <div class="info2">{{ item.info }}</div>
+                <div class="info1">{{ item.title }}</div>
+                <div class="info2">{{ item.remark }}</div>
               </div>
             </div>
           </div>
@@ -61,6 +62,7 @@
 </template>
 
 <script lang="ts">
+import { getProductOne } from '@/service/public'
 export default {
   data() {
     return {
@@ -75,10 +77,24 @@ export default {
         { image: require('@/static/images/product/application_image_2.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
         { image: require('@/static/images/product/application_image_3.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
         { image: require('@/static/images/product/application_image_4.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
-      ]
+      ],
+      detail: {}
     }
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
+    async fetchData() {
+      const res = await getProductOne({
+        id: this.$route.query.id
+      })
+      this.detail = res
+      console.log(res,1111)
+      // if(res.data && res.data.length) {
+      //   this.list = res.data
+      // }
+    },
   },
   components: {
   }
@@ -167,6 +183,7 @@ export default {
         font-weight: 300;
         color: #9A9A9A;
         line-height: 25px;
+        text-align: center;
       }
     }
     .product-advantage {

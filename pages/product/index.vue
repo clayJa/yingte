@@ -10,13 +10,13 @@
     <div class="wrapper">
       <div class="title">产品中心</div>
       <div class="list-wrapper">
-        <div class="list-item" v-for="(item,index) in list" :key="index">
+        <div class="list-item" v-for="(item,index) in list" :key="index" @click="toDetail(item)">
           <div class="image">
-            <img :src="item.image" alt="">
+            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
             <div class="button">应用</div>
           </div>
           <div class="description">
-            <div class="name">{{item.name}}</div>
+            <div class="name">{{item.title}}</div>
             <div class="link">Learn more <i class="iconfont icon">&#xe60a;</i></div>
           </div>
         </div>
@@ -28,6 +28,7 @@
 </template>
 
 <script lang="ts">
+import { getProductList } from '@/service/public'
 export default {
   data() {
     return {
@@ -41,7 +42,21 @@ export default {
       ]
     }
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
+    async fetchData() {
+      const res = await getProductList({
+        limit: 15
+      })
+      if(res.data && res.data.length) {
+        this.list = res.data
+      }
+    },
+    toDetail(item) {
+      this.$router.push(`/product/detail?id=${item.id}`)
+    }
   },
   components: {
   }
@@ -97,6 +112,7 @@ export default {
         .image {
           width: 555px;
           height: 555px;
+          padding: 20px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -118,6 +134,7 @@ export default {
           }
           img {
             width: auto;
+            max-width: 100%;
           }
         }
       }

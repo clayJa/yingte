@@ -103,6 +103,15 @@ export default {
       }
     }
   },
+  axios: {
+    proxy: true,
+  },
+  proxy: {
+    '/backApi': {
+      target: 'http://int.veianweb.com/',
+      pathRewrite: { '^/backApi': '' }
+    },
+  },
   alias: {
 
   },

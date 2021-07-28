@@ -1,15 +1,16 @@
 <template>
   <div class="product-container">
     <div class="decription">
-      <div class="title">蒸发式冷凝器</div>
-      <div class="info">
-        <div>采用专利逆流式结构，换热效率更高，占地面积小，减少机组尺寸；</div>
+      <div class="title">{{ this.productList[activeItem] && this.productList[activeItem].title}}</div>
+      <div class="info" v-if="this.productList[activeItem]">
+        <div v-for="(item,index) in this.productList[activeItem].description" :key="index">{{item.title}}</div>
+        <!-- <div>采用专利逆流式结构，换热效率更高，占地面积小，减少机组尺寸；</div>
         <div>水侧采用闭式环状结构分配和集水槽设计，实现均匀布水；</div>
         <div>采用小管径换热管或换热板，氟侧换热加强，提高换热效率，大大减少制冷剂充注量；</div>
         <div>创新的填料结构和设计，增大湿空气与水的换热面积，降低机组高度；</div>
-        <div>模块化结构设计，方便组装和维护。</div>
+        <div>模块化结构设计，方便组装和维护。</div> -->
       </div>
-      <div class="item-list">
+      <!-- <div class="item-list">
         <div class="item">
           <span class="left">Item one</span>
           <span class="right">南方采暖</span>
@@ -22,14 +23,14 @@
           <span class="left">Item three</span>
           <span class="right">工业应用等</span>
         </div>
-      </div>
+      </div> -->
       <div class="button-wrapper">
         <div class="button">了解更多</div>
       </div>
     </div>
     <div class="right-wrapper">
       <div class="image-wrapper">
-        <img :src="require('@/static/images/about/蒸发式冷凝器.png')" alt="">
+        <img :src="this.productList[activeItem] ? `/backApi/upload/${this.productList[activeItem].cover_picture}` : ''" alt="">
       </div>
       <!-- <div class="my-swiper">
         <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
@@ -44,7 +45,7 @@
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
             <div class="product-image">
-              <img :src="item.img" alt="">
+              <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
             </div>
           </div>
         </div>
@@ -54,7 +55,7 @@
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
             <div class="product-image">
-              <img :src="item.img" alt="">
+              <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
             </div>
           </div>
         </div>
@@ -64,6 +65,7 @@
 </template>
 
 <script lang="ts">
+import { getProductList } from '@/service/public'
 export default {
   data() {
     return {
@@ -87,17 +89,18 @@ export default {
         updateOnImagesReady : true,
         resizeReInit : true,
       },
-      activeItem: 1,
+      activeItem: 0,
       randomKey: Math.random(),
       productList: [
-        { img: require('@/static/images/about/高效新型壳管式换热器.png') },
-        { img: require('@/static/images/about/蒸发式冷凝器.png') },
-        { img: require('@/static/images/about/降膜式换热器.png') },
-        { img: require('@/static/images/about/降膜式换热器.png') },
+        { img: '' },
+        // { img: require('@/static/images/about/蒸发式冷凝器.png') },
+        // { img: require('@/static/images/about/降膜式换热器.png') },
+        // { img: require('@/static/images/about/降膜式换热器.png') },
       ],
     }
   },
   mounted() {
+    this.fetchData()
   },
   computed: {
   },
@@ -106,9 +109,16 @@ export default {
   methods: {
     changeItem(index) {
       this.activeItem = index
+      this.myMobileSwiper.swipeTo(index, 1000, false)
+      this.mySwiper.swipeTo(index, 1000, false)
     },
-    changeSelect(index) {
-      this.select = index
+    async fetchData() {
+      const res = await getProductList({
+        limit: 15
+      })
+      if(res.data && res.data.length) {
+        this.productList = res.data
+      }
     }
   },
   components: {
@@ -126,6 +136,7 @@ export default {
     display: flex;
     justify-content: center;
     position: relative;
+    height: 100%;
     &.active {
       .product-image {
         border: 1px solid #354194;
@@ -225,14 +236,17 @@ export default {
     }
   }
   .image-wrapper {
-    height: 555px;
+    max-height: 555px;
+    max-width: 555px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
     img {
-      width: 474px;
-      height: 100%;
+      max-width: 100%;
+      width: auto;
+      max-height: 100%;
     }
   }
   @media only screen and (max-width: 760px) {
@@ -310,12 +324,14 @@ export default {
       flex-direction: column-reverse;
     }
     .image-wrapper {
-      padding: 0 25px;
+      padding: 25px;
       height: auto;
       display: block;
       border-radius: 4px;
       border: 1px solid #ECECEC;
       margin: 48px  16px;
+      max-width: 100%;
+      max-height: none;
       img {
         width: 100%;
         height: 100%;
