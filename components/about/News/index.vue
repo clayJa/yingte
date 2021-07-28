@@ -6,42 +6,42 @@
     </div>
     <div class="content">
       <div class="left-wrapper d-md-none">
-        <div class="item">
+        <div class="item" @click="toPath(list[0])">
           <div class="image-wrapper">
-            <img :src="require('@/static/images/about/news-image.png')" alt="">
+            <img :src="`/backApi/upload/${this.list[0] && this.list[0].cover_picture}`" alt="">
           </div>
-          <div class="title line-2">看展｜“碳中和”下的2021制冷展，暖通空调产业链重磅看点全景呈现…</div>
-          <div class="info">4月7日-9日，第三十二届中国制冷展在上海新国际博览中心盛大召开。本届展会以“强基固本，质量优先，内外协同，低碳发展”为主题，共设置W1-W5、E1-E5共10个展馆，有来自10个国家和地区的1200多家企业和机构参展。展览规模和展商数量均创历史新高…</div>
+          <div class="title line-2">{{this.list[0] && this.list[0].title}} {{this.list[0] && this.list[0].id}}</div>
+          <div class="info">{{this.list[0] && this.list[0].description}}</div>
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>
-            <span>August 21 2021</span>
+            <span>{{this.list[0] && this.list[0].updated_at}}</span>
           </div>
         </div>
       </div>
       <div class="right-wrapper d-md-none">
-        <div class="item" v-for="(item,index) in 4" :key="index">
+        <div class="item" @click="toPath(item)" v-for="(item,index) in this.list.slice(1)" :key="index">
           <div class="image-wrapper">
-            <img :src="require('@/static/images/about/news-image.png')" alt="">
+            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
           </div>
-          <div class="title line-2">看展｜“碳中和”下的2021制冷展，暖通空调产业链重磅看点全景呈现…</div>
+          <div class="title line-2">{{item.title}}{{item.id}}</div>
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>
-            <span>August 21 2021</span>
+            <span>{{item.updated_at}}</span>
           </div>
         </div>
       </div>
       <div class="item-wrapper  d-none d-md-block">
-        <div class="item" v-for="(item,index) in 4" :key="index">
+        <div class="item" @click="toPath(item)" v-for="(item,index) in this.list" :key="index">
           <div class="image-wrapper">
-            <img :src="require('@/static/images/about/news-image.png')" alt="">
+            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
           </div>
-          <div class="title line-2">看展｜“碳中和”下的2021制冷展，暖通空调产业链重磅看点全景呈现…</div>
+          <div class="title line-2">{{item.title}}</div>
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>
-            <span>August 21 2021</span>
+            <span>{{item.updated_at}}</span>
           </div>
         </div>
       </div>
@@ -51,16 +51,33 @@
 </template>
 
 <script lang="ts">
+import {newsSearch} from '@/service/news'
 export default {
   data() {
     return {
+      list: []
     }
   },
   computed: {
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
-    toPath() {
-      console.log(1111)
+    toPath(item) {
+      if(item.is_link) {
+        window.open(item.link_url)
+        return
+      }
+      this.$router.push(`/news/detail?id=${item.id}`)
+    },
+    async fetchData() {
+      const res = await newsSearch({
+        limit: 5,
+        page: 1,
+        category: 1,
+      })
+      this.list = res.data
     }
   },
   components: {

@@ -6,13 +6,14 @@
     </div>
     <div class="wrapper">
       <div class="title-wrapper">
-        <div class="title">【原创】英特科技亮相“热泵变频与控制方法技术论坛”</div>
+        <div class="title">{{articleData.title}}</div>
         <div class="description">
-          <div class="date">2021-03-13 16:06:06</div>
-          <div class="author">蔡文广</div>
-          <div class="source">来源： 热泵产业资讯</div>
+          <div class="date">{{articleData.updated_at}}</div>
+          <!-- <div class="author">蔡文广</div>
+          <div class="source">来源： 热泵产业资讯</div> -->
         </div>
       </div>
+      <div class="content" v-html="articleData.content"></div>
       <div class="pager-wrapper">
         <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
         <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
@@ -25,6 +26,7 @@
 
 <script lang="ts">
 import Breadcrumb from '@/components/Breadcrumb/index.vue'
+import { newsDetail } from '@/service/news'
 export default {
   data() {
     return {
@@ -42,9 +44,19 @@ export default {
           path: '/news/detail',
         },
       ],
+      articleData: {}
     }
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
+    async fetchData() {
+      const query = this.$route.query
+      const res = await newsDetail({id: query.id})
+      console.log(res,'requestData')
+      this.articleData = res
+      }
   },
   components: {
     Breadcrumb,
@@ -60,6 +72,11 @@ export default {
     background: #fff;
     padding: 0 64px;
     text-align: center;
+    .content {
+      padding: 32px 0;
+      border-bottom: 1px solid #ECECEC;
+      text-align: initial;
+    }
     .title-wrapper {
       padding-top: 64px;
       padding-bottom: 12px;
@@ -127,6 +144,10 @@ export default {
     .wrapper {
         margin: 16px;
         padding: 0 16px;
+        .content {
+          padding: 32px 0;
+          border-bottom: 1px solid #ECECEC;
+        }
       .title-wrapper {
         padding-top: 32px;
         padding-bottom: 12px;
