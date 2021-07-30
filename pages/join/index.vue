@@ -19,14 +19,16 @@
     </div>
     <div class="wrapper">
       <div class="job-list">
-        <div class="job-item" v-for="(item,index) in list" :key="index">
+        <div class="job-item" v-for="(item,index) in list" :key="index" @click="toDetail(item)">
           <div class="title-wrapper">
             <div class="date">{{ item.date }}</div>
             <div class="title">{{ item.title }}</div>
             <div class="line"><span class="circle"></span></div>
           </div>
           <div class="content-wrapper">
-            <div class="content line-3 ">{{ item.content }}</div>
+            <div class="content line-3 ">
+              <div v-for="(description,index) in item.job_responsibilities || []" :key="index">{{description.title}}</div>
+            </div>
             <div class="link">了解更多<i class="iconfont icon">&#xe60a;</i></div>
           </div>
         </div>
@@ -42,17 +44,47 @@
 </template>
 
 <script lang="ts">
+import {hiringList} from '@/service/news'
 export default {
   data() {
     return {
       list: [
-        { date: ' 2021-03-13', title: 'XXX产品科技研发项目经理', content: '1. 负责产品的构建和各类项目实现；做为项目核心成员负责指导前端人员，前端架构和难点攻克。' },
-        { date: ' 2021-03-13', title: 'XXX产品科技研发项目经理', content: '1. 负责产品的构建和各类项目实现；做为项目核心成员负责指导前端人员，前端架构和难点攻克。' },
-        { date: ' 2021-03-13', title: 'XXX产品科技研发项目经理', content: '1. 负责产品的构建和各类项目实现；做为项目核心成员负责指导前端人员，前端架构和难点攻克。' },
-      ]
+        // { date: ' 2021-03-13', title: 'XXX产品科技研发项目经理', content: '1. 负责产品的构建和各类项目实现；做为项目核心成员负责指导前端人员，前端架构和难点攻克。' },
+        // { date: ' 2021-03-13', title: 'XXX产品科技研发项目经理', content: '1. 负责产品的构建和各类项目实现；做为项目核心成员负责指导前端人员，前端架构和难点攻克。' },
+        // { date: ' 2021-03-13', title: 'XXX产品科技研发项目经理', content: '1. 负责产品的构建和各类项目实现；做为项目核心成员负责指导前端人员，前端架构和难点攻克。' },
+      ],
+      page: 1,
+      lastPage: 1,
     }
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
+    async fetchData(type) {
+      let page
+      switch (type) {
+        case 'prev':
+          page = this.page - 1
+          break;
+        case 'next':
+          page = this.page + 1
+          break;
+        default:
+          page = this.page
+          break;
+      }
+      const res:any = await hiringList({
+        limit: 3,
+        page: page,
+      })
+      this.page = res.current_page
+      this.lastPage = res.last_page
+      this.list = res.data
+    },
+    toDetail(item) {
+      this.$router.push(`/join/detail?id=${item.id}`)
+    },
   },
   components: {
   }
@@ -164,7 +196,7 @@ export default {
           padding: 36px 50px 48px 50px;
           text-align: center;
           .content {
-            word-break: keep-all;
+            word-break: break-word;
           }
           .link {
             font-size: 16px;

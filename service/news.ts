@@ -6,12 +6,9 @@ export const newsSearch = async (params) => {
 export const newsDetail = async (params) => {
   return await request.post('/backApi/api/news/detail', params)
 }
-export const newsTagsList = async (params) => {
-  return await request.post('/backApi/api/news/tags/list', params)
+export const hiringList = async (params) => {
+  return await request.post('/backApi/api/hiring/list', params)
 }
-export const caseList = async (params) => {
-  return await request.post('/backApi/api/news/case/list', params)
-}
-export const caseDetail = async (params) => {
-  return await request.post('/backApi/api/news/case/one', params)
+export const hiringDetail = async (params) => {
+  return await request.post('/backApi/api/hiring/one', params)
 }
