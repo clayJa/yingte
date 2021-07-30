@@ -15,8 +15,8 @@
       </div>
       <div class="content" v-html="articleData.content"></div>
       <div class="pager-wrapper">
-        <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
-        <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
+        <div :class="`prev step ${!articleData.previous ? 'disabled' : ''}`" @click="toPath(articleData.previous)"><i class="iconfont icon">&#xe608;</i>上一页</div>
+        <div :class="`next step ${!articleData.next ? 'disabled' : ''}`" @click="toPath(articleData.next)">下一页<i class="iconfont icon">&#xe60a;</i></div>
       </div>
     </div>
     <ContactUs />
@@ -41,7 +41,7 @@ export default {
         },
         {
           name: '正文',
-          path: '/news/detail',
+          path: this.$route.fullPath,
         },
       ],
       articleData: {}
@@ -50,7 +50,15 @@ export default {
   mounted() {
     this.fetchData()
   },
+  watch: {
+    '$route.fullPath'() {
+      this.fetchData()
+    }
+  },
   methods: {
+    toPath(item) {
+      this.$router.push(`/news/detail?id=${item.id}`)
+    },
     async fetchData() {
       const query = this.$route.query
       const res = await newsDetail({id: query.id})
@@ -117,7 +125,9 @@ export default {
       font-size: 38px;
     }
     .disabled {
-      color: #9A9A9A;
+      color: #9A9A9A !important;
+      cursor: not-allowed !important;
+      pointer-events: none;
     }
     .step {
       cursor: pointer;

@@ -15,23 +15,23 @@
           </div>
         </div>
         <div class="list-wrapper">
-          <div class="item" v-for="item in 6" :key="item">
+          <div class="item" v-for="item in list" :key="item.id" @click="toPath(item)">
             <div class="image-wrapper">
-              <img :src="require('@/static/images/about/news-image.png')" alt="">
+              <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
             </div>
-            <div class="title line-2">看展｜“碳中和”下的2021制冷展，暖通空调产业链重磅看点全景呈现…</div>
-            <div class="info">4月7日-9日，第三十二届中国制冷展在上海新国际博览中心盛大召开。本届展会以“强基固本，质量优先，内外协同，低碳发展”为主题，共设置W1-W5、E1-E5共10个展馆，有来自10个国家和地区的1200多家企业和机构参展。展览规模和展商数量均创历史新高…</div>
+            <div class="title line-2">{{item.title}}</div>
+            <div class="info">{{item.description}}</div>
             <div class="time">
               <span>热点资讯</span>
               <span>/</span>
-              <span>August 21 2021</span>
+              <span>{{item.updated_at}}</span>
             </div>
           </div>
         </div>
       </div>
       <div class="pager-wrapper">
-        <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
-        <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
+        <div :class="`prev step ${ page === 1 ? 'disabled' : ''}`" @click="fetchData('prev')"><i class="iconfont icon">&#xe608;</i>上一页</div>
+        <div :class="`next step ${ page === lastPage ? 'disabled' : ''}`" @click="fetchData('next')">下一页<i class="iconfont icon">&#xe60a;</i></div>
       </div>
     </div>
     <ContactUs />
@@ -40,12 +40,49 @@
 </template>
 
 <script lang="ts">
+import { newsSearch } from '@/service/news'
 export default {
   data() {
     return {
+      page: 1,
+      lastPage: 1,
+      list: [],
     }
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
+    async fetchData(type) {
+      let page
+      switch (type) {
+        case 'prev':
+          page = this.page - 1
+          break;
+        case 'next':
+          page = this.page + 1
+          break;
+        default:
+          page = this.page
+          break;
+      }
+      const res:any = await newsSearch({
+        limit: 6,
+        page: page,
+        category: 1,
+      })
+      this.page = res.current_page
+      this.lastPage = res.last_page
+      console.log(res,1111)
+      this.list = res.data
+    },
+    toPath(item) {
+      if(item.is_link) {
+        window.open(item.link_url)
+        return
+      }
+      this.$router.push(`/news/detail?id=${item.id}`)
+    },
   },
   components: {
   }
@@ -79,7 +116,7 @@ export default {
       .list-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin: 96px 150px 0 150px;
         border-bottom: 1px solid #ECECEC;
         .item {
@@ -89,6 +126,10 @@ export default {
           border-bottom: 4px solid #fff;
           border-radius: 4px;
           cursor: pointer;
+          margin-right: 15px;
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
           &:hover {
             border-color: #354194;
           }
@@ -145,7 +186,9 @@ export default {
       font-size: 38px;
     }
     .disabled {
-      color: #9A9A9A;
+      color: #9A9A9A !important;
+      cursor: not-allowed !important;
+      pointer-events: none !important;
     }
     .step {
       cursor: pointer;
@@ -199,6 +242,7 @@ export default {
           .item {
             width: 100%;
             margin-bottom: 32px;
+            margin-right: 0;
             background: #fff;
             border-bottom: 4px solid #fff;
             border-radius: 4px;

@@ -198,7 +198,9 @@ export default {
       font-size: 38px;
     }
     .disabled {
-      color: #9A9A9A;
+      color: #9A9A9A !important;
+      cursor: not-allowed !important;
+      pointer-events: none !important;
     }
     .step {
       cursor: pointer;
