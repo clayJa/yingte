@@ -15,17 +15,17 @@
       <div class="list-wrapper">
         <div class="list-item" v-for="(item,index) in list" :key="index">
           <div class="image">
-            <img :src="item.image" alt="">
+            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
           </div>
           <div class="description">
-            <div class="name">{{item.name}}</div>
-            <div class="date">{{item.date}}</div>
+            <div class="name">{{item.title}}</div>
+            <div class="date">{{item.updated_at}}</div>
           </div>
         </div>
       </div>
       <div class="pager-wrapper">
-        <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
-        <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
+        <div :class="`prev step ${ page === 1 ? 'disabled' : ''}`" @click="fetchData('prev')"><i class="iconfont icon">&#xe608;</i>上一页</div>
+        <div :class="`next step ${ page === lastPage ? 'disabled' : ''}`" @click="fetchData('next')">下一页<i class="iconfont icon">&#xe60a;</i></div>
       </div>
     </div>
     <ContactUs />
@@ -36,31 +36,64 @@
 <script lang="ts">
 import TabBar from '@/components/about/TabBar/index.vue'
 import ButtonGroup from '@/components/about/ButtonGroup/index.vue'
+import { newsSearch } from '@/service/news'
 export default {
   data() {
     return {
       options: [
-        {name: '政府荣誉', value: 1},
-        {name: '行业荣誉', value: 2},
-        {name: '客户荣誉', value: 3},
+        {name: '政府荣誉', value: 2},
+        {name: '行业荣誉', value: 3},
+        {name: '客户荣誉', value: 4},
       ],
-      select: 1,
+      select: 2,
       list: [
-        { image: require('@/static/images/about/honor/honor_image_1.png'), name: '国家高新技术企业证书', date: '2021/03/12' },
-        { image: require('@/static/images/about/honor/honor_image_2.png'), name: '“AAA”级企业信用等级', date: '2021/03/23' },
-        { image: require('@/static/images/about/honor/honor_image_3.png'), name: '国家高新技术企业证书', date: '2018/04/12' },
-        { image: require('@/static/images/about/honor/honor_image_4.png'), name: '2018年度热泵行业优秀零部件供应商', date: '2019/03/23' },
-        { image: require('@/static/images/about/honor/honor_image_5.png'), name: '2019热泵技术创新奖', date: '2004/04/12' },
-        { image: require('@/static/images/about/honor/honor_image_6.png'), name: '国家高新技术企业证书', date: '2008/03/23' },
-        { image: require('@/static/images/about/honor/honor_image_7.png'), name: '国家高新技术企业证书', date: '2004/04/12' },
-        { image: require('@/static/images/about/honor/honor_image_8.png'), name: '国家高新技术企业证书', date: '2008/03/23' },
-      ]
+        // { image: require('@/static/images/about/honor/honor_image_1.png'), name: '国家高新技术企业证书', date: '2021/03/12' },
+        // { image: require('@/static/images/about/honor/honor_image_2.png'), name: '“AAA”级企业信用等级', date: '2021/03/23' },
+        // { image: require('@/static/images/about/honor/honor_image_3.png'), name: '国家高新技术企业证书', date: '2018/04/12' },
+        // { image: require('@/static/images/about/honor/honor_image_4.png'), name: '2018年度热泵行业优秀零部件供应商', date: '2019/03/23' },
+        // { image: require('@/static/images/about/honor/honor_image_5.png'), name: '2019热泵技术创新奖', date: '2004/04/12' },
+        // { image: require('@/static/images/about/honor/honor_image_6.png'), name: '国家高新技术企业证书', date: '2008/03/23' },
+        // { image: require('@/static/images/about/honor/honor_image_7.png'), name: '国家高新技术企业证书', date: '2004/04/12' },
+        // { image: require('@/static/images/about/honor/honor_image_8.png'), name: '国家高新技术企业证书', date: '2008/03/23' },
+      ],
+      lastPage: 1,
+    }
+  },
+  mounted() {
+    this.fetchData()
+  },
+  watch: {
+    select() {
+      this.page = 1
+      this.fetchData()
     }
   },
   methods: {
     handleChange(item,index) {
       this.select = item.value
-    }
+    },
+    async fetchData(type) {
+      let page
+      switch (type) {
+        case 'prev':
+          page = this.page - 1
+          break;
+        case 'next':
+          page = this.page + 1
+          break;
+        default:
+          page = this.page
+          break;
+      }
+      const res:any = await newsSearch({
+        limit: 8,
+        page: page,
+        category: this.select,
+      })
+      this.page = res.current_page
+      this.lastPage = res.last_page
+      this.list = res.data
+    },
   },
   components: {
     TabBar,
@@ -81,13 +114,17 @@ export default {
     .list-wrapper {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
+      // align-items: center;
+      // justify-content: space-between;
       border-bottom: 1px solid #ECECEC;
       .list-item {
         margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
+        margin-right: 30px;
+        &:nth-child(4n) {
+          margin-right: 30px;
+        }
       }
       .description {
         padding-top: 24px;
@@ -171,6 +208,10 @@ export default {
           margin-top: 16px;
           margin-bottom: 48px;
           width: 100%;
+          margin-right: 0;
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
         }
         .description {
           padding-top: 24px;

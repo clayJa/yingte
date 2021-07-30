@@ -10,18 +10,18 @@
     <TabBar />
     <div class="wrapper">
       <div class="list-wrapper">
-        <div class="list-item" v-for="(item,index) in list" :key="index">
+        <div class="list-item" v-for="(item) in list" :key="item.id">
           <div class="image">
-            <img :src="item.image" alt="">
+            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
           </div>
           <div class="description">
-            <div class="name">{{item.name}}</div>
+            <div class="name">{{item.title}}</div>
           </div>
         </div>
       </div>
       <div class="pager-wrapper">
-        <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
-        <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
+        <div :class="`prev step ${ page === 1 ? 'disabled' : ''}`" @click="fetchData('prev')"><i class="iconfont icon">&#xe608;</i>上一页</div>
+        <div :class="`next step ${ page === lastPage ? 'disabled' : ''}`" @click="fetchData('next')">下一页<i class="iconfont icon">&#xe60a;</i></div>
       </div>
     </div>
     <ContactUs />
@@ -31,18 +31,46 @@
 
 <script lang="ts">
 import TabBar from '@/components/about/TabBar/index.vue'
+import { newsSearch } from '@/service/news'
 export default {
   data() {
     return {
       list: [
-        { image: require('@/static/images/about/patent/patent_image_1.png'), name: '特种设备制造许可证' },
-        { image: require('@/static/images/about/patent/patent_image_2.png'), name: '实用新型专利证书' },
-        { image: require('@/static/images/about/patent/patent_image_3.png'), name: 'CRAA产品认证证书' },
-        { image: require('@/static/images/about/patent/patent_image_4.png'), name: '实用新型专利证书' },
-      ]
+        // { image: require('@/static/images/about/patent/patent_image_1.png'), name: '特种设备制造许可证' },
+        // { image: require('@/static/images/about/patent/patent_image_2.png'), name: '实用新型专利证书' },
+        // { image: require('@/static/images/about/patent/patent_image_3.png'), name: 'CRAA产品认证证书' },
+        // { image: require('@/static/images/about/patent/patent_image_4.png'), name: '实用新型专利证书' },
+      ],
+      page: 1,
+      lastPage: 1,
     }
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
+    async fetchData(type) {
+      let page
+      switch (type) {
+        case 'prev':
+          page = this.page - 1
+          break;
+        case 'next':
+          page = this.page + 1
+          break;
+        default:
+          page = this.page
+          break;
+      }
+      const res:any = await newsSearch({
+        limit: 6,
+        page: page,
+        category: 6,
+      })
+      this.page = res.current_page
+      this.lastPage = res.last_page
+      this.list = res.data
+    },
   },
   components: {
     TabBar,

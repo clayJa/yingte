@@ -5,7 +5,7 @@
       <div class="nav-wrapper">
         <div :class="['nav-item', {active: $nuxt.$route.path === item.path || ($nuxt.$route.path.includes(item.path) && item.sub_path !== '/')}]"
           v-for="(item,index) in menus" :key="index">
-          <a @click.stop="toPath(item)">
+          <a @click.stop="toPath(item)" href="javascript:void(0);">
             {{ item.name }}
           </a>
         </div>
