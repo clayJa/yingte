@@ -10,7 +10,7 @@
           <div class="image-wrapper">
             <img :src="`/backApi/upload/${this.list[0] && this.list[0].cover_picture}`" alt="">
           </div>
-          <div class="title line-2">{{this.list[0] && this.list[0].title}} {{this.list[0] && this.list[0].id}}</div>
+          <div class="title line-2">{{this.list[0] && this.list[0].title}}</div>
           <div class="info">{{this.list[0] && this.list[0].description}}</div>
           <div class="time">
             <span>热点资讯</span>
@@ -24,7 +24,7 @@
           <div class="image-wrapper">
             <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
           </div>
-          <div class="title line-2">{{item.title}}{{item.id}}</div>
+          <div class="title line-2">{{item.title}}</div>
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>

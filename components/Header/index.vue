@@ -18,7 +18,7 @@
               @keyup.enter="handleEnter"
             ></b-form-input>
             <div class="search-item">
-              <i class="iconfont icon" @click="showSearch">&#xe63a;</i>
+              <i class="iconfont icon" @click="handleEnter">&#xe63a;</i>
             </div>
         </div>
       </div>
@@ -82,7 +82,7 @@ export default {
     },
     handleEnter() {
       localStorage.setItem('searchText',this.text)
-      this.modalShow = false
+      // this.modalShow = false
       this.text = ''
       this.$router.push('/search')
     },

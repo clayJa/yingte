@@ -22,22 +22,23 @@
             <i class="iconfont input-search" @click="handleTextSearch">&#xe63a;</i>
           </div>
         </div>
-        <div :class="['search-item', { image: index / 2 > 0.5 }]" v-for="(item,index) in 4" :key="index">
-          <div :class="['image-wrapper']" v-if="index / 2 > 0.5">
-            <img :src="require('@/static/images/about/蒸发式冷凝器.png')" alt="">
+        <div :class="['search-item', { image: item.cover_picture }]" v-for="(item) in list"
+          @click="toPath(item)" :key="item.id">
+          <div :class="['image-wrapper']" v-if="item.cover_picture">
+            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
           </div>
           <div class="content-wrapper">
             <div class="content">
-              <div class="title">英特科技亮相“热泵变频与控制方法技术论坛”</div>
-              <div class="info line-2">零部件及配件配套产品，是热泵与空调产品的重要组成部分，其质量的优越程度和技术的先进与否，对主机…</div>
+              <div class="title">{{item.title}}</div>
+              <div class="info line-2">{{item.description}}</div>
             </div>
-            <div class="button-wrapper"><div class="button">查看</div></div>
+            <div class="button-wrapper"><div class="button"  @click="toPath(item)">查看</div></div>
           </div>
         </div>
       </div>
       <div class="pager-wrapper">
-        <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
-        <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
+        <div :class="`prev step ${ page === 1 ? 'disabled' : ''}`" @click="fetchData({type:'prev'})"><i class="iconfont icon">&#xe608;</i>上一页</div>
+        <div :class="`next step ${ page === lastPage ? 'disabled' : ''}`" @click="fetchData({type:'next'})">下一页<i class="iconfont icon">&#xe60a;</i></div>
       </div>
     </div>
     <ContactUs />
@@ -47,6 +48,7 @@
 
 <script lang="ts">
 import SelfSelect from '@/components/SelfSelect/index.vue'
+import { newsSearch } from '@/service/news'
 export default {
   data() {
     return {
@@ -57,25 +59,70 @@ export default {
         },
         {
           name: '搜索结果',
-          path: '/join',
+          path: '/search',
         },
-        {
-          name: 'APP',
-          path: '/join/detail',
-        },
+        // {
+        //   name: 'APP',
+        //   path: '/search',
+        // },
       ],
-      options: [
-        { label: '网址建设', value: 1},
-        { label: '移动互联', value: 2},
-        { label: '网址运维', value: 3},
-        { label: '影像创意与制作', value: 4},
-      ]
+      // options: [
+      //   { label: '网址建设', value: 1},
+      //   { label: '移动互联', value: 2},
+      //   { label: '网址运维', value: 3},
+      //   { label: '影像创意与制作', value: 4},
+      // ],
+      searchText: '',
+      page: 1,
+      lastPage: 1,
+      list: [],
     }
+  },
+  created() {
+    if (process.browser){
+      this.searchText = window.localStorage.getItem('searchText')
+      window.localStorage.setItem('searchText','')
+    }
+    this.requestData()
   },
   methods: {
     handleTextSearch() {
-
-    }
+      this.requestData()
+    },
+    toPath(item) {
+      if(item.is_link) {
+        window.open(item.link_url)
+        return
+      }
+      this.$router.push(`/news/detail?id=${item.id}`)
+    },
+    async requestData(params = {}) {
+      const { type = '' } = params as any
+      let page
+      switch (type) {
+        case 'prev':
+          page = this.page - 1
+          break;
+        case 'next':
+          page = this.page + 1
+          break;
+        default:
+          page = this.page
+          break;
+      }
+      const res:any = await newsSearch({
+        keyword: this.searchText,
+        // keyword: '',
+        limit: 8,
+        page: page,
+        category: 1,
+        ...params
+      })
+      console.log('111',res)
+      this.page = res.current_page
+      this.lastPage = res.last_page
+      this.list = res.data
+    },
   },
   components: {
     SelfSelect,
@@ -111,6 +158,7 @@ export default {
         width: 100%;
         padding: 40px 0;
         border-bottom: 1px solid #ECECEC;
+        cursor: pointer;
       }
       .search-item.image {
         .content-wrapper {
