@@ -11,3 +11,7 @@ export const getProductList = async (params) => {
 export const getProductOne = async (params) => {
   return await request.post('/backApi/api/product/one', params)
 }
+
+export const settingAll = async (params) => {
+  return await request.post('/backApi/api/setting/all', params)
+}

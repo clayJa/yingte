@@ -13,32 +13,32 @@
           </div>
         </div>
         <div class="item">
-          <div class="name">关于英特</div>
-          <div class="name">产品应用</div>
-          <div class="name">新闻资讯</div>
+          <div class="name" @click="toPath('/about')">关于英特</div>
+          <div class="name" @click="toPath('/product')">产品应用</div>
+          <div class="name" @click="toPath('/news')">新闻资讯</div>
         </div>
         <div class="item">
-          <div class="name">投资者关系</div>
-          <div class="name">联系我们</div>
+          <div class="name" @click="toPath('/news')" >投资者关系</div>
+          <div class="name" @click="toPath('/join')">联系我们</div>
         </div>
       </div>
       <div class="right-wrapper">
         <div class="address">
           <div class="text">
-            china.info@extek.com
+            {{globalSetting.email}}
           </div>
           <div class="icon"><img :src="require('@/static/images/icons/icon_Contact_Email.png')" alt=""></div>
         </div>
         <div class="address">
           <div class="text" style="max-width: 100%">
-            +86 188 XXXX 8888 / 400 888 8888
+            {{globalSetting.phone}}
           </div>
           <div class="icon"><img :src="require('@/static/images/icons/icon_Contact_Phone.png')" alt=""></div>
         </div>
         <div class="address">
           <div class="text">
-            <div>浙江省安吉县递铺街道乐三路</div>
-            <div>468 Lesan Road, Dipu street, Anji County, Zhejiang Province</div>
+            <div>{{globalSetting.address}}</div>
+            <div>{{globalSetting.address_en}}</div>
           </div>
           <div class="icon"><img :src="require('@/static/images/icons/icon_Address.png')" alt=""></div>
         </div>
@@ -50,32 +50,32 @@
         <div class="info">
           <div class="icon"><img :src="require('@/static/images/icons/icon_Contact_Email.png')" alt=""></div>
           <div class="text">
-            china.info@extek.com
+            {{globalSetting.email}}
           </div>
         </div>
         <div class="info">
           <div class="icon"><img :src="require('@/static/images/icons/icon_Contact_Phone.png')" alt=""></div>
           <div class="text" style="max-width: 100%">
-            +86 188 XXXX 8888 / 400 888 8888
+            {{globalSetting.phone}}
           </div>
         </div>
         <div class="info">
           <div class="icon"><img :src="require('@/static/images/icons/icon_Address.png')" alt=""></div>
           <div class="text">
-            <div>浙江省安吉县递铺街道乐三路</div>
-            <div>468 Lesan Road, Dipu street, Anji County, Zhejiang Province</div>
+            <div>{{globalSetting.address}}</div>
+            <div>{{globalSetting.address_en}}</div>
           </div>
         </div>
       </div>
       <div class="item-wrapper">
         <div class="item">
-          <div class="name">关于英特</div>
-          <div class="name">产品应用</div>
+          <div class="name" @click="toPath('/about')">关于英特</div>
+          <div class="name" @click="toPath('/about')">产品应用</div>
           <div class="name">新闻资讯</div>
         </div>
         <div class="item">
           <div class="name">投资者关系</div>
-          <div class="name">联系我们</div>
+          <div class="name" @click="toPath('/join')">加入我们</div>
         </div>
       </div>
       <div class="follow">
@@ -93,16 +93,24 @@
 </template>
 
 <script lang="ts">
+import { mapActions, mapState } from 'vuex'
 export default {
   data() {
     return {
     }
   },
   computed: {
+    ...mapState(['globalSetting'])
+  },
+  watch: {
+  },
+  mounted() {
+    this.fetchGlobalSetting()
   },
   methods: {
-    toPath() {
-      console.log(1111)
+    ...mapActions(['fetchGlobalSetting']),
+    toPath(path) {
+      this.$router.push(path)
     }
   },
   components: {

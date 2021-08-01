@@ -1,7 +1,7 @@
 <template>
   <div class="ContactUs-wrapper">
     <div class="title">选择英特，打造企业未来得到100%的提升!</div>
-    <div class="button">联系我们</div>
+    <div class="button" @click="toPath">联系我们</div>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     toPath() {
-      console.log(1111)
+      this.$router.push('/join')
     }
   },
   components: {
