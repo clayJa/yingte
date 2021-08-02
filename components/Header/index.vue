@@ -145,12 +145,15 @@ a {
   display: flex;
   align-items: center;
   .lang-wrapper {
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 14px;
     font-family: PingFangSC-Light, PingFang SC;
     font-weight: 300;
     color: #9A9A9A;
     line-height: 20px;
+    .lang {
+      font-size: 14px;
+    }
     /deep/ #dropdown-aria__BV_toggle_ {
       background: transparent;
       &:active {
@@ -227,6 +230,7 @@ a {
   position: relative;
   #input-search {
     padding-right: 40px;
+    height: 34px;
   }
   .search-item {
     position: absolute;
