@@ -134,7 +134,7 @@ export default {
 .index-wrapper {
   .wrapper {
     .search-list {
-      padding: 64px 150px 0 150px;
+      padding: 64px 135px 0 135px;
       .search-wrapper {
         position: relative;
         #help-search {
@@ -230,7 +230,7 @@ export default {
     color: #3E3E3E;
     line-height: 28px;
     letter-spacing: 1px;
-    padding: 48px 150px;
+    padding: 48px 135px;
     .icon {
       font-size: 38px;
     }

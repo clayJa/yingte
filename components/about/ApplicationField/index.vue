@@ -111,9 +111,9 @@ export default {
     .content {
       position: absolute;
       left: 0;
-      right: 150px;
+      right: 135px;
       bottom: 144px;
-      padding-left: 150px;
+      padding-left: 135px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -148,7 +148,7 @@ export default {
   .image-list {
     display: flex;
     justify-content: space-between;
-    padding: 64px 150px 96px 150px;
+    padding: 64px 135px 96px 135px;
   }
   .item {
     cursor: pointer;
@@ -220,7 +220,7 @@ export default {
     .image-list {
       display: flex;
       justify-content: space-between;
-      padding: 64px 150px 96px 150px;
+      padding: 64px 135px 96px 135px;
     }
     .item {
       cursor: pointer;

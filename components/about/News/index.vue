@@ -87,7 +87,7 @@ export default {
 
 <style lang="less" scoped>
 .news-wrapper {
-  padding: 96px 150px;
+  padding: 96px 135px;
   .title-wrapper {
     display: flex;
     justify-content: space-between;

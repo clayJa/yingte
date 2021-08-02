@@ -79,7 +79,7 @@ a {
   color: #838181;
 }
 .header-wrapper {
-  padding: 0 150px;
+  padding: 0 135px;
   .content {
     display: flex;
     align-items: baseline;

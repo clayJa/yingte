@@ -11,15 +11,28 @@
             </a>
           </div>
         </div>
-        <div class="search-wrapper">
-            <b-form-input
-              id="input-search"
-              v-model="text"
-              @keyup.enter="handleEnter"
-            ></b-form-input>
-            <div class="search-item">
-              <i class="iconfont icon" @click="handleEnter">&#xe63a;</i>
-            </div>
+        <div class="right-wrapper">
+          <div class="search-wrapper">
+              <b-form-input
+                id="input-search"
+                v-model="text"
+                @keyup.enter="handleEnter"
+              ></b-form-input>
+              <div class="search-item">
+                <i class="iconfont icon" @click="handleEnter">&#xe63a;</i>
+              </div>
+          </div>
+          <div class="lang-wrapper d-md-none">
+              <b-dropdown id="dropdown-aria" class="m-2">
+                <div slot="button-content">
+                    <span class="lang">EN</span>
+                    <i class="iconfont icon">&#xe632;</i>
+                </div>
+                  <b-dropdown-item>English</b-dropdown-item>
+                  <b-dropdown-item>简体中文</b-dropdown-item>
+              </b-dropdown>
+
+          </div>
         </div>
       </div>
       <div class="mobile-header-wrapper d-none d-md-flex">
@@ -44,6 +57,11 @@
             v-for="item in menus" :key="item.id">
             <a @click.stop="toPath(item)" href="javascript:void(0);">
               {{ item.name }}
+            </a>
+          </div>
+          <div :class="['mobile-nav-item']">
+            <a @click.stop="changeLang" href="javascript:void(0);">
+              语言切换
             </a>
           </div>
         </div>
@@ -89,6 +107,9 @@ export default {
     toPath(item) {
       this.$router.push(item.path)
     },
+    changeLang() {
+
+    }
   },
   mounted() {
   },
@@ -120,6 +141,27 @@ a {
     height: 80px;
   }
 }
+.right-wrapper {
+  display: flex;
+  align-items: center;
+  .lang-wrapper {
+    margin-left: 40px;
+    font-size: 14px;
+    font-family: PingFangSC-Light, PingFang SC;
+    font-weight: 300;
+    color: #9A9A9A;
+    line-height: 20px;
+    /deep/ #dropdown-aria__BV_toggle_ {
+      background: transparent;
+      &:active {
+        box-shadow: none;
+      }
+    }
+    /deep/ .dropdown-menu > li > a{
+      padding: 12px 20px;
+    }
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -133,7 +175,7 @@ a {
   align-items: center;
   justify-content: space-between;
   height: @headerHeight;
-  padding: 0 150px;
+  padding: 0 135px;
 }
 .nav-wrapper {
   display: flex;

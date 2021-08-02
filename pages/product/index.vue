@@ -67,7 +67,7 @@ export default {
 .index-wrapper {
   background: #F7F7F7;
   .wrapper {
-    padding: 96px 150px 0px 150px;
+    padding: 96px 135px 0px 135px;
     .title {
       position: relative;
       font-size: 46px;

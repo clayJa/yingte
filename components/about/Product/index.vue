@@ -170,7 +170,7 @@ export default {
 }
 .product-container {
   display: flex;
-  padding: 96px 150px;
+  padding: 96px 135px;
   align-items: center;
   justify-content: space-between;
   .decription {

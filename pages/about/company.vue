@@ -104,7 +104,7 @@ export default {
 .index-wrapper {
   .media {
     display: flex;
-    padding: 96px 150px;
+    padding: 96px 135px;
     align-items: center;
     justify-content: space-between;
   }
@@ -171,7 +171,7 @@ export default {
     }
   }
   .about-wrapper {
-    padding: 96px 150px 64px 150px;
+    padding: 96px 135px 64px 135px;
     .content {
       background-image: url('@/static/images/about/about_company_bg.png');
       background-size: 100% 100%;

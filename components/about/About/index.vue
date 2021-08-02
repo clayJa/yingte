@@ -65,7 +65,7 @@ export default {
   .content {
     position: relative;
     text-align: center;
-    padding: 96px 150px;
+    padding: 96px 135px;
     padding-top: 96px;
     .title-en {
       font-size: 18px;

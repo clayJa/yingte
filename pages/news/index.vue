@@ -95,7 +95,7 @@ export default {
   .wrapper {
     .new-content {
       .title-wrapper {
-        padding: 96px 150px 0px 150px;
+        padding: 96px 135px 0px 135px;
         background: #fff;
         .title {
           font-size: 46px;
@@ -117,7 +117,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         // justify-content: space-between;
-        margin: 96px 150px 0 150px;
+        margin: 96px 135px 0 135px;
         border-bottom: 1px solid #ECECEC;
         .item {
           width: 370px;
@@ -181,7 +181,7 @@ export default {
     color: #3E3E3E;
     line-height: 28px;
     letter-spacing: 1px;
-    padding: 48px 150px;
+    padding: 48px 135px;
     .icon {
       font-size: 38px;
     }

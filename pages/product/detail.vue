@@ -104,7 +104,7 @@ export default {
 <style lang="less" scoped>
 .index-wrapper {
   .detail {
-    padding: 96px 150px 144px 150px;
+    padding: 96px 135px 144px 135px;
     .title-wrapper {
       .title {
         font-size: 46px;

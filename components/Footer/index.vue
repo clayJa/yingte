@@ -120,7 +120,7 @@ export default {
 
 <style lang="less" scoped>
 .footer-wrapper {
-  padding: 65px 150px 32px 150px;
+  padding: 65px 135px 32px 135px;
   background: #fff;
   .logo {
     cursor: pointer;

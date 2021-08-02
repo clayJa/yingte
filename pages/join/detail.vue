@@ -103,7 +103,7 @@ export default {
 .index-wrapper {
   background:#F7F7F7;
   .wrapper {
-    margin: 48px 150px 96px 150px;
+    margin: 48px 135px 96px 135px;
     background: #fff;
     padding: 0 64px;
     text-align: center;

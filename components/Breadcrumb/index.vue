@@ -33,7 +33,7 @@ export default {
   line-height: 63px;
   background: #fff;
   margin-bottom: 0;
-  padding: 8px 150px;
+  padding: 8px 135px;
   a {
     font-size: 13px;
     font-weight: 400;

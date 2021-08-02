@@ -105,7 +105,7 @@ export default {
 <style lang="less" scoped>
 .index-wrapper {
   .wrapper {
-    padding: 96px 150px 0px 150px;
+    padding: 96px 135px 0px 135px;
     .select {
       display: flex;
       justify-content: center;

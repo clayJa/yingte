@@ -96,7 +96,7 @@ export default {
   background:#F7F7F7;
   .join {
     background: #fff;
-    padding: 96px 150px;
+    padding: 96px 135px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -135,7 +135,7 @@ export default {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      margin: 107px 150px 0 150px;
+      margin: 107px 135px 0 135px;
       padding-bottom: 43px;
       border-bottom: 1px solid #ECECEC;
       .job-item {
@@ -225,7 +225,7 @@ export default {
     color: #3E3E3E;
     line-height: 28px;
     letter-spacing: 1px;
-    padding: 48px 150px;
+    padding: 48px 135px;
     .icon {
       font-size: 38px;
     }

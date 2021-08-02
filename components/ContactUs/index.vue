@@ -28,7 +28,7 @@ export default {
   width: 100%;
   height: 182px;
   background: #354194;
-  padding: 0 150px;
+  padding: 0 135px;
   display: flex;
   align-items: center;
   justify-content: space-between;
