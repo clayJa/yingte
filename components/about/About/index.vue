@@ -8,28 +8,37 @@
       <div class="title"><span>关于</span><strong>英特</strong></div>
       <div class="description">
         <div>
-            公司是一家专业从事高效换热器的研发、生产及销售的高新技术企业，产品主要包括高效新型壳管式换热器、同轴套管式换热器、降膜式换热器等产品以及分配器等系统配件，广泛应用于供热采暖、空调、轨道交通、数据中心、工农业应用等领域。公司凭借先进的研发能力、高水平的生产工艺以及严格的质量管控，在行业内已建立起较高的品牌知名度，成为换热器领域主要生产企业，2018至2020连续三个年度，被中国节能协会热泵专业委员会评选为中国热泵行业优秀零部件供应商。
+          {{ info.remark }}
         </div>
       </div>
       <div class="button-wrapper">
-        <div class="button">了解英特</div>
+        <div class="button" @click="toPath('/about')">了解英特</div>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import {aboutInfo} from '@/service/public'
 export default {
   name: 'About',
   data() {
     return {
+      info: {}
     }
   },
   computed: {
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
-    toPath() {
-      console.log(1111)
+    toPath(path) {
+      this.$router.push(path)
+    },
+    async fetchData() {
+      const res = await aboutInfo()
+      this.info = res
     }
   },
   components: {

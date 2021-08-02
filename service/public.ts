@@ -15,3 +15,7 @@ export const getProductOne = async (params) => {
 export const settingAll = async (params) => {
   return await request.post('/backApi/api/setting/all', params)
 }
+
+export const aboutInfo = async () => {
+  return await request.post('/backApi/api/about/info')
+}
