@@ -1,6 +1,11 @@
 {
   "home" : {
     "locale": "English",
-    "languageSwitch": "Language Switch"
+    "languageSwitch": "Language Switch",
+    "about": "About",
+    "product": "Product",
+    "news": "News",
+    "investorRelations": "Investor Relations",
+    "join": "Join"
   }
 }

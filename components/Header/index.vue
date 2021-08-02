@@ -85,12 +85,16 @@ export default {
       showMobileMenu: false,
       activePath: '',
       scroll: false,
-      menus: [
-        { name: '关于英特', path: '/about' },
-        { name: '产品应用', path: '/product' },
-        { name: '新闻资讯', path: '/news' },
-        { name: '投资者关系', path: '/investor-relations'},
-        { name: '加入我们', path: '/join' },
+    }
+  },
+  computed: {
+    menus() {
+      return [
+        { name: this.$t('home.about'), path: '/about' },
+        { name: this.$t('home.product'), path: '/product' },
+        { name: this.$t('home.news'), path: '/news' },
+        { name: this.$t('home.investorRelations'), path: '/investor-relations'},
+        { name: this.$t('home.join'), path: '/join' },
       ]
     }
   },

@@ -13,13 +13,13 @@
           </div>
         </div>
         <div class="item">
-          <div class="name" @click="toPath('/about')">关于英特</div>
-          <div class="name" @click="toPath('/product')">产品应用</div>
-          <div class="name" @click="toPath('/news')">新闻资讯</div>
+          <div class="name" @click="toPath('/about')">{{$t('home.about')}}</div>
+          <div class="name" @click="toPath('/product')">{{$t('home.product')}}</div>
+          <div class="name" @click="toPath('/news')">{{$t('home.news')}}</div>
         </div>
         <div class="item">
-          <div class="name" @click="toPath('/news')" >投资者关系</div>
-          <div class="name" @click="toPath('/join')">联系我们</div>
+          <div class="name" @click="toPath('/news')" >{{$t('home.investorRelations')}}</div>
+          <div class="name" @click="toPath('/join')">{{$t('home.join')}}</div>
         </div>
       </div>
       <div class="right-wrapper">
