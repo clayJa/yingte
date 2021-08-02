@@ -30,6 +30,7 @@ export default {
   plugins: [
     { src: '@/plugins/babel-polyfill', ssr: true }, // 将es6转换为es5 兼容ie9
     { src: '@/plugins/swiper.js', ssr: false },
+    '@/plugins/i18n.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

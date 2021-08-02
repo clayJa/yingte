@@ -16,6 +16,7 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
+    "vue-i18n": "^8.25.0",
     "vue-swiper-2.x": "^1.0.3"
   },
   "devDependencies": {

@@ -25,11 +25,11 @@
           <div class="lang-wrapper d-md-none">
               <b-dropdown id="dropdown-aria" class="m-2">
                 <div slot="button-content">
-                    <span class="lang">EN</span>
+                    <span class="lang">{{$t('home.locale')}}</span>
                     <i class="iconfont icon">&#xe632;</i>
                 </div>
-                  <b-dropdown-item>English</b-dropdown-item>
-                  <b-dropdown-item>简体中文</b-dropdown-item>
+                  <b-dropdown-item @click.stop="changeLang('en-US')" href="javascript:void(0);">English</b-dropdown-item>
+                  <b-dropdown-item @click.stop="changeLang('zh-CN')" href="javascript:void(0);">简体中文</b-dropdown-item>
               </b-dropdown>
 
           </div>
@@ -75,6 +75,7 @@ interface Data {
   visible: boolean,
   menu: any[],
 }
+import { mapMutations } from 'vuex'
 export default {
   data () {
     return {
@@ -94,6 +95,7 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['SET_LANG']),
     showSearch() {
       this.modalShow = true
       this.text = ''
@@ -107,8 +109,9 @@ export default {
     toPath(item) {
       this.$router.push(item.path)
     },
-    changeLang() {
-
+    changeLang(locale) {
+      this.$i18n.locale = locale;
+      this.SET_LANG(locale)
     }
   },
   mounted() {
