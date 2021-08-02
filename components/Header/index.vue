@@ -60,8 +60,8 @@
             </a>
           </div>
           <div :class="['mobile-nav-item']">
-            <a @click.stop="changeLang" href="javascript:void(0);">
-              语言切换
+            <a @click.stop="changeLang('')" href="javascript:void(0);">
+              {{$t('home.languageSwitch')}}
             </a>
           </div>
         </div>
@@ -110,8 +110,15 @@ export default {
       this.$router.push(item.path)
     },
     changeLang(locale) {
-      this.$i18n.locale = locale;
-      this.SET_LANG(locale)
+      if(locale) {
+        this.$i18n.locale = locale;
+        this.SET_LANG(locale)
+      } else {
+        const currentLang = localStorage.getItem('locale') || 'zh-CN';
+        const lang = currentLang === 'zh-CN' ? 'en-US' : 'zh-CN';
+        this.$i18n.locale = lang
+        this.SET_LANG(lang)
+      }
     }
   },
   mounted() {

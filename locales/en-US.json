@@ -1,5 +1,6 @@
 {
   "home" : {
-    "locale": "English"
+    "locale": "English",
+    "languageSwitch": "Language Switch"
   }
 }
