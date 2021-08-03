@@ -10,16 +10,16 @@
     <TabBar />
     <div class="media">
       <div class="media-description">
-        <div class="title">企业文化相关视频标题位置</div>
-        <div class="info">企业文化相关视频内容位置，企业文化相关视频内容位置，企业文化相关视频内容位置，企业文化相关视频内容位置</div>
+        <div class="title">{{videoInfo.title}}</div>
+        <div class="info">{{videoInfo.remark}}</div>
         <div class="button">了解更多</div>
       </div>
       <div class="media-wrapper" >
         <div class="media-back" :style="{background: `url('${require('@/static/images/about/Video_Player.png')}')  no-repeat center center`}"  />
         <img class="play-btn" @click="playVideo()" src="@/static/images/about/icon_Video_Player.png" alt="">
-        <template v-if="isPlay">
+        <template v-if="isPlay && videoInfo.video">
           <video class="video" controls width="100%" height="100%" autoplay>
-            <source src="" type="video/mp4">
+            <source :src="`/backApi/upload/${videoInfo.video}`" type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
           </video>
         </template>
@@ -30,7 +30,8 @@
         <div class="title-en">About us</div>
         <div class="title"><span>关于</span><strong>英特</strong></div>
         <div class="description">
-          <div>
+          {{aboutInfo.remark}}
+          <!-- <div>
             公司是一家专业从事高效换热器的研发、生产及销售的高新技术企业，产品主要包括高效新型壳管式换热器、同轴套管式换热器、降膜式换热器等产品以及分配器等系统配件，广泛应用于供热采暖、空调、轨道交通、数据中心、工农业应用等领域。公司凭借先进的研发能力、高水平的生产工艺以及严格的质量管控，在行业内已建立起较高的品牌知名度，成为换热器领域主要生产企业，2018至2020连续三个年度，被中国节能协会热泵专业委员会评选为中国热泵行业优秀零部件供应商。
           </div>
           <div>
@@ -38,7 +39,7 @@
           </div>
           <div>
             公司一直致力于高效传热设备关键技术研究和新产品开发，被授予高新技术企业和省级高新技术企业研究开发中心，承担了国家火炬计划项目之“同轴换热器”等重点项目。公司及子公司共拥有专利86项，其中，发明专利8项，并负责制定了GB/T25862-2010《制冷与空调用同轴套管式换热器》国家标准和JB/T11132-2011《制冷与空调用套管换热器》行业标准，参与制定了GB/T30261-2013《制冷空调用板式热交换器㶲效率评价方法》和GB/T30262-2013《空冷式热交换器㶲效率评价方法》国家标准。
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -75,6 +76,7 @@
 
 <script lang="ts">
 import TabBar from '@/components/about/TabBar/index.vue'
+import {aboutAboutInfo,aboutVideo} from '@/service/public'
 export default {
   data() {
     return {
@@ -85,14 +87,30 @@ export default {
         require('@/static/images/about/company/works_Photo3.png'),
         require('@/static/images/about/company/works_Photo4.png'),
         require('@/static/images/about/company/works_Photo5.png'),
-      ]
+      ],
+      videoInfo: {},
+      aboutInfo: {},
     }
+  },
+  mounted() {
+    this.fetchData()
   },
   methods: {
     playVideo() {
       console.log('play')
       this.isPlay = true
     },
+    async fetchData() {
+      const [res1,res2] = await Promise.all([aboutAboutInfo(),aboutVideo()])
+      if(res1) {
+        this.aboutInfo = res1
+      }
+      if(res2) {
+        this.videoInfo = res2
+      }
+      console.log(res1,res2)
+      // aboutAboutInfo()
+    }
   },
   components: {
     TabBar,
@@ -132,6 +150,7 @@ export default {
       position: absolute;
       top: 0;
       bottom: 0;
+      object-fit: cover;
       border-radius: 4px;
     }
   }

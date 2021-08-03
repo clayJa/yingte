@@ -19,3 +19,11 @@ export const settingAll = async (params) => {
 export const aboutInfo = async () => {
   return await request.post('/backApi/api/about/info')
 }
+
+export const aboutAboutInfo = async () => {
+  return await request.post('/backApi/api/about/about')
+}
+
+export const aboutVideo = async () => {
+  return await request.post('/backApi/api/about/video')
+}
