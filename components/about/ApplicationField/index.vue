@@ -1,15 +1,16 @@
 <template>
   <div class="field-container">
     <div class="main-image-wrapper">
-      <img :src="list[active].image" alt="">
+      <!-- <img :src="list[active].image" alt=""> -->
+      <img :src="`/backApi/upload/${list[active].cover_picture}`" alt="">
       <div class="content">
         <div class="title-wrapper">
-          <div class="title">{{list[active].name}}</div>
+          <div class="title">{{list[active].title}}</div>
           <div class="button">Load More</div>
         </div>
-        <div class="icon-wrapper">
+        <!-- <div class="icon-wrapper">
           <img :src="list[active].icon" alt="">
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="image-list d-md-none">
@@ -17,8 +18,8 @@
         :key="index"
         @click="changeClick(index)"
       >
-        <img :src="item.thumbnail" alt="">
-        <div class="name">{{ item.name }}</div>
+        <img :src="`/backApi/upload/${item.cover_picture_small}`" alt="">
+        <div class="name">{{ item.title }}</div>
       </div>
     </div>
     <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption">
@@ -26,8 +27,8 @@
         <div :class="['swiper-slide', { active: active === index}]" v-for="(item,index) in list"
           :key="index" @click="changeClick(index)">
           <div :class="['item', { active: active === index}]">
-            <img :src="item.thumbnail" alt="">
-            <div class="name">{{ item.name }}</div>
+            <img :src="`/backApi/upload/${item.cover_picture_small}`" alt="">
+            <div class="name">{{ item.title }}</div>
           </div>
         </div>
       </div>
@@ -36,6 +37,7 @@
 </template>
 
 <script lang="ts">
+import { exampleList } from '@/service/public'
 export default {
   data() {
     return {
@@ -94,9 +96,20 @@ export default {
   },
   watch: {
   },
+  mounted() {
+    this.fetchData()
+  },
   methods: {
     changeClick(index) {
       this.active = index
+    },
+    async fetchData() {
+      const res = await exampleList({
+        limit: 6,
+        page: 1
+      })
+      this.list = res.data
+      console.log(res,111111)
     }
   },
   components: {
@@ -108,6 +121,7 @@ export default {
 .field-container {
   .main-image-wrapper {
     position: relative;
+    width: 100%;
     .content {
       position: absolute;
       left: 0;

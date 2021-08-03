@@ -27,3 +27,7 @@ export const aboutAboutInfo = async () => {
 export const aboutVideo = async () => {
   return await request.post('/backApi/api/about/video')
 }
+
+export const exampleList = async (params) => {
+  return await request.post('/backApi/api/example/list',params)
+}
