@@ -122,6 +122,7 @@ export default {
   .main-image-wrapper {
     position: relative;
     width: 100%;
+    min-width: 800px;
     .content {
       position: absolute;
       left: 0;
