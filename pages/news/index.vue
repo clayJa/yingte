@@ -17,7 +17,7 @@
         <div class="list-wrapper">
           <div class="item" v-for="item in list" :key="item.id" @click="toPath(item)">
             <div class="image-wrapper">
-              <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+              <img :src="`${item.cover_picture}`" alt="">
             </div>
             <div class="title line-2">{{item.title}}</div>
             <div class="info">{{item.description}}</div>

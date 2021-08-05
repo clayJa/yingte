@@ -12,7 +12,7 @@
       <div class="list-wrapper">
         <div class="list-item" v-for="(item,index) in list" :key="index" @click="toDetail(item)">
           <div class="image">
-            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+            <img :src="`${item.cover_picture}`" alt="">
             <div class="button">应用</div>
           </div>
           <div class="description">

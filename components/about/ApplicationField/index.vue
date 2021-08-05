@@ -2,7 +2,7 @@
   <div class="field-container">
     <div class="main-image-wrapper">
       <!-- <img :src="list[active].image" alt=""> -->
-      <img :src="`/backApi/upload/${list[active].cover_picture}`" alt="">
+      <img :src="`${list[active].cover_picture}`" alt="">
       <div class="content">
         <div class="title-wrapper">
           <div class="title">{{list[active].title}}</div>
@@ -18,7 +18,7 @@
         :key="index"
         @click="changeClick(index)"
       >
-        <img :src="`/backApi/upload/${item.cover_picture_small}`" alt="">
+        <img :src="`${item.cover_picture_small}`" alt="">
         <div class="name">{{ item.title }}</div>
       </div>
     </div>
@@ -27,7 +27,7 @@
         <div :class="['swiper-slide', { active: active === index}]" v-for="(item,index) in list"
           :key="index" @click="changeClick(index)">
           <div :class="['item', { active: active === index}]">
-            <img :src="`/backApi/upload/${item.cover_picture_small}`" alt="">
+            <img :src="`${item.cover_picture_small}`" alt="">
             <div class="name">{{ item.title }}</div>
           </div>
         </div>

@@ -11,7 +11,7 @@
       <div class="title-wrapper clearfix">
         <div class="title">{{this.detail.title}}</div>
         <div class="product-image">
-          <img :src="`/backApi/upload/${this.detail.cover_picture}`" alt="">
+          <img :src="`${this.detail.cover_picture}`" alt="">
         </div>
       </div>
       <div class="product-description">
@@ -29,7 +29,7 @@
         <div class="display">
           <div class="display-item" v-for="(item,index) in this.detail.product_show || []" :key="index">
             <div class="image">
-              <img :src="`/backApi/upload/${item.image}`" alt="">
+              <img :src="`${item.image}`" alt="">
             </div>
             <div class="name">{{ item.title }}</div>
           </div>
@@ -46,7 +46,7 @@
         <div class="application">
           <div class="item" v-for="(item,index) in this.detail.product_scopes || []" :key="index">
             <div class="image">
-              <img :src="`/backApi/upload/${item.image}`" alt="">
+              <img :src="`${item.image}`" alt="">
               <div class="info">
                 <div class="info1">{{ item.title }}</div>
                 <div class="info2">{{ item.remark }}</div>

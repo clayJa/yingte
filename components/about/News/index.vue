@@ -8,7 +8,7 @@
       <div class="left-wrapper d-md-none">
         <div class="item" @click="toPath(list[0])">
           <div class="image-wrapper">
-            <img :src="`/backApi/upload/${this.list[0] && this.list[0].cover_picture}`" alt="">
+            <img :src="`${this.list[0] && this.list[0].cover_picture}`" alt="">
           </div>
           <div class="title line-2">{{this.list[0] && this.list[0].title}}</div>
           <div class="info">{{this.list[0] && this.list[0].description}}</div>
@@ -22,7 +22,7 @@
       <div class="right-wrapper d-md-none">
         <div class="item" @click="toPath(item)" v-for="(item,index) in this.list.slice(1)" :key="index">
           <div class="image-wrapper">
-            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+            <img :src="`${item.cover_picture}`" alt="">
           </div>
           <div class="title line-2">{{item.title}}</div>
           <div class="time">
@@ -35,7 +35,7 @@
       <div class="item-wrapper  d-none d-md-block">
         <div class="item" @click="toPath(item)" v-for="(item,index) in this.list" :key="index">
           <div class="image-wrapper">
-            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+            <img :src="`${item.cover_picture}`" alt="">
           </div>
           <div class="title line-2">{{item.title}}</div>
           <div class="time">
