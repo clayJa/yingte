@@ -15,11 +15,13 @@
         <div class="button">了解更多</div>
       </div>
       <div class="media-wrapper" >
-        <div class="media-back" :style="{background: `url('${require('@/static/images/about/Video_Player.png')}')  no-repeat center center`}"  />
+        <div class="media-back">
+          <img style="width:100%;height:100%;object-fit: cover;" :src="videoInfo.cover_picture" alt="">
+        </div>
         <img class="play-btn" @click="playVideo()" src="@/static/images/about/icon_Video_Player.png" alt="">
         <template v-if="isPlay && videoInfo.video">
           <video class="video" controls width="100%" height="100%" autoplay>
-            <source :src="`/backApi/upload/${videoInfo.video}`" type="video/mp4">
+            <source :src="`${videoInfo.video}`" type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
           </video>
         </template>

@@ -30,7 +30,7 @@
     </div>
     <div class="right-wrapper">
       <div class="image-wrapper">
-        <img :src="this.productList[activeItem] ? `/backApi/upload/${this.productList[activeItem].cover_picture}` : ''" alt="">
+        <img :src="this.productList[activeItem] ? `${this.productList[activeItem].cover_picture}` : ''" alt="">
       </div>
       <!-- <div class="my-swiper">
         <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
@@ -45,7 +45,7 @@
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
             <div class="product-image">
-              <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+              <img :src="`${item.cover_picture}`" alt="">
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
             <div class="product-image">
-              <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+              <img :src="`${item.cover_picture}`" alt="">
             </div>
           </div>
         </div>

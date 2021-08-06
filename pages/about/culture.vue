@@ -10,7 +10,7 @@
     <TabBar />
     <div class="list-wrapper">
       <div class="list-item" v-for="item in list" :key="item.id">
-        <div class="image"><img :src="`/backApi/upload/${item.cover_picture}`" alt=""></div>
+        <div class="image"><img :src="`${item.cover_picture}`" alt=""></div>
         <div class="content">
           <div class="name">{{ item.title }}</div>
           <div class="info">{{ item.description }}</div>

@@ -12,7 +12,7 @@
       <div class="list-wrapper">
         <div class="list-item" v-for="(item) in list" :key="item.id">
           <div class="image">
-            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+            <img :src="`${item.cover_picture}`" alt="">
           </div>
           <div class="description">
             <div class="name">{{item.title}}</div>

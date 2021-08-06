@@ -25,7 +25,7 @@
         <div :class="['search-item', { image: item.cover_picture }]" v-for="(item) in list"
           @click="toPath(item)" :key="item.id">
           <div :class="['image-wrapper']" v-if="item.cover_picture">
-            <img :src="`/backApi/upload/${item.cover_picture}`" alt="">
+            <img :src="`${item.cover_picture}`" alt="">
           </div>
           <div class="content-wrapper">
             <div class="content">
