@@ -102,7 +102,8 @@ export default {
           overrideBrowserslist: ['last 3 versions', '> 1%','ie 9', 'ie 8', 'ie 7'],
         }
       }
-    }
+    },
+    publicPath: "http://qxbc2eixz.hd-bkt.clouddn.com"
   },
   axios: {
     proxy: true,
