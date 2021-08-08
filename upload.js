@@ -37,7 +37,9 @@ async function addFileToOSSSync(src, dist,isDir) {
     let st = fs.statSync(_src);
     // 判断是否为文件
     if (st.isFile() && dist !== "LICENSES`") {
+
       putOSS(_src, !isDir?doc: dist+`/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
+
     }
     // 如果是目录则递归调用自身
     else if (st.isDirectory()) {
@@ -45,6 +47,31 @@ async function addFileToOSSSync(src, dist,isDir) {
     }
   });
 }
+
+async function addFileToOSSSyncV2(){
+  let docs = fs.readdirSync(src);
+  async.mapLimit(docs, 5, function (doc) {
+
+    let _src = src +'/'+ doc,
+      _dist = dist +'/'+ doc;
+    let st = fs.statSync(_src);
+    // 判断是否为文件
+    if (st.isFile() && dist !== "LICENSES`") {
+
+      putOSS(_src, !isDir?doc: dist+`/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
+
+    }
+    // 如果是目录则递归调用自身
+    else if (st.isDirectory()) {
+      addFileToOSSSyncV2(_src, _dist,true);
+    }
+
+  }, function (error, result) {
+    console.log("result: ")
+    console.log(result);
+  })
+}
+
 /**
  *单个文件上传至oss
  */
@@ -54,6 +81,9 @@ async function putOSS(src, dist) {
     var formUploader = new qiniu.form_up.FormUploader(config);
     var putExtra = new qiniu.form_up.PutExtra();
     var key=dist;
+
+
+
     // 文件上传
     await formUploader.putFile(uploadToken, key, localFile, putExtra, function(respErr,
                                                                                respBody, respInfo) {
@@ -78,7 +108,8 @@ async function upFile() {
   try {
     let src = PUBLIC_PATH+".nuxt/dist/client";
     let docs = fs.readdirSync(src);
-    await addFileToOSSSync(src, docs);
+    //await addFileToOSSSync(src, docs);
+    addFileToOSSSyncV2(src,docs);
   } catch (err) {
     console.log("上传oss失败", err);
   }
