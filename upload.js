@@ -38,7 +38,7 @@ function addFileToOSSSync(src, dist, isDir) {
     // 判断是否为文件
     if (st.isFile() && dist !== "LICENSES`") {
 
-      putOSS(_src, !isDir ? doc : dist + `/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
+      putOSS(_src, dist + `/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
 
     }
     // 如果是目录则递归调用自身
