@@ -52,21 +52,17 @@ async function addFileToOSSSync(src, dist,isDir) {
 async function addFileToOSSSyncV2(src, dist,isDir){
   let docs = fs.readdirSync(src);
   async.mapLimit(docs, 5, function (doc) {
-
     let _src = src +'/'+ doc,
       _dist = dist +'/'+ doc;
     let st = fs.statSync(_src);
     // 判断是否为文件
     if (st.isFile() && dist !== "LICENSES`") {
-
       putOSS(_src, !isDir?doc: dist+`/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
-
     }
     // 如果是目录则递归调用自身
     else if (st.isDirectory()) {
       addFileToOSSSyncV2(_src, _dist,true);
     }
-
   }, function (error, result) {
     console.log("result: ")
     console.log(result);
@@ -110,7 +106,7 @@ async function upFile() {
     let src = PUBLIC_PATH+".nuxt/dist/client";
     let docs = fs.readdirSync(src);
     //await addFileToOSSSync(src, docs);
-    addFileToOSSSyncV2(src,docs);
+    addFileToOSSSync(src,docs);
   } catch (err) {
     console.log("上传oss失败", err);
   }
