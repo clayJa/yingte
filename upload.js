@@ -40,7 +40,7 @@ function addFileToOSSSync(src, dist, isDir) {
       let dist_str = dist + '';
       let arr = dist_str.split(',');
 
-      putOSS(_src, arr[arr.length-1].slice(4)+`/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
+      putOSS(_src, !isDir ? doc : arr[arr.length - 1].slice(4) + `/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
 
     }
     // 如果是目录则递归调用自身
