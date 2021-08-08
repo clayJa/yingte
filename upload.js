@@ -48,7 +48,7 @@ async function addFileToOSSSync(src, dist,isDir) {
   });
 }
 
-async function addFileToOSSSyncV2(){
+async function addFileToOSSSyncV2(src, dist,isDir){
   let docs = fs.readdirSync(src);
   async.mapLimit(docs, 5, function (doc) {
 
