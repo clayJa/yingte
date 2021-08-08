@@ -1,6 +1,6 @@
 
 const qiniu = require("qiniu");
-import async from 'async';
+const async = require('async');
 const fs = require("fs");
 const path = require("path");
 const PUBLIC_PATH = path.join(__dirname, "/");
