@@ -37,7 +37,8 @@ function addFileToOSSSync(src, dist, isDir) {
     let st = fs.statSync(_src);
     // 判断是否为文件
     if (st.isFile() && dist !== "LICENSES`") {
-      let arr = dist.split(',');
+      let dist_str = dist + '';
+      let arr = dist_str.split(',');
 
       putOSS(_src, arr[arr.length - 1] + `/${doc}`);//如果是文件夹下文件，文件名为 fonts/文件名
 
