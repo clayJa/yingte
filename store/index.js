@@ -1,4 +1,4 @@
-import { settingAll } from '@/service/public'
+import { settingAll, getBannerList } from '@/service/public'
 export const state = () => ({
   isMobileMenu: true,
   globalSetting: {},
@@ -22,6 +22,13 @@ export const mutations = {
 };
 
 export const actions = {
+  async fetchBannerList({commit}, payload) {
+    const res = await getBannerList(payload)
+    if(res) {
+      return res
+    }
+    return false
+  },
   async fetchGlobalSetting({commit}, payload) {
     const res = await settingAll(payload)
     let resultObj = {}

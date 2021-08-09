@@ -40,7 +40,7 @@
           </div>
         </div>
       </div> -->
-      <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption">
+      <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption" :key="randomKey">
         <div class="swiper-wrapper">
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption">
+      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption" :key="randomMKey">
         <div class="swiper-wrapper">
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
@@ -91,8 +91,9 @@ export default {
       },
       activeItem: 0,
       randomKey: Math.random(),
+      randomMKey: Math.random(),
       productList: [
-        { img: '' },
+        // { img: '' },
         // { img: require('@/static/images/about/蒸发式冷凝器.png') },
         // { img: require('@/static/images/about/降膜式换热器.png') },
         // { img: require('@/static/images/about/降膜式换热器.png') },
@@ -105,6 +106,10 @@ export default {
   computed: {
   },
   watch: {
+    productList() {
+      this.randomKey = Math.random();
+      this.randomMKey = Math.random();
+    }
   },
   methods: {
     changeItem(index) {
@@ -344,6 +349,10 @@ export default {
   width: 100vw;
   height: 200px;
   border-bottom: 1px solid #ECECEC;
+  // .swiper-wrapper {
+  //   display: flex;
+  //   justify-content: space-around;
+  // }
   .swiper-slide {
     display: flex;
     justify-content: center;

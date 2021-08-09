@@ -2,10 +2,10 @@
   <div class="index-wrapper">
     <Header />
     <div class="banner d-md-none">
-      <img :src="require('@/static/images/about/banner/11.png')" alt="">
+      <img :src="banner.cover_picture" alt="">
     </div>
     <div class="banner d-md-block d-none">
-      <img :src="require('@/static/images/about/mobile_banner/mobile_banner_5.png')" alt="">
+      <img :src="banner.cover_picture_small" alt="">
     </div>
     <div class="wrapper">
       <div class="title">产品中心</div>
@@ -29,20 +29,23 @@
 
 <script lang="ts">
 import { getProductList } from '@/service/public'
+import {mapActions} from 'vuex'
 export default {
   data() {
     return {
       list: [
-        { image: require('@/static/images/product/product_image_1.png'), name: '壳管式换热器' },
-        { image: require('@/static/images/product/product_image_2.png'), name: '套管式换热器' },
-        { image: require('@/static/images/product/product_image_3.png'), name: '降膜式换热器' },
-        { image: require('@/static/images/product/product_image_4.png'), name: '蒸发式冷凝器' },
-        { image: require('@/static/images/product/product_image_5.png'), name: '液冷散热器' },
-        { image: require('@/static/images/product/product_image_6.png'), name: '分配器' },
-      ]
+        // { image: require('@/static/images/product/product_image_1.png'), name: '壳管式换热器' },
+        // { image: require('@/static/images/product/product_image_2.png'), name: '套管式换热器' },
+        // { image: require('@/static/images/product/product_image_3.png'), name: '降膜式换热器' },
+        // { image: require('@/static/images/product/product_image_4.png'), name: '蒸发式冷凝器' },
+        // { image: require('@/static/images/product/product_image_5.png'), name: '液冷散热器' },
+        // { image: require('@/static/images/product/product_image_6.png'), name: '分配器' },
+      ],
+      banner: {}
     }
   },
   mounted() {
+    this.fetchBannerData()
     this.fetchData()
   },
   methods: {
@@ -56,6 +59,13 @@ export default {
     },
     toDetail(item) {
       this.$router.push(`/product/detail?id=${item.id}`)
+    },
+    ...mapActions(['fetchBannerList']),
+    async fetchBannerData() {
+      const res = await this.fetchBannerList({subclass: 'product'})
+      if(res && res.length) {
+        this.banner = res[0]
+      }
     }
   },
   components: {

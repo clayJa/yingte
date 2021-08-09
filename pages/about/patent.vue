@@ -2,10 +2,10 @@
   <div class="index-wrapper">
     <Header />
     <div class="banner d-md-none">
-      <img :src="require('@/static/images/about/banner/12.png')" alt="">
+      <img :src="banner.cover_picture" alt="">
     </div>
     <div class="banner d-md-block d-none">
-      <img :src="require('@/static/images/about/mobile_banner/mobile_banner_3.png')" alt="">
+      <img :src="banner.cover_picture_small" alt="">
     </div>
     <TabBar />
     <div class="wrapper">
@@ -32,6 +32,7 @@
 <script lang="ts">
 import TabBar from '@/components/about/TabBar/index.vue'
 import { newsSearch } from '@/service/news'
+import {mapActions} from 'vuex'
 export default {
   data() {
     return {
@@ -43,9 +44,11 @@ export default {
       ],
       page: 1,
       lastPage: 1,
+      banner: {}
     }
   },
   mounted() {
+    this.fetchBannerData()
     this.fetchData()
   },
   methods: {
@@ -71,6 +74,13 @@ export default {
       this.lastPage = res.last_page
       this.list = res.data
     },
+    ...mapActions(['fetchBannerList']),
+    async fetchBannerData() {
+      const res = await this.fetchBannerList({subclass: 'about_us'})
+      if(res && res.length) {
+        this.banner = res[0]
+      }
+    }
   },
   components: {
     TabBar,

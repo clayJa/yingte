@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="d-none d-md-block">
-    <div class="mobile-my-swiper" v-swiper:myMobileSwiper="swiperMobileOption">
+    <div class="mobile-my-swiper" v-swiper:myMobileSwiper="swiperMobileOption" :key="randomMKey">
       <div class="swiper-wrapper">
         <div class="swiper-slide"
           v-for="(item,index) in options" :key="index">
@@ -43,6 +43,7 @@ export default {
         updateOnImagesReady : true,
         resizeReInit : true,
       },
+      randomMKey: Math.random()
     }
   },
   methods: {

@@ -54,6 +54,7 @@
 <script lang="ts">
 import Breadcrumb from '@/components/Breadcrumb/index.vue'
 import {hiringDetail} from '@/service/news'
+import {mapActions} from 'vuex'
 export default {
   data() {
     return {
@@ -71,7 +72,7 @@ export default {
           path: this.$route.fullPath,
         },
       ],
-      articleData: {}
+      articleData: {},
     }
   },
   mounted() {
@@ -91,7 +92,7 @@ export default {
       const res = await hiringDetail({id: query.id})
       console.log(res,'requestData')
       this.articleData = res
-    }
+    },
   },
   components: {
     Breadcrumb,

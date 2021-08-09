@@ -2,10 +2,10 @@
   <div class="index-wrapper">
     <Header />
     <div class="banner d-md-none">
-      <img :src="require('@/static/images/about/banner/11.png')" alt="">
+      <img :src="banner.cover_picture" alt="">
     </div>
     <div class="banner d-md-block d-none">
-      <img :src="require('@/static/images/about/mobile_banner/mobile_banner_5.png')" alt="">
+      <img :src="banner.cover_picture_small" alt="">
     </div>
     <div class="detail">
       <div class="title-wrapper clearfix">
@@ -63,25 +63,28 @@
 
 <script lang="ts">
 import { getProductOne } from '@/service/public'
+import {mapActions} from 'vuex'
 export default {
   data() {
     return {
       advantage: ['易于维护','广泛应用套筒轴承和免维护','适用冷凝器的电机和轴承，防止电机过热，减少轴承磨损',],
       product: [
-        { image: require('@/static/images/product/sub_image_1.png'), name: '塑料壳管' },
-        { image: require('@/static/images/product/sub_image_1.png'), name: '带分配器的壳管式换热器' },
-        { image: require('@/static/images/product/sub_image_1.png'), name: '带分配器的壳管式换热器' },
+        // { image: require('@/static/images/product/sub_image_1.png'), name: '塑料壳管' },
+        // { image: require('@/static/images/product/sub_image_1.png'), name: '带分配器的壳管式换热器' },
+        // { image: require('@/static/images/product/sub_image_1.png'), name: '带分配器的壳管式换热器' },
       ],
       application: [
-        { image: require('@/static/images/product/application_image_1.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
-        { image: require('@/static/images/product/application_image_2.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
-        { image: require('@/static/images/product/application_image_3.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
-        { image: require('@/static/images/product/application_image_4.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
+        // { image: require('@/static/images/product/application_image_1.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
+        // { image: require('@/static/images/product/application_image_2.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
+        // { image: require('@/static/images/product/application_image_3.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
+        // { image: require('@/static/images/product/application_image_4.png'), info: '换热器作为环境控制设备的重要组成部分，在工业生产中得到了广泛应用。作为冷凝器重要的细分市场，食品、医药、化工等行业的快速发展将带动换热器市场需求。', name: '工农业应用'},
       ],
-      detail: {}
+      detail: {},
+      banner: {}
     }
   },
   mounted() {
+    this.fetchBannerData()
     this.fetchData()
   },
   methods: {
@@ -95,6 +98,13 @@ export default {
       //   this.list = res.data
       // }
     },
+    ...mapActions(['fetchBannerList']),
+    async fetchBannerData() {
+      const res = await this.fetchBannerList({subclass: 'product'})
+      if(res && res.length) {
+        this.banner = res[0]
+      }
+    }
   },
   components: {
   }

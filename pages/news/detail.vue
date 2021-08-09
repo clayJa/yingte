@@ -64,7 +64,7 @@ export default {
       const res = await newsDetail({id: query.id})
       console.log(res,'requestData')
       this.articleData = res
-    }
+    },
   },
   components: {
     Breadcrumb,

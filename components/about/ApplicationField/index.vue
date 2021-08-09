@@ -22,7 +22,7 @@
         <div class="name">{{ item.title }}</div>
       </div>
     </div>
-    <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption">
+    <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption" :key="randomMKey">
       <div class="swiper-wrapper">
         <div :class="['swiper-slide', { active: active === index}]" v-for="(item,index) in list"
           :key="index" @click="changeClick(index)">
@@ -52,6 +52,7 @@ export default {
         resizeReInit : true,
       },
       active: 0,
+      randomMKey: Math.random(),
       list: [
         {
           icon: require('@/static/images/about/field/icon_Data Center.png'),
@@ -95,6 +96,9 @@ export default {
   computed: {
   },
   watch: {
+    list() {
+      this.randomMKey = Math.random()
+    }
   },
   mounted() {
     this.fetchData()
