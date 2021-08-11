@@ -77,6 +77,8 @@ export default {
     .list-item {
       width: 370px;
       height: 460px;
+      display: flex;
+      flex-direction: column;
       background: #FFFFFF;
       box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
       border-radius: 12px;
@@ -97,6 +99,11 @@ export default {
     }
     .content {
       padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
       .name {
         font-size: 24px;
         font-family: PingFangSC-Medium, PingFang SC;
@@ -112,6 +119,7 @@ export default {
         color: #9A9A9A;
         line-height: 32px;
         margin-top: 12px;
+        text-align: center;
       }
     }
   }
