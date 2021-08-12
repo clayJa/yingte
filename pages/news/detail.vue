@@ -8,7 +8,7 @@
       <div class="title-wrapper">
         <div class="title">{{articleData.title}}</div>
         <div class="description">
-          <div class="date">{{articleData.updated_at}}</div>
+          <div class="date">{{articleData.created_at}}</div>
           <!-- <div class="author">蔡文广</div>
           <div class="source">来源： 热泵产业资讯</div> -->
         </div>

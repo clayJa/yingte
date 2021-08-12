@@ -24,7 +24,7 @@
             <div class="time">
               <span>热点资讯</span>
               <span>/</span>
-              <span>{{item.updated_at}}</span>
+              <span>{{item.created_at}}</span>
             </div>
           </div>
         </div>

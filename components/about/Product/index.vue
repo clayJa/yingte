@@ -25,7 +25,7 @@
         </div>
       </div> -->
       <div class="button-wrapper">
-        <div class="button">了解更多</div>
+        <div class="button" @click="toDetail">了解更多</div>
       </div>
     </div>
     <div class="right-wrapper">
@@ -112,6 +112,12 @@ export default {
     }
   },
   methods: {
+    toDetail() {
+      if(this.productList.length) {
+        const  item = this.productList[this.activeItem]
+        this.$router.push(`/product/detail?id=${item.id}`)
+      }
+    },
     changeItem(index) {
       this.activeItem = index
       this.myMobileSwiper.swipeTo(index, 1000, false)
@@ -237,6 +243,7 @@ export default {
         background: #354194;
         border-radius: 4px;
         border: 1px solid rgba(24, 30, 45, 0.2);
+        cursor: pointer;
       }
     }
   }

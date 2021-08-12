@@ -15,7 +15,7 @@
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>
-            <span>{{this.list[0] && this.list[0].updated_at}}</span>
+            <span>{{this.list[0] && this.list[0].created_at}}</span>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>
-            <span>{{item.updated_at}}</span>
+            <span>{{item.created_at}}</span>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
           <div class="time">
             <span>热点资讯</span>
             <span>/</span>
-            <span>{{item.updated_at}}</span>
+            <span>{{item.created_at}}</span>
           </div>
         </div>
       </div>
