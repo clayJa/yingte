@@ -6,10 +6,10 @@
     <div class="content">
       <div class="title-en">About us</div>
       <div class="title"><span>关于</span><strong>英特</strong></div>
-      <div class="description">
-        <div>
+      <div class="description" v-html="info.remark">
+        <!-- <div>
           {{ info.remark }}
-        </div>
+        </div> -->
       </div>
       <div class="button-wrapper">
         <div class="button" @click="toPath('/about')">了解英特</div>

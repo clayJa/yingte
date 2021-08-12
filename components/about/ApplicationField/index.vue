@@ -2,15 +2,15 @@
   <div class="field-container">
     <div class="main-image-wrapper">
       <!-- <img :src="list[active].image" alt=""> -->
-      <img :src="`${list[active].cover_picture}`" alt="">
+      <img :src="`${list[active] && list[active].cover_picture}`" alt="">
       <div class="content">
         <div class="title-wrapper">
-          <div class="title">{{list[active].title}}</div>
-          <div class="button">Load More</div>
+          <div class="title">{{list[active] && list[active].title}}</div>
+          <div class="button" @click="toPath">Load More</div>
         </div>
-        <!-- <div class="icon-wrapper">
-          <img :src="list[active].icon" alt="">
-        </div> -->
+        <div class="icon-wrapper">
+          <img :src="list[active] && list[active].icon" alt="">
+        </div>
       </div>
     </div>
     <div class="image-list d-md-none">
@@ -54,42 +54,42 @@ export default {
       active: 0,
       randomMKey: Math.random(),
       list: [
-        {
-          icon: require('@/static/images/about/field/icon_Data Center.png'),
-          thumbnail: require('@/static/images/about/field/pic_数据中心_thumbnail.png'),
-          image:  require('@/static/images/about/field/pic_数据中心.png'),
-          name: '数据中心'
-        },
-        {
-          icon: require('@/static/images/about/field/icon_ Industry and Agriculture.png'),
-          thumbnail: require('@/static/images/about/field/pic_工农业应用_thumbnail.png'),
-          image:  require('@/static/images/about/field/pic_工农业应用.png'),
-          name: '工农业应用'
-        },
-        {
-          icon: require('@/static/images/about/field/icon_ HVAC.png'),
-          thumbnail: require('@/static/images/about/field/pic_暖通空调_thumbnail.png'),
-          image:  require('@/static/images/about/field/pic_暖通空调.png'),
-          name: '暖通空调'
-        },
-        {
-          icon: require('@/static/images/about/field/icon_Subway traffic.png'),
-          thumbnail: require('@/static/images/about/field/pic_轨道交通_thumbnail.png'),
-          image:  require('@/static/images/about/field/pic_轨道交通.png'),
-          name: '轨道交通'
-        },
-        {
-          icon: require('@/static/images/about/field/icon_heating.png'),
-          thumbnail: require('@/static/images/about/field/pic_北方供热采暖_thumbnail.png'),
-          image:  require('@/static/images/about/field/pic_北方供热采暖.png'),
-          name: '北方供热采暖'
-        },
-        {
-          icon: require('@/static/images/about/field/icon_Home air conditioner.png'),
-          thumbnail: require('@/static/images/about/field/pic_家用户式空调_thumbnail.png'),
-          image:  require('@/static/images/about/field/pic_家用户式空调.png'),
-          name: '家用户式空调'
-        },
+        // {
+        //   icon: require('@/static/images/about/field/icon_Data Center.png'),
+        //   thumbnail: require('@/static/images/about/field/pic_数据中心_thumbnail.png'),
+        //   image:  require('@/static/images/about/field/pic_数据中心.png'),
+        //   name: '数据中心'
+        // },
+        // {
+        //   icon: require('@/static/images/about/field/icon_ Industry and Agriculture.png'),
+        //   thumbnail: require('@/static/images/about/field/pic_工农业应用_thumbnail.png'),
+        //   image:  require('@/static/images/about/field/pic_工农业应用.png'),
+        //   name: '工农业应用'
+        // },
+        // {
+        //   icon: require('@/static/images/about/field/icon_ HVAC.png'),
+        //   thumbnail: require('@/static/images/about/field/pic_暖通空调_thumbnail.png'),
+        //   image:  require('@/static/images/about/field/pic_暖通空调.png'),
+        //   name: '暖通空调'
+        // },
+        // {
+        //   icon: require('@/static/images/about/field/icon_Subway traffic.png'),
+        //   thumbnail: require('@/static/images/about/field/pic_轨道交通_thumbnail.png'),
+        //   image:  require('@/static/images/about/field/pic_轨道交通.png'),
+        //   name: '轨道交通'
+        // },
+        // {
+        //   icon: require('@/static/images/about/field/icon_heating.png'),
+        //   thumbnail: require('@/static/images/about/field/pic_北方供热采暖_thumbnail.png'),
+        //   image:  require('@/static/images/about/field/pic_北方供热采暖.png'),
+        //   name: '北方供热采暖'
+        // },
+        // {
+        //   icon: require('@/static/images/about/field/icon_Home air conditioner.png'),
+        //   thumbnail: require('@/static/images/about/field/pic_家用户式空调_thumbnail.png'),
+        //   image:  require('@/static/images/about/field/pic_家用户式空调.png'),
+        //   name: '家用户式空调'
+        // },
       ]
     }
   },
@@ -106,6 +106,13 @@ export default {
   methods: {
     changeClick(index) {
       this.active = index
+    },
+    toPath() {
+      const item = this.list[this.active]
+      if(item.is_link) {
+        window.open(item.link_url)
+        return
+      }
     },
     async fetchData() {
       const res = await exampleList({
@@ -149,6 +156,7 @@ export default {
         margin-bottom: 64px;
       }
       .button {
+        cursor: pointer;
         display: inline-flex;
         align-items: center;
         justify-content: center;

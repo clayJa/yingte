@@ -100,7 +100,8 @@ export default {
 }
 .mobile-my-swiper {
   position: relative;
-  height: 800px;
+  min-height: 208px;
+  max-height: 800px;
   width: 100%;
 }
 </style>
