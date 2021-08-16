@@ -113,7 +113,7 @@ export default {
         text-align: center;
       }
       .info {
-        font-size: 16px;
+        font-size: 15px;
         font-family: PingFangSC-Light, PingFang SC;
         font-weight: 300;
         color: #9A9A9A;
@@ -161,7 +161,7 @@ export default {
           text-align: center;
         }
         .info {
-          font-size: 16px;
+          font-size: 13.9px;
           font-family: PingFangSC-Light, PingFang SC;
           font-weight: 300;
           color: #9A9A9A;

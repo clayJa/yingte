@@ -20,7 +20,7 @@
             <span>{{articleData.salary}}</span>
           </div>
           <div>
-            <span class="name">工作时间：</span>
+            <span class="name">工作福利：</span>
             <span>{{articleData.length_of_work}}</span>
           </div>
           <div>

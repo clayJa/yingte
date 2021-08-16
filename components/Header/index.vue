@@ -4,7 +4,7 @@
       <div class="header-wrapper d-md-none">
         <div class="logo" @click="$router.push('/')"></div>
         <div class="nav-wrapper">
-          <div :class="['nav-item', {active: $nuxt.$route.path === item.path || ($nuxt.$route.path.includes(item.path) && item.sub_path !== '/')}]"
+          <div :class="['nav-item', {active: $nuxt.$route.path === item.path || ($nuxt.$route.path.includes(item.path) && item.path !== '/')}]"
             v-for="item in menus" :key="item.id">
             <a @click.stop="toPath(item)" href="javascript:void(0);">
               {{ item.name }}
@@ -90,10 +90,11 @@ export default {
   computed: {
     menus() {
       return [
+        { name: this.$t('home.home'), path: '/' },
         { name: this.$t('home.about'), path: '/about' },
         { name: this.$t('home.product'), path: '/product' },
         { name: this.$t('home.news'), path: '/news' },
-        { name: this.$t('home.investorRelations'), path: '/investor-relations'},
+        // { name: this.$t('home.investorRelations'), path: '/investor-relations'},
         { name: this.$t('home.join'), path: '/join' },
       ]
     }
@@ -180,7 +181,8 @@ a {
   }
 }
 .header {
-  position: fixed;
+  // position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -217,6 +219,8 @@ a {
     padding-bottom: 42px;
     color: @textColor;
     border-bottom: transparent 4px solid;
+    min-width: 4em;
+    text-align: center;
   }
   &.active > a {
     color:  @mainColor;

@@ -10,11 +10,11 @@
     <div class="join">
       <div class="join-description">
         <div class="title-en">join us</div>
-        <div class="title">加入我们</div>
-        <div class="description">我们需要仍有传统美德的人，热爱生活，热爱工作，善于发现美好，技术大拿，或者行业大咖。如有兴趣加入我们欢迎把您的简历和作品投递到以下邮箱，简历投递邮箱：china.info@extek.com</div>
+        <div class="title">{{join.title}}</div>
+        <div class="description" v-html="join.remark"></div>
       </div>
       <div class="join-image">
-        <img src="@/static/images/join_image.png" alt="">
+        <img :src="join.cover_picture" alt="">
       </div>
     </div>
     <div class="wrapper">
@@ -45,6 +45,7 @@
 
 <script lang="ts">
 import {hiringList} from '@/service/news'
+import {aboutJoin} from '@/service/public'
 import {mapActions} from 'vuex'
 export default {
   data() {
@@ -56,11 +57,13 @@ export default {
       ],
       page: 1,
       lastPage: 1,
-      banner: {}
+      banner: {},
+      join: {}
     }
   },
   mounted() {
     this.fetchBannerData()
+    this.fetchJoinData()
     this.fetchData()
   },
   methods: {
@@ -93,6 +96,12 @@ export default {
       const res = await this.fetchBannerList({subclass: 'join_us'})
       if(res && res.length) {
         this.banner = res[0]
+      }
+    },
+    async fetchJoinData() {
+      const res = await aboutJoin()
+      if(res) {
+        this.join = res
       }
     }
   },
