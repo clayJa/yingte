@@ -40,7 +40,7 @@
           </div>
         </div>
       </div> -->
-      <div class="my-swiper d-md-none" v-swiper:mySwiper="swiperOption" :key="randomKey">
+      <div class="my-swiper d-md-none" v-swiper:mySwiper="activeItem === 0 ? swiperOption : {...swiperOption,centeredSlides: true}" :key="randomKey">
         <div class="swiper-wrapper">
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="swiperMobileOption" :key="randomMKey">
+      <div class="mobile-my-swiper d-none d-md-block" v-swiper:myMobileSwiper="activeItem === 0 ? swiperMobileOption : {...swiperMobileOption,centeredSlides: true}" :key="randomMKey">
         <div class="swiper-wrapper">
           <div :class="['swiper-slide', { active: activeItem === index}]" v-for="(item,index) in productList"
             :key="index" @click="changeItem(index)">
@@ -78,16 +78,34 @@ export default {
         preventClicks: false,
         updateOnImagesReady : true,
         resizeReInit : true,
+        onSlideChangeStart: function(swiper){
+          if (swiper.isBeginning || swiper.isEnd) {
+                swiper.params.centeredSlides = false;
+            }
+            else {
+                swiper.params.centeredSlides = true;
+            }
+            swiper.update();
+        }
       },
       swiperMobileOption: {
         loop: false,
         // autoplay: 6000,
-        initialSlide: 1,
+        initialSlide: 0,
         slidesPerView: 1.8,
         paginationClickable :true,
         preventClicks: false,
         updateOnImagesReady : true,
         resizeReInit : true,
+        onSlideChangeStart: function(swiper){
+          if (swiper.isBeginning || swiper.isEnd) {
+                swiper.params.centeredSlides = false;
+            }
+            else {
+                swiper.params.centeredSlides = true;
+            }
+            swiper.update();
+        }
       },
       activeItem: 0,
       randomKey: Math.random(),
@@ -120,8 +138,19 @@ export default {
     },
     changeItem(index) {
       this.activeItem = index
+      if(index!==0 && index !== this.productList.length - 1) {
+        this.mySwiper.params.centeredSlides = true
+        this.myMobileSwiper.params.centeredSlides = true
+      } else {
+        this.mySwiper.params.centeredSlides = false
+        this.myMobileSwiper.params.centeredSlides = false
+      }
+      this.mySwiper.reInit()
+      this.myMobileSwiper.reInit()
+      if(index!==0 && index !== this.productList.length - 1) {
+        this.mySwiper.swipeTo(index, 1000, false)
+      }
       this.myMobileSwiper.swipeTo(index, 1000, false)
-      this.mySwiper.swipeTo(index, 1000, false)
     },
     async fetchData() {
       const res = await getProductList({
