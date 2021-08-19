@@ -74,7 +74,6 @@
           <div class="name">新闻资讯</div>
         </div>
         <div class="item">
-          <!--<div class="name">投资者关系</div>-->
           <div class="name" @click="toPath('/join')">加入我们</div>
         </div>
       </div>
