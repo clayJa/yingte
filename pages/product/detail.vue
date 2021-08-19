@@ -174,7 +174,7 @@ export default {
     .display {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: flex-start; // 样式修改 space-between;
       .display-item {
         &:nth-child(3n) {
           margin-right: 0;
@@ -356,7 +356,7 @@ export default {
       .display {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start; // 样式修改 space-between;
         margin-top: 48px;
         .display-item {
           &:nth-child(3n) {
