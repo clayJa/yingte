@@ -18,7 +18,6 @@
           <div class="name" @click="toPath('/news')">{{$t('home.news')}}</div>
         </div>
         <div class="item">
-          <div class="name" @click="toPath('/news')" >{{$t('home.investorRelations')}}</div>
           <div class="name" @click="toPath('/join')">{{$t('home.join')}}</div>
         </div>
       </div>
