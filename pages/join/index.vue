@@ -34,8 +34,8 @@
         </div>
       </div>
       <div class="pager-wrapper">
-        <div class="prev step disabled"><i class="iconfont icon">&#xe608;</i>上一页</div>
-        <div class="next step">下一页<i class="iconfont icon">&#xe60a;</i></div>
+        <div :class="`prev step ${ page === 1 ? 'disabled' : ''}`" @click="fetchData('prev')"><i class="iconfont icon">&#xe608;</i>上一页</div>
+        <div :class="`next step ${ page === lastPage ? 'disabled' : ''}`" @click="fetchData('next')">下一页<i class="iconfont icon">&#xe60a;</i></div>
       </div>
     </div>
     <ContactUs />
@@ -152,7 +152,7 @@ export default {
     .job-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       margin: 107px 135px 0 135px;
       padding-bottom: 43px;
@@ -163,6 +163,10 @@ export default {
         width: 360px;
         height: 400px;
         cursor: pointer;
+        margin-right: 20px;
+        &:nth-child(3n) {
+          margin-right: 0px;
+        }
         &:hover {
           .title-wrapper .date {
             visibility: visible;
