@@ -134,7 +134,7 @@ export default {
         width: 260px;
         margin-right: 30px;
         &:nth-child(4n) {
-          margin-right: 30px;
+          margin-right: 0;
         }
       }
       .description {
