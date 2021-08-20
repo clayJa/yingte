@@ -1,5 +1,5 @@
 <template>
-  <div class="index-wrapper">
+  <div class="product-detail-wrapper">
     <Header />
     <div class="banner d-md-none">
       <img :src="banner.cover_picture" alt="">
@@ -112,7 +112,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.index-wrapper {
+.product-detail-wrapper {
   .detail {
     padding: 96px 135px 144px 135px;
     .title-wrapper {
