@@ -132,9 +132,9 @@ export default {
         margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
-        margin-right: 15px;
+        margin-right: 29px;
         &:nth-child(4n) {
-          margin-right: 15px;
+          margin-right: 29px;
         }
       }
       .description {
