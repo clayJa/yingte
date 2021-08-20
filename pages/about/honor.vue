@@ -19,7 +19,7 @@
           </div>
           <div class="description">
             <div class="name">{{item.title}}</div>
-            <div class="date">{{item.updated_at}}</div>
+            <!-- <div class="date">{{item.updated_at}}</div> -->
           </div>
         </div>
       </div>
