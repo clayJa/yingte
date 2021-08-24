@@ -198,7 +198,7 @@ export default {
   @media only screen and (max-width: 760px) {
     .main-image-wrapper {
       position: relative;
-      height: 800px;
+      height: 400px;
       margin-bottom: 64px;
       img {
         width: 100%;
@@ -209,7 +209,7 @@ export default {
         position: absolute;
         left: 0;
         right: 0px;
-        bottom: 96px;
+        bottom: 30px;
         padding-left: 16px;
         display: flex;
         flex-direction: column-reverse;

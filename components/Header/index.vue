@@ -345,8 +345,8 @@ a {
   .mobile-nav-wrapper {
     .mobile-nav-item {
       width: 100%;
-      padding-top: 30px;
-      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 14px;
       padding-left: 32px;
       background: #fff;
       font-size: 24px;
