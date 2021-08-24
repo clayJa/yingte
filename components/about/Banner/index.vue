@@ -93,15 +93,31 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.my-swiper {
-  position: relative;
-  height: 220px;
-  width: 100%;
-}
-.mobile-my-swiper {
-  position: relative;
-  min-height: 208px;
-  max-height: 220px;
-  width: 100%;
-}
+  .my-swiper {
+    position: relative;
+    height: 800px;
+    width: 100%;
+  }
+
+  .mobile-my-swiper {
+    position: relative;
+    min-height: 208px;
+    max-height: 800px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .my-swiper {
+      position: relative;
+      height: 220px;
+      width: 100%;
+    }
+
+    .mobile-my-swiper {
+      position: relative;
+      min-height: 208px;
+      max-height: 220px;
+      width: 100%;
+    }
+  }
 </style>
