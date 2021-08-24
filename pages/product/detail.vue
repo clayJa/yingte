@@ -224,7 +224,7 @@ export default {
           line-height: 33px;
           max-width: 362px;
           display: inline-flex;
-          align-items: center;
+          // align-items: center;
           margin-right: 16px;
           margin-bottom: 20px;
           &::before {
