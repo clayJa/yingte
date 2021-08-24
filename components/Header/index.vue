@@ -289,8 +289,10 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   overflow: scroll;
   z-index: 999;
+  background: white;
   .close-icon {
     position: absolute;
     top: 32px;
@@ -349,7 +351,7 @@ a {
       padding-bottom: 20px;
       padding-left: 32px;
       background: #fff;
-      font-size: 24px;
+      font-size: 18px;
       border-bottom: 1px solid #ECECEC;
       &:last-child {
         border-bottom: none;

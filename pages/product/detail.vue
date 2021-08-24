@@ -215,7 +215,7 @@ export default {
       .advantage {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         .item {
           font-size: 24px;
           font-family: PingFangSC-Light, PingFang SC;
@@ -224,7 +224,9 @@ export default {
           line-height: 33px;
           max-width: 362px;
           display: inline-flex;
-
+          align-items: center;
+          margin-right: 16px;
+          margin-bottom: 20px;
           &::before {
             display: inline-block;
             content: '';
@@ -233,6 +235,8 @@ export default {
             height: 29px;
             margin-right: 16px;
             background-image: url('@/static/images/product/check-square.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
           }
         }
       }
