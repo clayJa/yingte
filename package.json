@@ -25,7 +25,8 @@
     "babel-polyfill": "^6.26.0",
     "less": "^4.1.1",
     "less-loader": "5.0.0",
-    "postcss-px-to-viewport": "^1.1.1"
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-pxtorem": "5.1.1"
   },
   "browserslist": [
     "Explorer >= 9"
