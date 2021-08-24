@@ -211,6 +211,7 @@ export default {
 .product-container {
   display: flex;
   padding: 96px 135px;
+  padding-top: 0;
   align-items: center;
   justify-content: space-between;
   .decription {
