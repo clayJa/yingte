@@ -47,7 +47,7 @@ export default {
   methods: {
     async fetchData() {
       const res:any = await newsSearch({
-        limit: 3,
+        limit: 4,
         page: 1,
         category: 5,
       })
