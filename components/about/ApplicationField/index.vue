@@ -3,7 +3,7 @@
     <div class="main-image-wrapper">
       <!-- <img :src="list[active].image" alt=""> -->
       <img :src="`${list[active] && list[active].cover_picture}`" alt="">
-      <div class="content">
+      <!-- <div class="content">
         <div class="title-wrapper">
           <div class="title">{{list[active] && list[active].title}}</div>
           <div class="button" @click="toPath">Load More</div>
@@ -11,7 +11,7 @@
         <div class="icon-wrapper">
           <img :src="list[active] && list[active].icon" alt="">
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="image-list d-md-none">
       <div :class="['item', { active: active === index}]" v-for="(item,index) in list"
@@ -134,7 +134,7 @@ export default {
   .main-image-wrapper {
     position: relative;
     width: 100%;
-    min-height: 800px;
+    min-height: 700px;
     .content {
       position: absolute;
       left: 0;
@@ -199,7 +199,8 @@ export default {
   @media only screen and (max-width: 760px) {
     .main-image-wrapper {
       position: relative;
-      height: 400px;
+      // height: 400px;
+      height: auto;
       margin-bottom: 64px;
       img {
         width: 100%;

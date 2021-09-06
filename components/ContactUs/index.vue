@@ -26,7 +26,7 @@ export default {
 <style lang="less" scoped>
 .ContactUs-wrapper {
   width: 100%;
-  height: 182px;
+  height: 140px;
   background: #354194;
   padding: 0 135px;
   display: flex;

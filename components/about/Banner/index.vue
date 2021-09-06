@@ -6,15 +6,15 @@
           <img :src="item" alt="">
         </div>
       </div>
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="mobile-my-swiper d-md-block d-none" v-swiper:myMobileSwiper="swiperOption" :key="randomMKey">
+    <div class="mobile-my-swiper d-md-block d-none" v-swiper:myMobileSwiper="mobileSwiperOption" :key="randomMKey">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(item,index) in mobileBanner" :key="index">
           <img :src="item" alt="">
         </div>
       </div>
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="mobile-swiper-pagination"></div>
     </div>
   </div>
 </template>
@@ -36,6 +36,18 @@ export default {
         preventClicks: false,
         updateOnImagesReady : true,
         resizeReInit : true,
+        pagination: '.swiper-pagination',
+      },
+      mobileSwiperOption: {
+        loop: true,
+        autoplay: 6000,
+        spaceBetween: 0,
+        // pagination: '.swiper-pagination',
+        paginationClickable :true,
+        preventClicks: false,
+        updateOnImagesReady : true,
+        resizeReInit : true,
+        pagination: '.mobile-swiper-pagination',
       },
       randomKey: Math.random(),
       randomMKey: Math.random(),
@@ -97,6 +109,25 @@ export default {
     position: relative;
     height: 800px;
     width: 100%;
+    .swiper-pagination {
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      bottom: 24px;
+      text-align: center;
+      margin-left: -16px;
+      /deep/ .swiper-pagination-switch {
+        cursor: pointer;
+        display: inline-block;
+        height: 2px;
+        width: 64px;
+        background-color: fade(#fff,60);
+        margin-right: 0px;
+        &.swiper-active-switch {
+          background-color: #fff;
+        }
+      }
+    }
   }
 
   .mobile-my-swiper {
@@ -104,6 +135,25 @@ export default {
     min-height: 208px;
     max-height: 800px;
     width: 100%;
+    .mobile-swiper-pagination {
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      bottom: 24px;
+      text-align: center;
+      margin-left: -16px;
+      /deep/ .swiper-pagination-switch {
+        cursor: pointer;
+        display: inline-block;
+        height: 2px;
+        width: 64px;
+        background-color: fade(#fff,60);
+        margin-right: 0px;
+        &.swiper-active-switch {
+          background-color: #fff;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 760px) {
