@@ -36,12 +36,12 @@
         </div>
       </div>
       <div class="product-advantage">
-        <div class="title">产品优势</div>
+        <div class="title">应用领域</div>
         <div class="advantage">
           <div class="item" v-for="(item,index) in this.detail.product_advantage || []" :key="index">{{ item.title }}</div>
         </div>
       </div>
-      <div class="product-application">
+      <!-- <div class="product-application">
         <div class="sub-title">应用领域</div>
         <div class="application">
           <div class="item" v-for="(item,index) in this.detail.product_scopes || []" :key="index">
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <ContactUs />
     <Footer />
@@ -202,13 +202,14 @@ export default {
       background-size: 100% 100%;
       border-radius: 4px;
       margin-top: 76px;
-      margin-bottom: 96px;
+      margin-bottom: 0;
       object-fit: cover;
       .title {
         font-size: 46px;
         font-family: PingFangSC-Light, PingFang SC;
         font-weight: 300;
-        color: #FFFFFF;
+        // color: #FFFFFF;
+        color: #354194;
         line-height: 54px;
         margin-bottom: 45px;
       }
@@ -220,7 +221,7 @@ export default {
           font-size: 24px;
           font-family: PingFangSC-Light, PingFang SC;
           font-weight: 300;
-          color: #FFFFFF;
+          color: #404040;
           line-height: 33px;
           max-width: 362px;
           display: inline-flex;
@@ -234,7 +235,7 @@ export default {
             width: 32px;
             height: 29px;
             margin-right: 16px;
-            background-image: url('@/static/images/product/check-square.png');
+            background-image: url('@/static/images/product/check-square-dark.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
           }
@@ -388,12 +389,12 @@ export default {
         background-size: 100% 100%;
         border-radius: 4px;
         margin-top: 16px;
-        margin-bottom: 48px;
+        margin-bottom: 0;
         .title {
           font-size: 32px;
           font-family: PingFangSC-Light, PingFang SC;
           font-weight: 300;
-          color: #FFFFFF;
+          color: #354194;
           line-height: 54px;
           margin-bottom: 45px;
         }
@@ -406,7 +407,7 @@ export default {
             font-size: 18px;
             font-family: PingFangSC-Light, PingFang SC;
             font-weight: 300;
-            color: #FFFFFF;
+            color: #404040;
             line-height: 25px;
             max-width: 100%;
             display: inline-flex;
@@ -420,7 +421,7 @@ export default {
               width: 32px;
               height: 29px;
               margin-right: 16px;
-              background-image: url('@/static/images/product/check-square.png');
+              background-image: url('@/static/images/product/check-square-dark.png');
             }
           }
         }
