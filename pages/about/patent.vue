@@ -14,15 +14,15 @@
           <div class="image">
             <img :src="`${item.cover_picture}`" alt="">
           </div>
-          <div class="description">
+          <!-- <div class="description">
             <div class="name">{{item.title}}</div>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="pager-wrapper">
+      <!-- <div class="pager-wrapper">
         <div :class="`prev step ${ page === 1 ? 'disabled' : ''}`" @click="fetchData('prev')"><i class="iconfont icon">&#xe608;</i>上一页</div>
         <div :class="`next step ${ page === lastPage ? 'disabled' : ''}`" @click="fetchData('next')">下一页<i class="iconfont icon">&#xe60a;</i></div>
-      </div>
+      </div> -->
     </div>
     <ContactUs />
     <Footer />
@@ -66,7 +66,7 @@ export default {
           break;
       }
       const res:any = await newsSearch({
-        limit: 6,
+        limit: 1,
         page: page,
         category: 6,
       })
@@ -100,7 +100,8 @@ export default {
       border-bottom: 1px solid #ECECEC;
       .list-item {
         margin-bottom: 48px;
-        width: 260px;
+        // width: 260px;
+        width: 100%;
         position: relative;
         &:hover {
           .description {
