@@ -72,29 +72,36 @@ export default {
   .list-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     // justify-content: space-between;
-    padding: 96px 135px;
+    padding: 96px 228px;
     .list-item {
-      width: 370px;
-      height: 460px;
+      width: 460px;
+      height: 416px;
       display: flex;
       flex-direction: column;
       background: #FFFFFF;
       box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
       border-radius: 12px;
-      margin-right: 30px;
-      &:nth-child(3n) {
+      margin-right: 64px;
+      &:first-child, &:nth-child(2) {
+        margin-bottom: 64px;
+      }
+      &:nth-child(2n) {
         margin-right: 0;
       }
     }
     .image {
-      width: 370px;
+      width: 460px;
       height: 256px;
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
       img {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
       }
     }
     .content {
