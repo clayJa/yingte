@@ -292,12 +292,14 @@ export default {
     }
   }
   @media only screen and (max-width: 760px) {
-    padding: 96px 0;
+    padding: 0;
+    padding-bottom: 64px;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     .decription {
       margin: 0 16px;
+      margin-top: 48px;
       width: auto;
       .title {
         font-size: 46px;
@@ -363,7 +365,8 @@ export default {
     }
     .right-wrapper {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
+      margin-top: 0;
     }
     .image-wrapper {
       padding: 25px;
@@ -371,7 +374,7 @@ export default {
       display: block;
       border-radius: 4px;
       border: 1px solid #ECECEC;
-      margin: 48px  16px;
+      margin: 32px  16px;
       max-width: 100%;
       max-height: none;
       img {

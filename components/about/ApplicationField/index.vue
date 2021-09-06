@@ -106,6 +106,7 @@ export default {
   methods: {
     changeClick(index) {
       this.active = index
+      this.myMobileSwiper.swipeTo(index, 1000, false)
     },
     toPath() {
       const item = this.list[this.active]
