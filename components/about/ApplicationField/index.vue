@@ -44,8 +44,8 @@ export default {
       swiperMobileOption: {
         loop: false,
         // autoplay: 6000,
-        initialSlide: 1,
-        slidesPerView: 1.8,
+        // initialSlide: 1,
+        slidesPerView: 4.5,
         paginationClickable :true,
         preventClicks: false,
         updateOnImagesReady : true,
@@ -201,7 +201,7 @@ export default {
       position: relative;
       // height: 400px;
       height: auto;
-      margin-bottom: 64px;
+      margin-bottom: 24px;
       img {
         width: 100%;
         height: 100%;
@@ -258,13 +258,13 @@ export default {
       align-items: center;
       justify-content: center;
       .name {
-        font-size: 18px;
+        font-size: 12px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #404040;
         line-height: 32px;
         text-align: center;
-        margin-top: 24px;
+        margin-top: 12px;
       }
       &.active {
         .name {
@@ -276,9 +276,10 @@ export default {
   }
 }
 .mobile-my-swiper {
-  height: 265px;
+  height: 108px;
+  margin-bottom: 48px;
   img {
-    width: 165px;
+    width: 64px;
   }
 }
 </style>
