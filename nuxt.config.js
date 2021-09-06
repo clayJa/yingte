@@ -118,7 +118,7 @@ export default {
         }
       }
     },
-    publicPath: "http://qxbc2eixz.hd-bkt.clouddn.com"
+    publicPath: "http://www.veianweb.com"
   },
   axios: {
     proxy: true,
