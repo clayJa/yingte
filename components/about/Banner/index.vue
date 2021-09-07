@@ -107,8 +107,13 @@ export default {
 <style lang="less" scoped>
   .my-swiper {
     position: relative;
-    height: 800px;
+    height: 600px;
     width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     .swiper-pagination {
       display: inline-block;
       position: absolute;
