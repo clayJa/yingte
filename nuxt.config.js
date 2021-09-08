@@ -6,11 +6,11 @@ export default {
       lang: 'en'
     },
     meta: [
+      { name: 'renderer', content: 'webkit' },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1'},
-      { name: 'renderer', content: 'webkit' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -132,4 +132,8 @@ export default {
   alias: {
 
   },
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  }
 }
