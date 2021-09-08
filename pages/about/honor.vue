@@ -132,7 +132,8 @@ export default {
         margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
-        margin-right: 22px;
+        margin-left:auto;
+        margin-right: auto;
         .image {
           height: 100%;
           img {
@@ -142,7 +143,7 @@ export default {
           }
         }
         &:nth-child(4n) {
-          margin-right: 28px;
+          margin-right: 0;
         }
       }
       .description {
