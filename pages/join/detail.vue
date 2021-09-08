@@ -215,7 +215,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .wrapper {
         margin: 16px;
         padding: 0 16px;

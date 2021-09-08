@@ -157,6 +157,15 @@ export default {
             color: #404040;
             line-height: 30px;
             margin: 32px 32px 22px 32px;
+            @media only screen and (max-width: 1300px) {
+              line-height: 31px;
+            }
+            @media only screen and (max-width: 1100px) {
+              line-height: 32px;
+            }
+            @media only screen and (max-width: 1050px) {
+              line-height: 33px;
+            }
           }
           .info {
             font-size: 14px;
@@ -165,6 +174,12 @@ export default {
             color: #9A9A9A;
             line-height: 20px;
             padding: 0 32px 32px 32px;
+            @media only screen and (max-width: 1200px) {
+              line-height: 20.5px;
+            }
+            @media only screen and (max-width: 1050px) {
+              line-height: 21px;
+            }
           }
           .time {
             font-size: 12px;
@@ -221,7 +236,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .wrapper {
       .new-content {
         .title-wrapper {

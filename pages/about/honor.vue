@@ -9,9 +9,9 @@
     </div>
     <TabBar />
     <div class="wrapper">
-      <div class="select">
+<!--      <div class="select">
         <ButtonGroup :options="options" :select="select" @onChange="handleChange" />
-      </div>
+      </div>-->
       <div class="list-wrapper">
         <div class="list-item" v-for="(item,index) in list" :key="index">
           <div class="image">
@@ -132,9 +132,9 @@ export default {
         margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
-        margin-right: 28px;
+        margin-right: 22px;
         .image {
-          height: 160px;
+          height: 100%;
           img {
             width: 100%;
             height: 100%;
@@ -208,7 +208,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .wrapper {
       padding: 96px 16px 0px 16px;
       .select {

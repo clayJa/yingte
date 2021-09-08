@@ -8,7 +8,7 @@
       <img :src="banner.cover_picture_small" alt="">
     </div>
     <TabBar />
-    <div class="media">
+ <!--   <div class="media">
       <div class="media-description">
         <div class="title">{{videoInfo.title}}</div>
         <div class="info">{{videoInfo.remark}}</div>
@@ -26,7 +26,7 @@
           </video>
         </template>
       </div>
-    </div>
+    </div>-->
     <div class="about-wrapper">
       <div class="content">
         <div class="title-en">About us</div>
@@ -308,18 +308,18 @@ export default {
     }
     .item3,.item4 {
       width: 333px;
-      margin-right: 24px;
+      margin-right: 18px;
       margin-bottom: 24px;
     }
     .item5 {
       width: 692px;
-      margin-right: 24px;
+      margin-right: 11px;
     }
     .item6 {
       width: 439px;
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .media {
       display: flex;
       flex-direction: column-reverse;

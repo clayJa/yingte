@@ -291,7 +291,7 @@ export default {
       max-height: 100%;
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     padding: 0;
     padding-bottom: 64px;
     flex-direction: column-reverse;

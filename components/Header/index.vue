@@ -22,7 +22,7 @@
                 <i class="iconfont icon" @click="handleEnter">&#xe63a;</i>
               </div>
           </div>
-          <div class="lang-wrapper d-md-none">
+          <!--<div class="lang-wrapper d-md-none">
               <b-dropdown id="dropdown-aria" class="m-2">
                 <div slot="button-content">
                     <span class="lang">{{$t('home.locale')}}</span>
@@ -32,7 +32,7 @@
                   <b-dropdown-item @click.stop="changeLang('zh-CN')" href="javascript:void(0);">简体中文</b-dropdown-item>
               </b-dropdown>
 
-          </div>
+          </div>-->
         </div>
       </div>
       <div class="mobile-header-wrapper d-none d-md-flex">
@@ -148,11 +148,11 @@ a {
     color: @mainColor;
   }
 }
-@headerHeight: 120px;
+@headerHeight: 96px;
 .header-nav {
   position: relative;
   height: @headerHeight;
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     height: 80px;
   }
 }
@@ -195,6 +195,9 @@ a {
   justify-content: space-between;
   height: @headerHeight;
   padding: 0 135px;
+  @media only screen and (max-width: 1050px) {
+    padding: 0 10px;
+  }
 }
 .nav-wrapper {
   display: flex;
@@ -215,12 +218,26 @@ a {
     font-size: 18px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 500;
-    padding-top: 49px;
-    padding-bottom: 42px;
+    padding-top: 42px;
+    padding-bottom: 31px;
     color: @textColor;
     border-bottom: transparent 4px solid;
     min-width: 4em;
     text-align: center;
+    @media only screen and (max-width: 1300px) {
+      padding-top: 29px;
+      padding-bottom: 24px;
+    }
+    @media only screen and (max-width: 1100px) {
+      padding-top: 26px;
+      padding-bottom: 23px;
+    }
+    @media only screen and (max-width: 1050px) {
+      padding-top: 22px;
+      padding-bottom: 19px;
+    }
+
+
   }
   &.active > a {
     color:  @mainColor;

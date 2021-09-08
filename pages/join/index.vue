@@ -278,7 +278,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .join {
       background: #fff;
       padding: 96px 16px;

@@ -53,7 +53,7 @@ export default {
     font-weight: 300;
     color: #354194;
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     width: 100%;
     height: 288px;
     background: #354194;

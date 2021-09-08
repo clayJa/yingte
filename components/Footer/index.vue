@@ -222,7 +222,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     padding: 64px 16px 96px 16px;
     .copyright {
       font-size: 15px;

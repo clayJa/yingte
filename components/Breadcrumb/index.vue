@@ -48,7 +48,7 @@ export default {
     color: #354194;
     margin-right: 10px;
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     height: 63px;
     line-height: 63px;
     a {

@@ -121,7 +121,7 @@ export default {
       letter-spacing: 1px;
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     height: 761px;
     .background {
       width: 100%;

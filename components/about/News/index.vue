@@ -138,6 +138,12 @@ export default {
           margin-bottom: 24px;
           margin-top: 40px;
           padding: 0 32px;
+          @media only screen and (max-width: 1200px) {
+            line-height: 33px;
+          }
+          @media only screen and (max-width: 1100px) {
+            line-height: 34px;
+          }
         }
         .info {
           font-size: 14px;
@@ -147,6 +153,12 @@ export default {
           line-height: 24px;
           margin-bottom: 38px;
           padding: 0 32px;
+          @media only screen and (max-width: 1200px) {
+            line-height: 24.5px;
+          }
+          @media only screen and (max-width: 1100px) {
+            line-height: 25px;
+          }
         }
         .time {
           font-size: 12px;
@@ -184,6 +196,12 @@ export default {
           margin-bottom: 24px;
           margin-top: 20px;
           padding: 0 16px;
+          @media only screen and (max-width: 1200px) {
+            line-height: 26px;
+          }
+          @media only screen and (max-width: 1100px) {
+            line-height: 27px;
+          }
         }
         .time {
           font-size: 12px;
@@ -203,7 +221,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     padding: 96px 16px 64px 16px;
     .title-wrapper {
       display: flex;

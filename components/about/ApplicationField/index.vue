@@ -196,7 +196,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .main-image-wrapper {
       position: relative;
       // height: 400px;

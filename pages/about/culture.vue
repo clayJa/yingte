@@ -75,6 +75,9 @@ export default {
     flex-wrap: wrap;
     // justify-content: space-between;
     padding: 96px 220px;
+    @media only screen and (max-width: 1400px) {
+      padding: 96px 15%;
+    }
     .list-item {
       width: 460px;
       height: 416px;
@@ -130,7 +133,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .list-wrapper {
       display: flex;
       flex-direction: column;

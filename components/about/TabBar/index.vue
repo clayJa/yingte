@@ -86,7 +86,7 @@ a {
     justify-content: space-between;
     border-bottom: 1px solid #ECECEC;
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     padding: 0 16px;
     padding-top: 48px;
   }

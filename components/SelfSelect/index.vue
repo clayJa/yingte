@@ -142,7 +142,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 950px) {
     .input-wrapper {
       padding: 8px 18px;
       font-size: 12px;
