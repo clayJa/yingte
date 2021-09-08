@@ -316,7 +316,7 @@ export default {
       margin-right: 24px;
     }
     .item6 {
-      width: 440px;
+      width: 439px;
     }
   }
   @media only screen and (max-width: 760px) {

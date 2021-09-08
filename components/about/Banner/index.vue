@@ -127,7 +127,10 @@ export default {
         height: 2px;
         width: 64px;
         background-color: fade(#fff,60);
-        margin-right: 0px;
+        margin-right: 24px;
+        &:last-child {
+          margin-right: 0;
+        }
         &.swiper-active-switch {
           background-color: #fff;
         }
@@ -140,6 +143,11 @@ export default {
     min-height: 208px;
     max-height: 800px;
     width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     .mobile-swiper-pagination {
       display: inline-block;
       position: absolute;
@@ -153,7 +161,10 @@ export default {
         height: 2px;
         width: 64px;
         background-color: fade(#fff,60);
-        margin-right: 0px;
+        margin-right: 24px;
+        &:last-child {
+          margin-right: 0;
+        }
         &.swiper-active-switch {
           background-color: #fff;
         }

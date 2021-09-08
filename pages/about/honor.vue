@@ -132,9 +132,17 @@ export default {
         margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
-        margin-right: 29px;
+        margin-right: 28px;
+        .image {
+          height: 160px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         &:nth-child(4n) {
-          margin-right: 29px;
+          margin-right: 28px;
         }
       }
       .description {

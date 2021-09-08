@@ -74,7 +74,7 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     // justify-content: space-between;
-    padding: 96px 228px;
+    padding: 96px 220px;
     .list-item {
       width: 460px;
       height: 416px;
@@ -83,7 +83,7 @@ export default {
       background: #FFFFFF;
       box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
       border-radius: 12px;
-      margin-right: 64px;
+      margin-right: 62px;
       &:first-child, &:nth-child(2) {
         margin-bottom: 64px;
       }
