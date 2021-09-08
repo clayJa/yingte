@@ -105,6 +105,7 @@ export default {
       align-items: center;
       justify-content: space-between;
       margin-bottom: 64px;
+
       .list-item {
         width: 555px;
         position: relative;
@@ -113,6 +114,7 @@ export default {
         background: #fff;
         border-radius: 4px;
         border: 1px solid #ECECEC;
+        cursor: pointer;
         &:nth-child(2n) {
           margin-right: 0px;
         }

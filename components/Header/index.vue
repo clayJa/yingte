@@ -59,11 +59,11 @@
               {{ item.name }}
             </a>
           </div>
-          <div :class="['mobile-nav-item']">
+        <!--  <div :class="['mobile-nav-item']">
             <a @click.stop="changeLang('')" href="javascript:void(0);">
               {{$t('home.languageSwitch')}}
             </a>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>

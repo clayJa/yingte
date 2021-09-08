@@ -183,6 +183,10 @@ export default {
             color: #000000;
             line-height: 42px;
             padding: 0 68px;
+            @media only screen and (max-width: 1200px) {
+              font-size: 24px;
+            }
+
           }
           .date {
             font-size: 12px;

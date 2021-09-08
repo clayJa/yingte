@@ -69,8 +69,8 @@
       <div class="item-wrapper">
         <div class="item">
           <div class="name" @click="toPath('/about')">关于英特</div>
-          <div class="name" @click="toPath('/about')">产品应用</div>
-          <div class="name">新闻资讯</div>
+          <div class="name" @click="toPath('/product')">产品应用</div>
+          <div class="name" @click="toPath('/news')">新闻资讯</div>
         </div>
         <div class="item">
           <div class="name" @click="toPath('/join')">加入我们</div>

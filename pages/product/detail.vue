@@ -184,7 +184,7 @@ export default {
       }
       .image {
         width: 360px;
-        height: 310px;
+        height: auto;
       }
       .name {
         margin-top: 24px;
@@ -372,7 +372,7 @@ export default {
         }
         .image {
           width: 100%;
-          height: 300px;
+          height: auto;
         }
         .name {
           margin-top: 24px;
@@ -384,9 +384,9 @@ export default {
         }
       }
       .product-advantage {
-        padding: 96px 32px;
+        padding: 46px 32px;
         background-image: url('@/static/images/product/advantage_bg.png');
-        background-size: 100% 100%;
+        background-size: 200% 100%;
         border-radius: 4px;
         margin-top: 16px;
         margin-bottom: 0;

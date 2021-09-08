@@ -117,6 +117,7 @@ export default {
       font-weight: 400;
       color: #9A9A9A;
       line-height: 16px;
+      cursor: pointer;
     }
   }
   .content {
@@ -129,6 +130,7 @@ export default {
       .item {
         border-bottom: 1px solid #ECECEC;
         padding-bottom: 20px;
+        cursor: pointer;
         .title {
           font-size: 22px;
           font-family: PingFangSC-Regular, PingFang SC;
@@ -184,6 +186,7 @@ export default {
         width: 265px;
         border-bottom: 1px solid #ECECEC;
         padding-bottom: 20px;
+        cursor: pointer;
         &:nth-child(2n+1) {
           margin-right: 24px;
         }
