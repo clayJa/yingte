@@ -179,7 +179,7 @@ export default {
         justify-content: center;
         margin-right: 32px;
         img {
-          width: auto;
+          width: 100%;
           max-width: 100%;
           max-height: 100%;
         }

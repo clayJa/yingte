@@ -143,7 +143,7 @@ export default {
             line-height: 20px;
           }
           img {
-            width: auto;
+            width: 100%;
             max-width: 100%;
           }
         }
