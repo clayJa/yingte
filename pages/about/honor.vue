@@ -132,7 +132,7 @@ export default {
         margin-top: 16px;
         margin-bottom: 48px;
         width: 260px;
-        margin-left:auto;
+        margin-left:0;
         margin-right: auto;
         .image {
           height: 100%;
