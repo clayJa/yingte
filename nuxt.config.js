@@ -125,7 +125,7 @@ export default {
   },
   proxy: {
     '/backApi': {
-      target: 'http://int.veianweb.com/',
+      target: 'http://api.extek.com.cn/',
       pathRewrite: { '^/backApi': '' }
     },
   },
