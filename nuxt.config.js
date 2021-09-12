@@ -118,7 +118,7 @@ export default {
         }
       }
     },
-    publicPath: "http://www.veianweb.com"
+    publicPath: "http://lxslyly.com"
   },
   axios: {
     proxy: true,
