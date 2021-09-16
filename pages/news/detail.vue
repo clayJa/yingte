@@ -91,8 +91,10 @@
         padding: 32px 0;
         border-bottom: 1px solid #ECECEC;
         text-align: initial;
-        img{
-          max-width: 100%;
+        p {
+          img {
+            max-width: 100%;
+          }
         }
       }
 
@@ -182,8 +184,10 @@
         .content {
           padding: 32px 0;
           border-bottom: 1px solid #ECECEC;
-          img{
-            max-width: 100%;
+          p {
+            img {
+              max-width: 100%;
+            }
           }
         }
 
