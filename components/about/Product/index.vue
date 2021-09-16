@@ -222,6 +222,9 @@ export default {
       font-weight: 300;
       color: #181E2D;
       line-height: 54px;
+      @media only screen and (max-width: 1200px) {
+        line-height:55px;
+      }
       margin-bottom: 48px;
     }
     .info {
@@ -291,6 +294,7 @@ export default {
       max-height: 100%;
     }
   }
+
   @media only screen and (max-width: 950px) {
     padding: 0;
     padding-bottom: 64px;
@@ -384,6 +388,7 @@ export default {
     }
   }
 }
+
 .mobile-my-swiper  {
   position: relative;
   width: 100vw;

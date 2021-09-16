@@ -27,7 +27,8 @@
           </div>
           <div class="content-wrapper">
             <div class="content line-3 ">
-              <div v-for="(description,index) in item.job_responsibilities || []" :key="index">{{description.title}}</div>
+              <img :src="item.cover_picture" />
+              <!--<div v-for="(description,index) in item.job_responsibilities || []" :key="index">{{description.title}}</div>-->
             </div>
             <div class="link">了解更多<i class="iconfont icon">&#xe60a;</i></div>
           </div>
@@ -144,7 +145,7 @@ export default {
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #9A9A9A;
-        line-height: 42px;
+        line-height: 30px;
       }
     }
   }
@@ -316,7 +317,8 @@ export default {
           font-family: PingFangSC-Regular, PingFang SC;
           font-weight: 400;
           color: #9A9A9A;
-          line-height: 42px;
+          line-height: 30px;
+
         }
       }
     }
@@ -449,4 +451,9 @@ export default {
     }
   }
 }
+</style>
+<style>
+  .index-wrapper .join .join-description .description p {
+    margin: 0;
+  }
 </style>
