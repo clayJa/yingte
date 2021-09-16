@@ -150,7 +150,7 @@
 
 
         .description {
-          font-size: 14px;
+          font-size: 18px;
           font-family: PingFangSC-Regular, PingFang SC;
           font-weight: 400;
           color: #A6AAB1;
@@ -159,7 +159,6 @@
           width: 100%;
           float:left;
           .name{
-            font-size: 18px;
             color: #000000;
           }
           div{
@@ -190,7 +189,7 @@
         }
 
         .info-title {
-          font-size: 24px;
+          font-size: 22px;
           font-family: PingFangSC-Medium, PingFang SC;
           font-weight: 500;
           color: #404040;
