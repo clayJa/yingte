@@ -134,7 +134,7 @@
       .title-wrapper {
         padding-top: 64px;
         padding-bottom: 12px;
-        //border-bottom: 1px solid #E5E5E5;
+        // border-bottom: 1px solid #E5E5E5;
         .title {
           font-size: 24px;
           font-family: PingFangSC-Medium, PingFang SC;
@@ -161,7 +161,7 @@
           .name{
             color: #000000;
           }
-          div{
+          div {
             width: 33%;
             text-align: left;
           }
@@ -277,7 +277,7 @@
         .title-wrapper {
           padding-top: 32px;
           padding-bottom: 12px;
-          border-bottom: 1px solid #E5E5E5;
+          border-bottom: none;
 
           .title {
             font-size: 20px;
@@ -298,8 +298,8 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-
             & > div {
+              width: auto;
               margin-left: 1em;
             }
           }
