@@ -10,12 +10,12 @@
         <div class="title">{{articleData.title}}</div>
         <div class="description">
           <div>
-            <span class="name">工作地点：</span>
-            <span>{{articleData.work_place}}</span>
+            <span class="name">招聘人数：</span>
+            <span>{{articleData.number_of_recruits}}</span>
           </div>
           <div>
-            <span class="name">HR：</span>
-            <span>{{articleData.hr_name}}</span>
+            <span class="name">工作地点：</span>
+            <span>{{articleData.work_place}}</span>
           </div>
           <div>
             <span class="name">发布时间：</span>
