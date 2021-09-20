@@ -1,9 +1,9 @@
 <template>
   <div class="field-container">
-    <div class="main-image-wrapper">
-      <!-- <img :src="list[active].image" alt=""> -->
+    <!-- <div class="main-image-wrapper">
+      <img :src="list[active].image" alt="">
       <img :src="`${list[active] && list[active].cover_picture}`" alt="">
-      <!-- <div class="content">
+      <div class="content">
         <div class="title-wrapper">
           <div class="title">{{list[active] && list[active].title}}</div>
           <div class="button" @click="toPath">Load More</div>
@@ -11,8 +11,8 @@
         <div class="icon-wrapper">
           <img :src="list[active] && list[active].icon" alt="">
         </div>
-      </div> -->
-    </div>
+      </div>
+    </div> -->
     <div class="image-list d-md-none">
       <div :class="['item', { active: active === index}]" v-for="(item,index) in list"
         :key="index"
