@@ -99,6 +99,7 @@ export default {
       margin-top: 32px;
       margin-bottom: 48px;
       text-align: left;
+      text-indent: 2em;
     }
     .button-wrapper {
       text-align: center;
