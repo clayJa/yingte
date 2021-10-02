@@ -26,35 +26,35 @@
   import {mapActions} from 'vuex'
 
   type DataProps = {
-    swiperOption: any
+    // swiperOption: any
   }
   export default {
     data() {
       return {
-        swiperOption: {
-          loop: true,
-          autoplay: 4000,
-          spaceBetween: 0,
-          // pagination: '.swiper-pagination',
-          paginationClickable: true,
-          preventClicks: false,
-          updateOnImagesReady: true,
-          resizeReInit: true,
-          pagination: '.swiper-pagination',
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          speed: 1000
-        },
-        mobileSwiperOption: {
-          loop: true,
-          autoplay: 4000,
-          spaceBetween: 0,
-          // pagination: '.swiper-pagination',
-          paginationClickable: true,
-          preventClicks: false,
-          updateOnImagesReady: true,
-          resizeReInit: true,
-        },
+        // swiperOption: {
+        //   loop: true,
+        //   autoplay: 4000,
+        //   spaceBetween: 0,
+        //   // pagination: '.swiper-pagination',
+        //   paginationClickable: true,
+        //   preventClicks: false,
+        //   updateOnImagesReady: true,
+        //   resizeReInit: true,
+        //   pagination: '.swiper-pagination',
+        //   nextButton: '.swiper-button-next',
+        //   prevButton: '.swiper-button-prev',
+        //   speed: 1000
+        // },
+        // mobileSwiperOption: {
+        //   loop: true,
+        //   autoplay: 4000,
+        //   spaceBetween: 0,
+        //   // pagination: '.swiper-pagination',
+        //   paginationClickable: true,
+        //   preventClicks: false,
+        //   updateOnImagesReady: true,
+        //   resizeReInit: true,
+        // },
         randomKey: Math.random(),
         randomMKey: Math.random(),
         swiperBanner: [
@@ -82,7 +82,36 @@
         ],
       } as DataProps
     },
-    computed: {},
+    computed: {
+        swiperOption(){
+          return {
+            loop: this.swiperBanner.length > 1,
+            autoplay: this.swiperBanner.length > 1 ? 4000 : undefined,
+            spaceBetween: 0,
+            // pagination: '.swiper-pagination',
+            paginationClickable: true,
+            preventClicks: false,
+            updateOnImagesReady: true,
+            resizeReInit: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            speed: 1000
+          }
+        },
+        mobileSwiperOption() {
+          return {
+            loop: this.swiperBanner.length > 1,
+            autoplay: this.swiperBanner.length > 1 ? 4000 : undefined,
+            spaceBetween: 0,
+            // pagination: '.swiper-pagination',
+            paginationClickable: true,
+            preventClicks: false,
+            updateOnImagesReady: true,
+            resizeReInit: true,
+          }
+        },
+    },
     mounted() {
 
       this.fetchBannerData()
