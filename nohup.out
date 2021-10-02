@@ -1,0 +1,1026 @@
+npm WARN deprecated core-js@2.6.12: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+npm WARN deprecated @types/browserslist@4.15.0: This is a stub types definition. browserslist provides its own type definitions, so you do not need this installed.
+npm WARN deprecated @types/anymatch@3.0.0: This is a stub types definition. anymatch provides its own type definitions, so you do not need this installed.
+npm WARN deprecated querystring@0.2.1: The
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated querystring@0.2.0: The
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+
+> core-js@2.6.12 postinstall /data/websites/yingte/node_modules/@nuxt/babel-preset-app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.12 postinstall /data/websites/yingte/node_modules/babel-polyfill/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.12 postinstall /data/websites/yingte/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> bootstrap-vue@2.21.2 postinstall /data/websites/yingte/node_modules/bootstrap-vue
+> opencollective || exit 0
+
+                                                             
+                          ;iiiiiiiiiiSSSSSSSSiiiiiiiiii;     
+                          .rXXXXXXXXXrrrrrrrSXXXXXXXXXr.     
+                          :iXXXXXXXX2. ;;;;, r3XXXXXXXi;     
+                         ,rSSSSSXXXX2..sSSi: r3XXXSSSSSr,    
+                          ,siiiiS2XX2. :;;:,.rXX2Siiiis,     
+                           ,riiiii2X2..5XXXi .22iiiiir,      
+                            .riiiii22..::::,,r2iiiiir.       
+                             .riiiii5SSiiiiS22iiiiir.        
+                               ;iiiii5X3333X5iiiii;          
+                                :iiiiiSXXXXSiiiii:           
+                                 :siiiiSXXSiiiis:            
+                                  ,siiiiiiiiiis,             
+                                   .riiiiiiiir.              
+                                    .riiiiiir.               
+                                     .;iiii;.                
+                                       ;ii;                  
+                                        ::                   
+                                         
+                       Thanks for installing bootstrap-vue 
+                 Please consider donating to our open collective
+                        to help us maintain this package.
+                                         
+                            Number of contributors: 0
+                              Number of backers: 266
+                            Annual budget: US$ 14,622
+                           Current balance: US$ 15,073
+                                         
+              Donate: https://opencollective.com/bootstrap-vue/donate
+                                         
+
+> core-js@3.16.0 postinstall /data/websites/yingte/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js:[0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://patreon.com/zloirock [0m
+[96m>[94m https://paypal.me/zloirock [0m
+[96m>[94m bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> nuxt@2.15.7 postinstall /data/websites/yingte/node_modules/nuxt
+> opencollective || exit 0
+
+                                                             
+                                     :-:                     
+                                   .==-+:                    
+                                  .==. :+- .-=-              
+                                 .==.   :==++-+=.            
+                                :==.     -**: :+=.           
+                               :+-      :*+++. .++.          
+                              :+-      -*= .++: .=+.         
+                             -+:      =*-   .+*: .=+:        
+                            -+:     .=*-     .=*-  =+:       
+                          .==:     .+*:        -*-  -+-      
+                         .=+:.....:+*-.........:=*=..=*-     
+                         .-=------=++============++====:     
+                                         
+                          Thanks for installing nuxtjs 
+                 Please consider donating to our open collective
+                        to help us maintain this package.
+                                         
+                            Number of contributors: 0
+                              Number of backers: 434
+                            Annual budget: US$ 86,374
+                           Current balance: US$ 37,380
+                                         
+                 Donate: https://opencollective.com/nuxtjs/donate
+                                         
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN bootstrap@4.6.0 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ws@7.5.3 requires a peer of bufferutil@^4.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN ws@7.5.3 requires a peer of utf-8-validate@^5.0.2 but none is installed. You must install peer dependencies yourself.
+npm WARN less-loader@5.0.0 requires a peer of less@^2.3.1 || ^3.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@10.1.1 requires a peer of node-sass@^4.0.0 || ^5.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@10.1.1 requires a peer of sass@^1.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@10.1.1 requires a peer of fibers@>= 3.1.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1338 packages from 741 contributors in 24.547s
+
+103 packages are looking for funding
+  run `npm fund` for details
+
+
+> mingchen-website@1.0.0 build /data/websites/yingte
+> nuxt build
+
+ℹ Production build
+ℹ Bundling for server and client side
+ℹ Target: server
+ℹ Using components loader to optimize imports
+ℹ Discovered Components: .nuxt/components/readme.md
+✔ Builder initialized
+✔ Nuxt files generated
+ℹ Compiling Client
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 14 times)
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 187 times)
+
+
+ ERROR  [BABEL] Note: The code generator has deoptimised the styling of /data/websites/yingte/node_modules/bootstrap-vue/src/icons/icons.js as it exceeds the max of 500KB.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 136 times)
+
+✔ Client: Compiled successfully in 35.49s
+ℹ Compiling Server
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 20 times)
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+✔ Server: Compiled successfully in 4.35s
+
+Hash: [1m88a1441f0437f5df8d71[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m35497[39m[22mms
+Built at: 2021-08-05 [1m10:30:46 ├F10: PM┤[39m[22m
+                                           [1mAsset[39m[22m       [1mSize[39m[22m             [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m       [1mChunk Names[39m[22m
+                  [1m[32m../server/client.manifest.json[39m[22m   71.9 KiB                   [1m[39m[22m  [1m[32m[emitted][39m[22m                     
+                                      [1m[32m12ec737.js[39m[22m   12.6 KiB              [1m17, 9[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/join/detail
+                                      [1m[32m1478455.js[39m[22m   17.1 KiB           [1m13, 5, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/honor
+                                      [1m[33m14e3eaf.js[39m[22m    [1m[33m780 KiB[39m[22m                 [1m25[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  vendors/app
+                                      [1m[32m1e13831.js[39m[22m   10.6 KiB              [1m12, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/culture
+                                      [1m[32m3173789.js[39m[22m   2.87 KiB                  [1m5[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-button-group
+                                      [1m[32m3430bb8.js[39m[22m   2.55 KiB                 [1m24[39m[22m  [1m[32m[emitted] [immutable][39m[22m         runtime
+                                      [1m[32m3664229.js[39m[22m   13.7 KiB              [1m15, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/patent
+                                      [1m[32m3720248.js[39m[22m   9.74 KiB              [1m19, 9[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/news/detail
+                                      [1m[32m58fa32c.js[39m[22m   35.2 KiB  [1m16, 2, 3, 4, 6, 7[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/index
+                                      [1m[32m6964cfc.js[39m[22m  401 bytes                 [1m14[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/index
+                                      [1m[32m6f8a63f.js[39m[22m   10.9 KiB                 [1m20[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/news/index
+                                      [1m[32m701fb81.js[39m[22m    4.7 KiB                 [1m10[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/self-select
+                                      [1m[32m96beed3.js[39m[22m   4.86 KiB                  [1m8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-tab-bar
+                                      [1m[32m9d3a757.js[39m[22m     16 KiB                 [1m21[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/product/detail
+                                        [1m[32mLICENSES[39m[22m   2.43 KiB                   [1m[39m[22m  [1m[32m[emitted][39m[22m                     
+                                      [1m[32ma9c0f71.js[39m[22m     15 KiB                 [1m18[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/join/index
+                                      [1m[32macc824b.js[39m[22m   9.76 KiB                  [1m7[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-product
+                                      [1m[32mae2a557.js[39m[22m   9.38 KiB                  [1m6[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-news
+                                      [1m[32mcb12d8f.js[39m[22m   8.12 KiB                 [1m22[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/product/index
+                                      [1m[32md47fdc8.js[39m[22m   8.24 KiB                  [1m3[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-application-field
+                                      [1m[32mdbc1c3a.js[39m[22m     18 KiB              [1m11, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/company
+                                      [1m[32me275279.js[39m[22m    2.4 KiB                  [1m4[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-banner
+                                      [1m[32mecbc03b.js[39m[22m   1.58 KiB                  [1m9[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/breadcrumb
+                                      [1m[33mee1a237.js[39m[22m    [1m[33m331 KiB[39m[22m                  [1m1[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  commons/app
+                                      [1m[32mf12b284.js[39m[22m   19.8 KiB          [1m23, 9, 10[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/search
+                                      [1m[32mf9f50bd.js[39m[22m   86.6 KiB                  [1m0[39m[22m  [1m[32m[emitted] [immutable][39m[22m         app
+                                      [1m[32mfa8110f.js[39m[22m   4.97 KiB                  [1m2[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-about
+  [1m[32mfonts/glyphicons-halflings-regular.4692b9e.ttf[39m[22m   44.3 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+  [1m[32mfonts/glyphicons-halflings-regular.5be1347.eot[39m[22m   19.7 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+ [1m[32mfonts/glyphicons-halflings-regular.82b1212.woff[39m[22m   22.9 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+[1m[32mfonts/glyphicons-halflings-regular.be810be.woff2[39m[22m   17.6 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                               [1m[33mimg/1.9f09634.png[39m[22m   [1m[33m2.36 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                              [1m[33mimg/11.d17ad14.png[39m[22m   [1m[33m1.94 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                              [1m[33mimg/12.7ececda.png[39m[22m   [1m[33m1.29 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                              [1m[33mimg/13.34b2bb3.png[39m[22m   [1m[33m1.06 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/2.fe5bdc3.png[39m[22m   [1m[33m1.95 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/3.6deeb11.png[39m[22m   [1m[33m2.22 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/4.bb2d5d5.png[39m[22m   [1m[33m2.35 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/5.ea53eea.png[39m[22m   [1m[33m2.31 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                [1m[33mimg/about-background.0013f11.png[39m[22m    [1m[33m846 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                [1m[33mimg/about_company_bg.ab142a3.png[39m[22m    [1m[33m270 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[32mimg/advantage_bg.72fe620.png[39m[22m   14.3 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+             [1m[32mimg/application_image_1.83afd7a.png[39m[22m   49.4 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+             [1m[33mimg/application_image_2.4cf6cd9.png[39m[22m    [1m[33m665 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+             [1m[33mimg/application_image_3.cbbe9f3.png[39m[22m    [1m[33m590 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+             [1m[33mimg/application_image_4.28c4aef.png[39m[22m    [1m[33m704 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+    [1m[32mimg/glyphicons-halflings-regular.060b271.svg[39m[22m    106 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                      [1m[32mimg/icon_ HVAC.30ed891.png[39m[22m   1.84 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+  [1m[32mimg/icon_ Industry and Agriculture.f38db4c.png[39m[22m   2.13 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                [1m[32mimg/icon_Data Center.73379ef.png[39m[22m   2.85 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+       [1m[32mimg/icon_Home air conditioner.2b3d48b.png[39m[22m   3.37 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+             [1m[32mimg/icon_Subway traffic.cda8bc3.png[39m[22m   2.53 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+               [1m[32mimg/icon_Video_Player.c88f8d2.png[39m[22m    3.7 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[32mimg/icon_heating.8d5ced7.png[39m[22m   2.36 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/icon_sina_weibo.b464e8f.png[39m[22m   1.43 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+          [1m[32mimg/icon_sina_weibo_active.3631207.png[39m[22m   1.58 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                     [1m[32mimg/icon_wechat.0424251.png[39m[22m   1.36 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+              [1m[32mimg/icon_wechat_active.a53d7bd.png[39m[22m   1.46 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                      [1m[33mimg/join_image.b4d5ac2.png[39m[22m    [1m[33m275 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                            [1m[32mimg/logo.29e7069.jpg[39m[22m   12.1 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                            [1m[32mimg/menu.b72a6e2.png[39m[22m    2.1 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[33mimg/mobile_banner_1.2f1a0fc.png[39m[22m    [1m[33m772 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_2.61a2790.png[39m[22m    [1m[33m392 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_3.259becd.png[39m[22m    [1m[33m431 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_4.45f1453.png[39m[22m    [1m[33m329 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_5.6f82221.png[39m[22m    [1m[33m654 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                      [1m[33mimg/pic_北方供热采暖.b52862f.png[39m[22m   [1m[33m1.19 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+            [1m[32mimg/pic_北方供热采暖_thumbnail.307600e.png[39m[22m   55.8 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                      [1m[33mimg/pic_家用户式空调.f68b169.png[39m[22m    [1m[33m1.6 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+            [1m[32mimg/pic_家用户式空调_thumbnail.ff3eac2.png[39m[22m     46 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                       [1m[33mimg/pic_工农业应用.ffa5301.png[39m[22m   [1m[33m2.25 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+             [1m[32mimg/pic_工农业应用_thumbnail.92c6a85.png[39m[22m   63.9 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                        [1m[33mimg/pic_数据中心.85fced2.png[39m[22m   [1m[33m1.38 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+              [1m[32mimg/pic_数据中心_thumbnail.04e5cbc.png[39m[22m     47 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                        [1m[33mimg/pic_暖通空调.56b1722.png[39m[22m   [1m[33m2.13 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+              [1m[32mimg/pic_暖通空调_thumbnail.83afd7a.png[39m[22m   49.4 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                        [1m[33mimg/pic_轨道交通.7f59899.png[39m[22m   [1m[33m1.79 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+              [1m[32mimg/pic_轨道交通_thumbnail.89eaf46.png[39m[22m     49 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_1.f2f968b.png[39m[22m    115 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_2.1cacc68.png[39m[22m    153 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_3.41bd242.png[39m[22m    159 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[33mimg/product_image_4.791551b.png[39m[22m    [1m[33m276 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[32mimg/product_image_5.2dab422.png[39m[22m   85.9 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_6.fb7ec78.png[39m[22m    127 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                     [1m[32mimg/sub_image_1.efe32e3.png[39m[22m    136 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[33mimg/works_Photo1.34ccbe1.png[39m[22m    [1m[33m567 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[33mimg/works_Photo2.8c28d5d.png[39m[22m    [1m[33m585 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[32mimg/works_Photo3.93a7ce7.png[39m[22m    198 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[32mimg/works_Photo4.a84fda3.png[39m[22m    198 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[33mimg/works_Photo5.0a1eb9c.png[39m[22m    [1m[33m440 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[33mimg/works_Photo6.30629ff.png[39m[22m    [1m[33m280 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+ + 2 hidden assets
+Entrypoint [1mapp[39m[22m [1m[33m[big][39m[22m = [1m[32m3430bb8.js[39m[22m [1m[32mee1a237.js[39m[22m [1m[32m14e3eaf.js[39m[22m [1m[32mf9f50bd.js[39m[22m
+
+[1m[33mWARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/mobile_banner_3.259becd.png (431 KiB)
+  img/12.7ececda.png (1.29 MiB)
+  img/mobile_banner_4.45f1453.png (329 KiB)
+  img/mobile_banner_5.6f82221.png (654 KiB)
+  img/13.34b2bb3.png (1.06 MiB)
+  img/11.d17ad14.png (1.94 MiB)
+  img/1.9f09634.png (2.36 MiB)
+  img/2.fe5bdc3.png (1.95 MiB)
+  img/3.6deeb11.png (2.22 MiB)
+  img/4.bb2d5d5.png (2.35 MiB)
+  img/5.ea53eea.png (2.31 MiB)
+  img/mobile_banner_1.2f1a0fc.png (772 KiB)
+  img/mobile_banner_2.61a2790.png (392 KiB)
+  img/pic_数据中心.85fced2.png (1.38 MiB)
+  img/pic_工农业应用.ffa5301.png (2.25 MiB)
+  img/pic_暖通空调.56b1722.png (2.13 MiB)
+  img/pic_轨道交通.7f59899.png (1.79 MiB)
+  img/pic_北方供热采暖.b52862f.png (1.19 MiB)
+  img/pic_家用户式空调.f68b169.png (1.6 MiB)
+  img/about-background.0013f11.png (846 KiB)
+  img/works_Photo1.34ccbe1.png (567 KiB)
+  img/works_Photo2.8c28d5d.png (585 KiB)
+  img/works_Photo5.0a1eb9c.png (440 KiB)
+  img/join_image.b4d5ac2.png (275 KiB)
+  img/product_image_4.791551b.png (276 KiB)
+  img/works_Photo6.30629ff.png (280 KiB)
+  img/about_company_bg.ab142a3.png (270 KiB)
+  img/application_image_2.4cf6cd9.png (665 KiB)
+  img/application_image_3.cbbe9f3.png (590 KiB)
+  img/application_image_4.28c4aef.png (704 KiB)
+  ee1a237.js (331 KiB)
+  14e3eaf.js (780 KiB)[39m[22m
+
+[1m[33mWARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (1000 KiB). This can impact web performance.
+Entrypoints:
+  app (1.17 MiB)
+      3430bb8.js
+      ee1a237.js
+      14e3eaf.js
+      f9f50bd.js
+[39m[22m
+
+Hash: [1m51caa1c6dee68d8807ba[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m4350[39m[22mms
+Built at: 2021-08-05 [1m10:30:50 ├F10: PM┤[39m[22m
+                                [1mAsset[39m[22m      [1mSize[39m[22m                        [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+            [1m[32mcomponents/about-about.js[39m[22m  10.3 KiB                             [1m1[39m[22m  [1m[32m[emitted][39m[22m  components/about-about
+[1m[32mcomponents/about-application-field.js[39m[22m  16.2 KiB                             [1m2[39m[22m  [1m[32m[emitted][39m[22m  components/about-application-field
+           [1m[32mcomponents/about-banner.js[39m[22m  9.66 KiB                             [1m3[39m[22m  [1m[32m[emitted][39m[22m  components/about-banner
+     [1m[32mcomponents/about-button-group.js[39m[22m  8.58 KiB                             [1m4[39m[22m  [1m[32m[emitted][39m[22m  components/about-button-group
+             [1m[32mcomponents/about-news.js[39m[22m  14.7 KiB                             [1m5[39m[22m  [1m[32m[emitted][39m[22m  components/about-news
+          [1m[32mcomponents/about-product.js[39m[22m    16 KiB                             [1m6[39m[22m  [1m[32m[emitted][39m[22m  components/about-product
+          [1m[32mcomponents/about-tab-bar.js[39m[22m  10.4 KiB                             [1m7[39m[22m  [1m[32m[emitted][39m[22m  components/about-tab-bar
+             [1m[32mcomponents/breadcrumb.js[39m[22m  7.03 KiB                             [1m8[39m[22m  [1m[32m[emitted][39m[22m  components/breadcrumb
+             [1m[32mcomponents/contact-us.js[39m[22m  8.12 KiB                             [1m9[39m[22m  [1m[32m[emitted][39m[22m  components/contact-us
+                 [1m[32mcomponents/footer.js[39m[22m  19.6 KiB                            [1m10[39m[22m  [1m[32m[emitted][39m[22m  components/footer
+                 [1m[32mcomponents/header.js[39m[22m  18.1 KiB                            [1m11[39m[22m  [1m[32m[emitted][39m[22m  components/header
+            [1m[32mcomponents/self-select.js[39m[22m  10.3 KiB                            [1m12[39m[22m  [1m[32m[emitted][39m[22m  components/self-select
+               [1m[32mpages/about/company.js[39m[22m  76.1 KiB              [1m13, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/company
+               [1m[32mpages/about/culture.js[39m[22m  67.9 KiB              [1m14, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/culture
+                 [1m[32mpages/about/honor.js[39m[22m  80.8 KiB           [1m15, 4, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/honor
+                 [1m[32mpages/about/index.js[39m[22m  1.88 KiB                            [1m16[39m[22m  [1m[32m[emitted][39m[22m  pages/about/index
+                [1m[32mpages/about/patent.js[39m[22m  70.8 KiB              [1m17, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/patent
+                       [1m[32mpages/index.js[39m[22m   116 KiB  [1m18, 1, 2, 3, 5, 6, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/index
+                 [1m[32mpages/join/detail.js[39m[22m  69.2 KiB              [1m19, 8, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/join/detail
+                  [1m[32mpages/join/index.js[39m[22m  66.5 KiB                 [1m20, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/join/index
+                 [1m[32mpages/news/detail.js[39m[22m  66.1 KiB              [1m21, 8, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/news/detail
+                  [1m[32mpages/news/index.js[39m[22m  61.9 KiB                 [1m22, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/news/index
+              [1m[32mpages/product/detail.js[39m[22m  68.9 KiB                 [1m23, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/product/detail
+               [1m[32mpages/product/index.js[39m[22m  59.9 KiB                 [1m24, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/product/index
+                      [1m[32mpages/search.js[39m[22m  81.8 KiB          [1m25, 8, 9, 10, 11, 12[39m[22m  [1m[32m[emitted][39m[22m  pages/search
+                            [1m[32mserver.js[39m[22m   307 KiB                             [1m0[39m[22m  [1m[32m[emitted][39m[22m  app
+                 [1m[32mserver.manifest.json[39m[22m  3.02 KiB                              [1m[39m[22m  [1m[32m[emitted][39m[22m  
+ + 26 hidden assets
+Entrypoint [1mapp[39m[22m = [1m[32mserver.js[39m[22m [1m[32mserver.js.map[39m[22m
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 23 times)
+
+ℹ Ready to run nuxt start
+
+> mingchen-website@1.0.0 build /data/websites/yingte
+> nuxt build && node upload.js
+
+ℹ Production build
+ℹ Bundling for server and client side
+ℹ Target: server
+ℹ Using components loader to optimize imports
+ℹ Discovered Components: .nuxt/components/readme.md
+✔ Builder initialized
+✔ Nuxt files generated
+ℹ Compiling Client
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 14 times)
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 183 times)
+
+
+ ERROR  [BABEL] Note: The code generator has deoptimised the styling of /data/websites/yingte/node_modules/bootstrap-vue/src/icons/icons.js as it exceeds the max of 500KB.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 140 times)
+
+✔ Client: Compiled successfully in 35.63s
+ℹ Compiling Server
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 20 times)
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+✔ Server: Compiled successfully in 4.15s
+
+Hash: [1m5c30bf94cd8701492a0d[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m35634[39m[22mms
+Built at: 08/08/2021 [1m2:37:28 PM[39m[22m
+                                           [1mAsset[39m[22m       [1mSize[39m[22m             [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m       [1mChunk Names[39m[22m
+                  [1m[32m../server/client.manifest.json[39m[22m   71.9 KiB                   [1m[39m[22m  [1m[32m[emitted][39m[22m                     
+                                      [1m[32m02ebf55.js[39m[22m   2.58 KiB                 [1m24[39m[22m  [1m[32m[emitted] [immutable][39m[22m         runtime
+                                      [1m[32m12ec737.js[39m[22m   12.6 KiB              [1m17, 9[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/join/detail
+                                      [1m[32m1478455.js[39m[22m   17.1 KiB           [1m13, 5, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/honor
+                                      [1m[33m14e3eaf.js[39m[22m    [1m[33m780 KiB[39m[22m                 [1m25[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  vendors/app
+                                      [1m[32m1e13831.js[39m[22m   10.6 KiB              [1m12, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/culture
+                                      [1m[32m3173789.js[39m[22m   2.87 KiB                  [1m5[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-button-group
+                                      [1m[32m3664229.js[39m[22m   13.7 KiB              [1m15, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/patent
+                                      [1m[32m3720248.js[39m[22m   9.74 KiB              [1m19, 9[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/news/detail
+                                      [1m[32m58fa32c.js[39m[22m   35.2 KiB  [1m16, 2, 3, 4, 6, 7[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/index
+                                      [1m[32m6964cfc.js[39m[22m  401 bytes                 [1m14[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/index
+                                      [1m[32m6f8a63f.js[39m[22m   10.9 KiB                 [1m20[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/news/index
+                                      [1m[32m701fb81.js[39m[22m    4.7 KiB                 [1m10[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/self-select
+                                      [1m[32m96beed3.js[39m[22m   4.86 KiB                  [1m8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-tab-bar
+                                      [1m[32m9d3a757.js[39m[22m     16 KiB                 [1m21[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/product/detail
+                                        [1m[32mLICENSES[39m[22m   2.43 KiB                   [1m[39m[22m  [1m[32m[emitted][39m[22m                     
+                                      [1m[32ma9c0f71.js[39m[22m     15 KiB                 [1m18[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/join/index
+                                      [1m[32macc824b.js[39m[22m   9.76 KiB                  [1m7[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-product
+                                      [1m[32mae2a557.js[39m[22m   9.38 KiB                  [1m6[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-news
+                                      [1m[32mcb12d8f.js[39m[22m   8.12 KiB                 [1m22[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/product/index
+                                      [1m[32md47fdc8.js[39m[22m   8.24 KiB                  [1m3[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-application-field
+                                      [1m[32mdbc1c3a.js[39m[22m     18 KiB              [1m11, 8[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/about/company
+                                      [1m[32me275279.js[39m[22m    2.4 KiB                  [1m4[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-banner
+                                      [1m[32mecbc03b.js[39m[22m   1.58 KiB                  [1m9[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/breadcrumb
+                                      [1m[33mee1a237.js[39m[22m    [1m[33m331 KiB[39m[22m                  [1m1[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  commons/app
+                                      [1m[32mf12b284.js[39m[22m   19.8 KiB          [1m23, 9, 10[39m[22m  [1m[32m[emitted] [immutable][39m[22m         pages/search
+                                      [1m[32mf9f50bd.js[39m[22m   86.6 KiB                  [1m0[39m[22m  [1m[32m[emitted] [immutable][39m[22m         app
+                                      [1m[32mfa8110f.js[39m[22m   4.97 KiB                  [1m2[39m[22m  [1m[32m[emitted] [immutable][39m[22m         components/about-about
+  [1m[32mfonts/glyphicons-halflings-regular.4692b9e.ttf[39m[22m   44.3 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+  [1m[32mfonts/glyphicons-halflings-regular.5be1347.eot[39m[22m   19.7 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+ [1m[32mfonts/glyphicons-halflings-regular.82b1212.woff[39m[22m   22.9 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+[1m[32mfonts/glyphicons-halflings-regular.be810be.woff2[39m[22m   17.6 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                               [1m[33mimg/1.9f09634.png[39m[22m   [1m[33m2.36 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                              [1m[33mimg/11.d17ad14.png[39m[22m   [1m[33m1.94 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                              [1m[33mimg/12.7ececda.png[39m[22m   [1m[33m1.29 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                              [1m[33mimg/13.34b2bb3.png[39m[22m   [1m[33m1.06 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/2.fe5bdc3.png[39m[22m   [1m[33m1.95 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/3.6deeb11.png[39m[22m   [1m[33m2.22 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/4.bb2d5d5.png[39m[22m   [1m[33m2.35 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                               [1m[33mimg/5.ea53eea.png[39m[22m   [1m[33m2.31 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                [1m[33mimg/about-background.0013f11.png[39m[22m    [1m[33m846 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                [1m[33mimg/about_company_bg.ab142a3.png[39m[22m    [1m[33m270 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[32mimg/advantage_bg.72fe620.png[39m[22m   14.3 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+             [1m[32mimg/application_image_1.83afd7a.png[39m[22m   49.4 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+             [1m[33mimg/application_image_2.4cf6cd9.png[39m[22m    [1m[33m665 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+             [1m[33mimg/application_image_3.cbbe9f3.png[39m[22m    [1m[33m590 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+             [1m[33mimg/application_image_4.28c4aef.png[39m[22m    [1m[33m704 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+    [1m[32mimg/glyphicons-halflings-regular.060b271.svg[39m[22m    106 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                      [1m[32mimg/icon_ HVAC.30ed891.png[39m[22m   1.84 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+  [1m[32mimg/icon_ Industry and Agriculture.f38db4c.png[39m[22m   2.13 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                [1m[32mimg/icon_Data Center.73379ef.png[39m[22m   2.85 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+       [1m[32mimg/icon_Home air conditioner.2b3d48b.png[39m[22m   3.37 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+             [1m[32mimg/icon_Subway traffic.cda8bc3.png[39m[22m   2.53 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+               [1m[32mimg/icon_Video_Player.c88f8d2.png[39m[22m    3.7 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[32mimg/icon_heating.8d5ced7.png[39m[22m   2.36 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/icon_sina_weibo.b464e8f.png[39m[22m   1.43 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+          [1m[32mimg/icon_sina_weibo_active.3631207.png[39m[22m   1.58 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                     [1m[32mimg/icon_wechat.0424251.png[39m[22m   1.36 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+              [1m[32mimg/icon_wechat_active.a53d7bd.png[39m[22m   1.46 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                      [1m[33mimg/join_image.b4d5ac2.png[39m[22m    [1m[33m275 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                            [1m[32mimg/logo.29e7069.jpg[39m[22m   12.1 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                            [1m[32mimg/menu.b72a6e2.png[39m[22m    2.1 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[33mimg/mobile_banner_1.2f1a0fc.png[39m[22m    [1m[33m772 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_2.61a2790.png[39m[22m    [1m[33m392 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_3.259becd.png[39m[22m    [1m[33m431 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_4.45f1453.png[39m[22m    [1m[33m329 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[33mimg/mobile_banner_5.6f82221.png[39m[22m    [1m[33m654 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                      [1m[33mimg/pic_北方供热采暖.b52862f.png[39m[22m   [1m[33m1.19 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+            [1m[32mimg/pic_北方供热采暖_thumbnail.307600e.png[39m[22m   55.8 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                      [1m[33mimg/pic_家用户式空调.f68b169.png[39m[22m    [1m[33m1.6 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+            [1m[32mimg/pic_家用户式空调_thumbnail.ff3eac2.png[39m[22m     46 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                       [1m[33mimg/pic_工农业应用.ffa5301.png[39m[22m   [1m[33m2.25 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+             [1m[32mimg/pic_工农业应用_thumbnail.92c6a85.png[39m[22m   63.9 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                        [1m[33mimg/pic_数据中心.85fced2.png[39m[22m   [1m[33m1.38 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+              [1m[32mimg/pic_数据中心_thumbnail.04e5cbc.png[39m[22m     47 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                        [1m[33mimg/pic_暖通空调.56b1722.png[39m[22m   [1m[33m2.13 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+              [1m[32mimg/pic_暖通空调_thumbnail.83afd7a.png[39m[22m   49.4 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                        [1m[33mimg/pic_轨道交通.7f59899.png[39m[22m   [1m[33m1.79 MiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+              [1m[32mimg/pic_轨道交通_thumbnail.89eaf46.png[39m[22m     49 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_1.f2f968b.png[39m[22m    115 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_2.1cacc68.png[39m[22m    153 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_3.41bd242.png[39m[22m    159 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[33mimg/product_image_4.791551b.png[39m[22m    [1m[33m276 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                 [1m[32mimg/product_image_5.2dab422.png[39m[22m   85.9 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                 [1m[32mimg/product_image_6.fb7ec78.png[39m[22m    127 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                     [1m[32mimg/sub_image_1.efe32e3.png[39m[22m    136 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[33mimg/works_Photo1.34ccbe1.png[39m[22m    [1m[33m567 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[33mimg/works_Photo2.8c28d5d.png[39m[22m    [1m[33m585 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[32mimg/works_Photo3.93a7ce7.png[39m[22m    198 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[32mimg/works_Photo4.a84fda3.png[39m[22m    198 KiB                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                    [1m[33mimg/works_Photo5.0a1eb9c.png[39m[22m    [1m[33m440 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+                    [1m[33mimg/works_Photo6.30629ff.png[39m[22m    [1m[33m280 KiB[39m[22m                   [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  
+ + 2 hidden assets
+Entrypoint [1mapp[39m[22m [1m[33m[big][39m[22m = [1m[32m02ebf55.js[39m[22m [1m[32mee1a237.js[39m[22m [1m[32m14e3eaf.js[39m[22m [1m[32mf9f50bd.js[39m[22m
+
+[1m[33mWARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/mobile_banner_3.259becd.png (431 KiB)
+  img/12.7ececda.png (1.29 MiB)
+  img/mobile_banner_4.45f1453.png (329 KiB)
+  img/mobile_banner_5.6f82221.png (654 KiB)
+  img/13.34b2bb3.png (1.06 MiB)
+  img/11.d17ad14.png (1.94 MiB)
+  img/1.9f09634.png (2.36 MiB)
+  img/2.fe5bdc3.png (1.95 MiB)
+  img/3.6deeb11.png (2.22 MiB)
+  img/4.bb2d5d5.png (2.35 MiB)
+  img/5.ea53eea.png (2.31 MiB)
+  img/mobile_banner_1.2f1a0fc.png (772 KiB)
+  img/mobile_banner_2.61a2790.png (392 KiB)
+  img/pic_数据中心.85fced2.png (1.38 MiB)
+  img/pic_工农业应用.ffa5301.png (2.25 MiB)
+  img/pic_暖通空调.56b1722.png (2.13 MiB)
+  img/pic_轨道交通.7f59899.png (1.79 MiB)
+  img/pic_北方供热采暖.b52862f.png (1.19 MiB)
+  img/pic_家用户式空调.f68b169.png (1.6 MiB)
+  img/about-background.0013f11.png (846 KiB)
+  img/works_Photo1.34ccbe1.png (567 KiB)
+  img/works_Photo2.8c28d5d.png (585 KiB)
+  img/works_Photo5.0a1eb9c.png (440 KiB)
+  img/join_image.b4d5ac2.png (275 KiB)
+  img/product_image_4.791551b.png (276 KiB)
+  img/works_Photo6.30629ff.png (280 KiB)
+  img/about_company_bg.ab142a3.png (270 KiB)
+  img/application_image_2.4cf6cd9.png (665 KiB)
+  img/application_image_3.cbbe9f3.png (590 KiB)
+  img/application_image_4.28c4aef.png (704 KiB)
+  ee1a237.js (331 KiB)
+  14e3eaf.js (780 KiB)[39m[22m
+
+[1m[33mWARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (1000 KiB). This can impact web performance.
+Entrypoints:
+  app (1.17 MiB)
+      02ebf55.js
+      ee1a237.js
+      14e3eaf.js
+      f9f50bd.js
+[39m[22m
+
+Hash: [1m2f0cb4e34c5c007fc1ae[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m4174[39m[22mms
+Built at: 08/08/2021 [1m2:37:33 PM[39m[22m
+                                [1mAsset[39m[22m      [1mSize[39m[22m                        [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+            [1m[32mcomponents/about-about.js[39m[22m  10.3 KiB                             [1m1[39m[22m  [1m[32m[emitted][39m[22m  components/about-about
+[1m[32mcomponents/about-application-field.js[39m[22m  16.2 KiB                             [1m2[39m[22m  [1m[32m[emitted][39m[22m  components/about-application-field
+           [1m[32mcomponents/about-banner.js[39m[22m  9.66 KiB                             [1m3[39m[22m  [1m[32m[emitted][39m[22m  components/about-banner
+     [1m[32mcomponents/about-button-group.js[39m[22m  8.58 KiB                             [1m4[39m[22m  [1m[32m[emitted][39m[22m  components/about-button-group
+             [1m[32mcomponents/about-news.js[39m[22m  14.7 KiB                             [1m5[39m[22m  [1m[32m[emitted][39m[22m  components/about-news
+          [1m[32mcomponents/about-product.js[39m[22m    16 KiB                             [1m6[39m[22m  [1m[32m[emitted][39m[22m  components/about-product
+          [1m[32mcomponents/about-tab-bar.js[39m[22m  10.4 KiB                             [1m7[39m[22m  [1m[32m[emitted][39m[22m  components/about-tab-bar
+             [1m[32mcomponents/breadcrumb.js[39m[22m  7.03 KiB                             [1m8[39m[22m  [1m[32m[emitted][39m[22m  components/breadcrumb
+             [1m[32mcomponents/contact-us.js[39m[22m  8.12 KiB                             [1m9[39m[22m  [1m[32m[emitted][39m[22m  components/contact-us
+                 [1m[32mcomponents/footer.js[39m[22m  19.6 KiB                            [1m10[39m[22m  [1m[32m[emitted][39m[22m  components/footer
+                 [1m[32mcomponents/header.js[39m[22m  18.1 KiB                            [1m11[39m[22m  [1m[32m[emitted][39m[22m  components/header
+            [1m[32mcomponents/self-select.js[39m[22m  10.3 KiB                            [1m12[39m[22m  [1m[32m[emitted][39m[22m  components/self-select
+               [1m[32mpages/about/company.js[39m[22m  76.1 KiB              [1m13, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/company
+               [1m[32mpages/about/culture.js[39m[22m  67.9 KiB              [1m14, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/culture
+                 [1m[32mpages/about/honor.js[39m[22m  80.8 KiB           [1m15, 4, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/honor
+                 [1m[32mpages/about/index.js[39m[22m  1.88 KiB                            [1m16[39m[22m  [1m[32m[emitted][39m[22m  pages/about/index
+                [1m[32mpages/about/patent.js[39m[22m  70.8 KiB              [1m17, 7, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/about/patent
+                       [1m[32mpages/index.js[39m[22m   116 KiB  [1m18, 1, 2, 3, 5, 6, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/index
+                 [1m[32mpages/join/detail.js[39m[22m  69.2 KiB              [1m19, 8, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/join/detail
+                  [1m[32mpages/join/index.js[39m[22m  66.5 KiB                 [1m20, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/join/index
+                 [1m[32mpages/news/detail.js[39m[22m  66.1 KiB              [1m21, 8, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/news/detail
+                  [1m[32mpages/news/index.js[39m[22m  61.9 KiB                 [1m22, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/news/index
+              [1m[32mpages/product/detail.js[39m[22m  68.9 KiB                 [1m23, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/product/detail
+               [1m[32mpages/product/index.js[39m[22m  59.9 KiB                 [1m24, 9, 10, 11[39m[22m  [1m[32m[emitted][39m[22m  pages/product/index
+                      [1m[32mpages/search.js[39m[22m  81.8 KiB          [1m25, 8, 9, 10, 11, 12[39m[22m  [1m[32m[emitted][39m[22m  pages/search
+                            [1m[32mserver.js[39m[22m   307 KiB                             [1m0[39m[22m  [1m[32m[emitted][39m[22m  app
+                 [1m[32mserver.manifest.json[39m[22m  3.02 KiB                              [1m[39m[22m  [1m[32m[emitted][39m[22m  
+ + 26 hidden assets
+Entrypoint [1mapp[39m[22m = [1m[32mserver.js[39m[22m [1m[32mserver.js.map[39m[22m
+
+ WARN  Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config. (repeated 23 times)
+
+ℹ Ready to run nuxt start
+3720248.js上传oss成功
+3173789.js上传oss成功
+3664229.js上传oss成功
+a9c0f71.js上传oss成功
+12ec737.js上传oss成功
+f12b284.js上传oss成功
+cb12d8f.js上传oss成功
+LICENSES上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/application_image_1.83afd7a.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_Subway traffic.cda8bc3.png上传oss成功
+96beed3.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/menu.b72a6e2.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_ HVAC.30ed891.png上传oss成功
+02ebf55.js上传oss成功
+58fa32c.js上传oss成功
+701fb81.js上传oss成功
+6f8a63f.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_家用户式空调_thumbnail.ff3eac2.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_wechat_active.a53d7bd.png上传oss成功
+1e13831.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_Video_Player.c88f8d2.png上传oss成功
+6964cfc.js上传oss成功
+acc824b.js上传oss成功
+ae2a557.js上传oss成功
+1478455.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_Data Center.73379ef.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_Home air conditioner.2b3d48b.png上传oss成功
+e275279.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_wechat.0424251.png上传oss成功
+fa8110f.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/fonts/glyphicons-halflings-regular.5be1347.eot上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_数据中心_thumbnail.04e5cbc.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_sina_weibo.b464e8f.png上传oss成功
+ecbc03b.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_暖通空调_thumbnail.83afd7a.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_heating.8d5ced7.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/fonts/glyphicons-halflings-regular.be810be.woff2上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/product_image_6.fb7ec78.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_sina_weibo_active.3631207.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/icon_ Industry and Agriculture.f38db4c.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/logo.29e7069.jpg上传oss成功
+dbc1c3a.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/works_Photo3.93a7ce7.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/works_Photo4.a84fda3.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/advantage_bg.72fe620.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/product_image_5.2dab422.png上传oss成功
+9d3a757.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/fonts/glyphicons-halflings-regular.82b1212.woff上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_轨道交通_thumbnail.89eaf46.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/join_image.b4d5ac2.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/mobile_banner_3.259becd.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/glyphicons-halflings-regular.060b271.svg上传oss成功
+ee1a237.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/about_company_bg.ab142a3.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/product_image_2.1cacc68.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/works_Photo6.30629ff.png上传oss成功
+d47fdc8.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/fonts/glyphicons-halflings-regular.4692b9e.ttf上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_工农业应用_thumbnail.92c6a85.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/product_image_1.f2f968b.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/mobile_banner_5.6f82221.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/works_Photo5.0a1eb9c.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/application_image_2.4cf6cd9.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/works_Photo1.34ccbe1.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/product_image_3.41bd242.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/about-background.0013f11.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/application_image_4.28c4aef.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/works_Photo2.8c28d5d.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/sub_image_1.efe32e3.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/mobile_banner_1.2f1a0fc.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_北方供热采暖.b52862f.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/3.6deeb11.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_数据中心.85fced2.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/12.7ececda.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/2.fe5bdc3.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_家用户式空调.f68b169.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/1.9f09634.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/11.d17ad14.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_暖通空调.56b1722.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_工农业应用.ffa5301.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/4.bb2d5d5.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/5.ea53eea.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_北方供热采暖_thumbnail.307600e.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/product_image_4.791551b.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/application_image_3.cbbe9f3.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/mobile_banner_2.61a2790.png上传oss成功
+14e3eaf.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/pic_轨道交通.7f59899.png上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/13.34b2bb3.png上传oss成功
+f9f50bd.js上传oss成功
+02ebf55.js,12ec737.js,1478455.js,14e3eaf.js,1e13831.js,3173789.js,3664229.js,3720248.js,58fa32c.js,6964cfc.js,6f8a63f.js,701fb81.js,96beed3.js,9d3a757.js,LICENSES,a9c0f71.js,acc824b.js,ae2a557.js,cb12d8f.js,d47fdc8.js,dbc1c3a.js,e275279.js,ecbc03b.js,ee1a237.js,f12b284.js,f9f50bd.js,fa8110f.js,fonts,img/img/mobile_banner_4.45f1453.png上传oss成功
